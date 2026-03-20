@@ -24,7 +24,6 @@ function renderTable(rows) {
         <tr>
           <td>${row.permit}</td>
           <td>${row.org}</td>
-          <td>${row.org_reg}</td>
           <td>${row.product}</td>
           <td>${row.name}</td>
           <td>${row.start} — ${row.end}</td>
