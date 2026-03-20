@@ -26,7 +26,8 @@ function renderTable(rows) {
           <td>${row.org}</td>
           <td>${row.product}</td>
           <td>${row.name}</td>
-          <td>${row.start} — ${row.end}</td>
+          <td>${row.start}</td>
+          <td>${row.end}</td>
           <td>${row.place}</td>
         </tr>
       `
