@@ -130,6 +130,21 @@ table {
   color: var(--text);
 }
 
+th {
+  cursor: pointer;
+  user-select: none;
+}
+
+th.sorted::after {
+  content: " ▲";
+  font-size: 11px;
+  color: var(--accent);
+}
+
+th.sorted.desc::after {
+  content: " ▼";
+}
+
 thead {
   position: sticky;
   top: 0;
