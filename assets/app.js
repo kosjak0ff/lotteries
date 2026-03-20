@@ -16,6 +16,9 @@ const stripAccents = (text) =>
     .replace(/\p{Mn}+/gu, "")
     .toLowerCase();
 
+// ensure proper display of non-ASCII text
+const safe = (text) => (text ? text : "— данных пока нет");
+
 const compare = (a, b) => {
   if (!sortKey) return 0;
   const dir = sortDir === "desc" ? -1 : 1;
@@ -60,9 +63,9 @@ function renderTable(rows) {
           <td>${row.start}</td>
           <td>${row.end}</td>
           <td>${row.place}</td>
-          <td>${enriched[row.permit]?.requirements ?? "— данных пока нет"}</td>
-          <td>${enriched[row.permit]?.prizes ?? "— данных пока нет"}</td>
-          <td>${enriched[row.permit]?.registration_url ? `<a href="${enriched[row.permit].registration_url}" target="_blank">Ссылка</a>` : "—"}</td>
+          <td>${safe(enriched[row.permit]?.requirements)}</td>
+          <td>${safe(enriched[row.permit]?.prizes)}</td>
+          <td>${enriched[row.permit]?.registration_url ? `<a href="${enriched[row.permit].registration_url}" target="_blank" rel="noopener">Ссылка</a>` : "—"}</td>
         </tr>
       `
     )
