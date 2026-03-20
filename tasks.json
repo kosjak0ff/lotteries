@@ -1,9 +1,26 @@
 {
-  "tasks": [],
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "Active Latvian lotteries 2026-03-20 (RU site)",
+      "description": "Extract active lotteries as of 2026-03-20 from Loteriju reģistrs_16.03.2026..xls, exclude magazine/newspaper-related entries; produce JSON and Russian static site.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "lotteries",
+        "web"
+      ],
+      "verify": [
+        "python scripts/extract_lotteries.py --check",
+        "python -m json.tool assets/active_lotteries.json"
+      ]
+    }
+  ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "b8cce95f94bb3842447a35cad31d68789df636e11353ab4a75179d86761d804c"
+    "checksum": "ede626e5c788e5afd7bb0840c53749f3cc5c3f5923dfee964c36ca29ef544302"
   }
 }
