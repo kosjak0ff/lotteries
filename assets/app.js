@@ -8,6 +8,7 @@ const headerCells = Array.from(document.querySelectorAll("th[data-sort]"));
 let data = [];
 let sortKey = null;
 let sortDir = "asc";
+let enriched = {};
 
 const stripAccents = (text) =>
   text
@@ -44,7 +45,7 @@ function renderTable(rows) {
   const sorted = sortKey ? [...rows].sort(compare) : rows;
 
   if (!sorted.length) {
-    tableBody.innerHTML = `<tr><td colspan="7" class="muted">Ничего не найдено по запросу</td></tr>`;
+    tableBody.innerHTML = `<tr><td colspan="10" class="muted">Ничего не найдено по запросу</td></tr>`;
     return;
   }
 
@@ -59,6 +60,9 @@ function renderTable(rows) {
           <td>${row.start}</td>
           <td>${row.end}</td>
           <td>${row.place}</td>
+          <td>${enriched[row.permit]?.requirements ?? "— данных пока нет"}</td>
+          <td>${enriched[row.permit]?.prizes ?? "— данных пока нет"}</td>
+          <td>${enriched[row.permit]?.registration_url ? `<a href="${enriched[row.permit].registration_url}" target="_blank">Ссылка</a>` : "—"}</td>
         </tr>
       `
     )
@@ -102,6 +106,16 @@ async function bootstrap() {
     const res = await fetch("assets/active_lotteries.json");
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const payload = await res.json();
+
+    try {
+      const extRes = await fetch("assets/enriched_info.json");
+      if (extRes.ok) {
+        enriched = await extRes.json();
+      }
+    } catch (e) {
+      console.warn("Enriched info missing, continuing with base data");
+      enriched = {};
+    }
 
     data = payload.items || [];
     countEl.textContent = payload.count ?? data.length;
