@@ -1,14 +1,14 @@
 :root {
-  --bg: #0f172a;
-  --card: #111827;
-  --accent: #38bdf8;
-  --accent-2: #a78bfa;
-  --text: #e5e7eb;
-  --muted: #94a3b8;
-  --border: #1f2937;
-  --table-bg: #0b1222;
-  --zebra: #10192f;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --accent: #2563eb;
+  --accent-2: #0ea5e9;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --table-bg: #ffffff;
+  --zebra: #f1f5f9;
+  --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
   --radius: 14px;
   font-family: "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
@@ -21,9 +21,9 @@
 
 body {
   margin: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.2), transparent 35%),
-    radial-gradient(circle at 80% 10%, rgba(167, 139, 250, 0.2), transparent 30%),
-    linear-gradient(145deg, #0b1222, #0f172a 45%, #0b1222);
+  background: radial-gradient(circle at 12% 10%, rgba(37, 99, 235, 0.08), transparent 25%),
+    radial-gradient(circle at 80% 0%, rgba(14, 165, 233, 0.08), transparent 30%),
+    var(--bg);
   color: var(--text);
   min-height: 100vh;
 }
@@ -62,8 +62,8 @@ h1 {
 }
 
 .card {
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(167, 139, 250, 0.12));
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: #ffffff;
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 14px 16px;
   box-shadow: var(--shadow);
@@ -96,8 +96,8 @@ h1 {
   width: 100%;
   padding: 12px 14px;
   border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: var(--card);
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
   color: var(--text);
   font-size: 16px;
   outline: none;
@@ -133,7 +133,7 @@ table {
 thead {
   position: sticky;
   top: 0;
-  background: linear-gradient(90deg, rgba(56, 189, 248, 0.15), rgba(167, 139, 250, 0.15));
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.1), rgba(14, 165, 233, 0.08));
   backdrop-filter: blur(6px);
   z-index: 2;
 }
@@ -160,7 +160,7 @@ tbody tr:nth-child(odd) {
 }
 
 tbody tr:hover {
-  background: rgba(56, 189, 248, 0.1);
+  background: rgba(37, 99, 235, 0.08);
 }
 
 .muted {
