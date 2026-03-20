@@ -35,10 +35,17 @@
     "notes": "Лотерея 09.02–23.03.2026; Atļaujas Nr. 8830; излозes 16.02, 23.02, 02.03, 09.03, 16.03, 23.03.2026; организатор SIA “Visas Loterijas”, ražotājs SIA “Orkla Latvija”."
   },
   "8840": {
-    "requirements": "?????? ????? ????????? ??????? Coca-Cola/Fanta/Sprite (???????? ? ????????) ? ?????????? ????? ??? ??????? ? ?? 30.03.2026 (17:00) ???????????????? ??? ?? ?????; ??????? 13+.",
-    "prizes": "1? ?????????????? ????? 2000 EUR; 20? ?????????? ????? Euronics ?? 100 EUR; 1000? Wolt ?? 5 EUR.",
+    "requirements": "Купить акционный напиток Coca-Cola/Fanta/Sprite с уникальным кодом под крышкой и до 30.03.2026 (17:00) зарегистрировать код на сайте; возраст 13+.",
+    "prizes": "1× предоплаченная карта 2000 EUR; 20× карты Euronics по 100 EUR; 1000× Wolt по 5 EUR.",
     "registration_url": "https://www.coca-cola.lv",
     "registration_until": "2026-03-30",
-    "notes": "??????? 05.01?08.04.2026; ???????/??????????? 05.01?30.03.2026; At?aujas Nr. 8840; ??????????? SIA Guilty, izplat?t?js SIA Coca-Cola HBC Latvia."
+    "notes": "Лотерея 05.01–08.04.2026; покупки/регистрация 05.01–30.03.2026; Atļaujas Nr. 8840; организатор SIA Guilty, izplatītājs SIA Coca-Cola HBC Latvia."
+  },
+  "8841": {
+    "requirements": "Купить акционный Sprite (список тар в правилах) с уникальным кодом под крышкой и до 31.03.2026 (17:00) зарегистрировать код на сайте Coca-Cola; возраст 18+.",
+    "prizes": "5× полёт на воздушном шаре на 2 чел. + 100 EUR ресторан 36.līnija; 300× Tinder Gold купон; 150× Wolt карта 20 EUR.",
+    "registration_url": "https://www.coca-cola.com/lv/lv",
+    "registration_until": "2026-03-31",
+    "notes": "Лотерея 02.02–07.04.2026; покупки/регистрация 02.02–31.03.2026; Atļaujas Nr. 8841; организатор SIA Guilty, izplatītājs SIA Coca-Cola HBC Latvia; излозes с 10.02 по 02.04, итоговый список до 07.04."
   }
 }
