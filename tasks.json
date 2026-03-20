@@ -1,0 +1,9 @@
+{
+  "tasks": [],
+  "meta": {
+    "schema_version": 1,
+    "managed_by": "agentctl",
+    "checksum_algo": "sha256",
+    "checksum": "b8cce95f94bb3842447a35cad31d68789df636e11353ab4a75179d86761d804c"
+  }
+}
