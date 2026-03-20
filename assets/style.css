@@ -146,6 +146,15 @@ th, td {
   font-size: 15px;
 }
 
+/* keep dates on one line and centered */
+th:nth-child(5),
+th:nth-child(6),
+td:nth-child(5),
+td:nth-child(6) {
+  white-space: nowrap;
+  text-align: center;
+}
+
 tbody tr:nth-child(odd) {
   background: var(--zebra);
 }
