@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Активные лотереи Латвии · 20.03.2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="eyebrow">Данные реестра лотерей Латвии</div>
+      <h1>Активные лотереи на <span id="reference-date">20.03.2026</span></h1>
+      <p class="lede">Исключены лотереи, связанные с журналами и газетами. Данные автоматически собраны из файла реестра.</p>
+      <div class="stats">
+        <div class="card">
+          <div class="card-label">Количество лотерей</div>
+          <div class="card-value" id="lottery-count">—</div>
+        </div>
+        <div class="card">
+          <div class="card-label">Источник</div>
+          <div class="card-value">Loteriju reģistrs 16.03.2026</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="controls">
+      <label class="control-label" for="search">Поиск по названию или организатору</label>
+      <input id="search" type="search" placeholder="Например, Tele2, KitKat, Nutella…" autocomplete="off">
+      <div id="search-hint" class="control-hint">Показываются все записи; фильтрация происходит на клиенте.</div>
+    </section>
+
+    <section class="table-wrap">
+      <table id="lottery-table">
+        <thead>
+          <tr>
+            <th>№ разрешения</th>
+            <th>Организатор</th>
+            <th>Рег. №</th>
+            <th>Продукт / услуга</th>
+            <th>Название лотереи</th>
+            <th>Даты</th>
+            <th>Место проведения</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <tr><td colspan="7" class="muted">Загрузка данных…</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="assets/app.js" type="module"></script>
+</body>
+</html>
