@@ -264,5 +264,26 @@
     "registration_url": "https://www.maxima.lv/smeg",
     "registration_until": "2026-06-14",
     "notes": "Atļaujas Nr. 8886; официальные правила на maxima.lv подтверждают период регистрации 03.03.2026 00:00 — 14.06.2026 23:59, итог розыгрыша 15.06.2026; организатор SIA “Sprintlab group”. Список участвующих товаров (EAN) опубликован в правилах: https://www.maxima.lv/uploads/file/Loterijas-noteikumi_SMEG2026-Final.pdf."
+  },
+  "8871": {
+    "requirements": "Купить 1 продукт Palmolive (кроме кускового мыла) или Speed Stick в любой торговой точке Латвии и зарегистрировать чек на registertowin.eu (имя, фамилия, номер чека, телефон, e-mail) до 05.04.2026 23:59.",
+    "prizes": "1 x комплект гоночного симулятора (NLR Gttrack Sim + Logitech G920); 10 x комплектов продукции Palmolive/Speed Stick.",
+    "registration_url": "https://registertowin.eu/win/palmolive_simulators",
+    "registration_until": "2026-04-05",
+    "notes": "Atļaujas Nr. 8871; официальные правила кампании “Laimē sacīkšu simulatora komplektu!” подтверждают период 23.02–09.04.2026, регистрацию до 05.04.2026 23:59, организатора SIA “ADgett”. Правила: https://registertowin.eu/storage/app/uploads/public/697/0d1/cfd/6970d1cfd1d4a701948939.pdf."
+  },
+  "8904": {
+    "requirements": "Купить товары брендов ELIĒR или BDK минимум на 25 EUR в указанных точках (автоматы ELIĒR в TC Spice, TC Rīga Plaza и в отеле Bellevue). Публичная форма регистрации в интернете не найдена.",
+    "prizes": "— данных пока нет (публичные правила/призовой фонд по Atļaujas Nr. 8904 не обнаружены в открытых источниках).",
+    "registration_url": "",
+    "registration_until": "2026-06-07",
+    "notes": "Atļaujas Nr. 8904; в реестре период 21.02–07.06.2026 и организатор SIA “Beauty Retail”. Поиск по loterijas.lv, rimi.lv и общим источникам не дал официальной публичной страницы с правилами/регистрацией именно этой лотереи."
+  },
+  "8934": {
+    "requirements": "Купить продукт(ы) бренда PEPSI в период акции. Публичная страница регистрации именно для “PEPSI loterija veikalos Rimi” (Atļaujas Nr. 8934) не найдена.",
+    "prizes": "— данных пока нет (публичные правила и призовой фонд именно по Atļaujas Nr. 8934 не обнаружены).",
+    "registration_url": "",
+    "registration_until": "2026-04-28",
+    "notes": "Atļaujas Nr. 8934; в реестре период 05.03–28.04.2026 и организатор SIA “PROMO TEAM BALTIC”. Проверены loterijas.lv sitemap и раздел акций/лотерей rimi.lv: публичная карточка с правилами и формой регистрации именно для этого номера разрешения не найдена."
   }
 }
