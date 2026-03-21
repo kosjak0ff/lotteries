@@ -194,5 +194,12 @@
     "registration_url": "https://www.loterijas.lv/loterija/latvijas-tost-maize-loterija-elvi-veikalos/",
     "registration_until": "2026-05-05",
     "notes": "Atļaujas Nr. 8901; период лотереи 11.03–05.05.2026; 8 розыгрышей: первый 18.03, финальный 06.05.2026."
+  },
+  "8900": {
+    "requirements": "Купить лотерейный продукт Latvijas Maiznieks в магазинах Elvi до 05.05.2026, сохранить чек и зарегистрировать его в форме на странице лотереи.",
+    "prizes": "1× комплект садовой мебели; 7× подарочная карта Depo на 50 EUR.",
+    "registration_url": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-produktu-loterijas-elvi-veikalos/",
+    "registration_until": "2026-05-05",
+    "notes": "Atļaujas Nr. 8900; период лотереи 11.03–05.05.2026; 8 розыгрышей: первый 18.03, финальный 06.05.2026."
   }
 }
