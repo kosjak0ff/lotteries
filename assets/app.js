@@ -1,4 +1,4 @@
-const tableBody = document.getElementById("table-body");
+﻿const tableBody = document.getElementById("table-body");
 const countEl = document.getElementById("lottery-count");
 const refDateEl = document.getElementById("reference-date");
 const searchInput = document.getElementById("search");
@@ -16,8 +16,15 @@ const stripAccents = (text) =>
     .replace(/\p{Mn}+/gu, "")
     .toLowerCase();
 
-// ensure proper display of non-ASCII text
-const safe = (text) => (text ? text : "— данных пока нет");
+const escapeHtml = (text) =>
+  String(text)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+
+const safe = (text) => (text ? escapeHtml(text) : "— данных пока нет");
 
 const compare = (a, b) => {
   if (!sortKey) return 0;
@@ -35,8 +42,8 @@ const compare = (a, b) => {
     va = parseDate(va);
     vb = parseDate(vb);
   } else {
-    va = stripAccents(String(va));
-    vb = stripAccents(String(vb));
+    va = stripAccents(String(va ?? ""));
+    vb = stripAccents(String(vb ?? ""));
   }
 
   if (va < vb) return -1 * dir;
@@ -48,28 +55,34 @@ function renderTable(rows) {
   const sorted = sortKey ? [...rows].sort(compare) : rows;
 
   if (!sorted.length) {
-    tableBody.innerHTML = `<tr><td colspan="10" class="muted">Ничего не найдено по запросу</td></tr>`;
+    tableBody.innerHTML = '<tr><td colspan="10" class="muted">Ничего не найдено по запросу</td></tr>';
     return;
   }
 
   const html = sorted
-    .map(
-      (row) => `
+    .map((row) => {
+      const details = enriched[row.permit] || {};
+      const registrationCell = details.registration_url
+        ? `<a class="reg-link" href="${escapeHtml(details.registration_url)}" target="_blank" rel="noopener">Ссылка</a>`
+        : "—";
+
+      return `
         <tr>
-          <td>${row.permit}</td>
-          <td>${row.org}</td>
-          <td>${row.product}</td>
-          <td>${row.name}</td>
-          <td>${row.start}</td>
-          <td>${row.end}</td>
-          <td>${row.place}</td>
-          <td>${safe(enriched[row.permit]?.requirements)}</td>
-          <td>${safe(enriched[row.permit]?.prizes)}</td>
-          <td>${enriched[row.permit]?.registration_url ? `<a href="${enriched[row.permit].registration_url}" target="_blank" rel="noopener">Ссылка</a>` : "—"}</td>
+          <td>${escapeHtml(row.permit)}</td>
+          <td>${escapeHtml(row.org)}</td>
+          <td>${escapeHtml(row.product)}</td>
+          <td>${escapeHtml(row.name)}</td>
+          <td>${escapeHtml(row.start)}</td>
+          <td>${escapeHtml(row.end)}</td>
+          <td>${escapeHtml(row.place)}</td>
+          <td>${safe(details.requirements)}</td>
+          <td>${safe(details.prizes)}</td>
+          <td>${registrationCell}</td>
         </tr>
-      `
-    )
+      `;
+    })
     .join("");
+
   tableBody.innerHTML = html;
 }
 
@@ -80,56 +93,60 @@ function applySearch() {
     searchHint.textContent = "Показываются все записи; фильтрация происходит на клиенте.";
     return;
   }
+
   const filtered = data.filter((row) => {
-    const hay = stripAccents(`${row.name} ${row.org}`);
-    return hay.includes(query);
+    const haystack = stripAccents(`${row.name} ${row.org}`);
+    return haystack.includes(query);
   });
+
   renderTable(filtered);
   searchHint.textContent = `Показано ${filtered.length} из ${data.length}`;
 }
 
-function handleSort(evt) {
-  const key = evt.currentTarget.dataset.sort;
+function handleSort(event) {
+  const key = event.currentTarget.dataset.sort;
   if (!key) return;
+
   if (sortKey === key) {
     sortDir = sortDir === "asc" ? "desc" : "asc";
   } else {
     sortKey = key;
     sortDir = "asc";
   }
+
   headerCells.forEach((th) => {
     th.classList.toggle("sorted", th.dataset.sort === sortKey);
     th.classList.toggle("desc", th.dataset.sort === sortKey && sortDir === "desc");
   });
+
   applySearch();
 }
 
 async function bootstrap() {
   try {
-    const res = await fetch("assets/active_lotteries.json");
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const payload = await res.json();
+    const response = await fetch("assets/active_lotteries.json");
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const payload = await response.json();
 
     try {
-      const extRes = await fetch("assets/enriched_info.json");
-      if (extRes.ok) {
-        enriched = await extRes.json();
+      const enrichedResponse = await fetch("assets/enriched_info.json");
+      if (enrichedResponse.ok) {
+        enriched = await enrichedResponse.json();
       }
-    } catch (e) {
-      console.warn("Enriched info missing, continuing with base data");
+    } catch {
       enriched = {};
     }
 
     data = payload.items || [];
     countEl.textContent = payload.count ?? data.length;
     refDateEl.textContent = payload.reference_date || "20.03.2026";
+
     renderTable(data);
 
     searchInput.addEventListener("input", applySearch);
     headerCells.forEach((th) => th.addEventListener("click", handleSort));
-  } catch (err) {
-    console.error(err);
-    tableBody.innerHTML = `<tr><td colspan="7" class="muted">Не удалось загрузить данные (${err.message})</td></tr>`;
+  } catch (error) {
+    tableBody.innerHTML = `<tr><td colspan="10" class="muted">Не удалось загрузить данные (${escapeHtml(error.message)})</td></tr>`;
   }
 }
 
