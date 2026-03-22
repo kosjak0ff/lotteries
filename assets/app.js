@@ -95,7 +95,9 @@ function applySearch() {
   }
 
   const filtered = data.filter((row) => {
-    const haystack = stripAccents(`${row.name} ${row.org} ${row.org_reg || ""}`);
+    const haystack = stripAccents(
+      `${row.name} ${row.org} ${row.org_reg || ""} ${row.permit || ""}`
+    );
     return haystack.includes(query);
   });
 
