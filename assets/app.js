@@ -95,8 +95,25 @@ function applySearch() {
   }
 
   const filtered = data.filter((row) => {
+    const details = enriched[row.permit] || {};
     const haystack = stripAccents(
-      `${row.name} ${row.org} ${row.org_reg || ""} ${row.permit || ""}`
+      [
+        row.permit,
+        row.org,
+        row.org_reg,
+        row.product,
+        row.name,
+        row.start,
+        row.end,
+        row.place,
+        details.requirements,
+        details.prizes,
+        details.registration_url,
+        details.registration_until,
+        details.notes
+      ]
+        .filter(Boolean)
+        .join(" ")
     );
     return haystack.includes(query);
   });
