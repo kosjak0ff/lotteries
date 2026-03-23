@@ -1,0 +1,94 @@
+name: Check IAUI Update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "11 6 * * *"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Read current IAUI metadata
+        run: python scripts/check_iaui_update.py --output iaui-metadata.json
+
+      - name: Create issue when metadata changed
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+            const metadata = JSON.parse(fs.readFileSync("iaui-metadata.json", "utf8"));
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const label = "iaui-update";
+
+            const existingLabels = await github.paginate(github.rest.issues.listLabelsForRepo, {
+              owner,
+              repo,
+              per_page: 100,
+            });
+            if (!existingLabels.some((item) => item.name === label)) {
+              await github.rest.issues.createLabel({
+                owner,
+                repo,
+                name: label,
+                color: "1d76db",
+                description: "IAUI registry file change notifications",
+              });
+            }
+
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner,
+              repo,
+              state: "open",
+              labels: label,
+              per_page: 100,
+            });
+
+            const fingerprintMarker = `fingerprint: ${metadata.fingerprint}`;
+            const matchingIssue = issues.find((issue) => (issue.body || "").includes(fingerprintMarker));
+            if (matchingIssue) {
+              core.info(`No notification needed; matching issue already exists: #${matchingIssue.number}`);
+              return;
+            }
+
+            for (const issue of issues) {
+              await github.rest.issues.update({
+                owner,
+                repo,
+                issue_number: issue.number,
+                state: "closed",
+              });
+            }
+
+            const titleDate = metadata.updated_at || "unknown-date";
+            const body = [
+              "The published IAUI lottery registry file metadata changed.",
+              "",
+              `- Updated at: ${metadata.updated_at || "unknown"}`,
+              `- Link text: ${metadata.link_text}`,
+              `- Download URL: ${metadata.download_url}`,
+              "",
+              fingerprintMarker,
+            ].join("\n");
+
+            await github.rest.issues.create({
+              owner,
+              repo,
+              title: `IAUI registry update detected (${titleDate})`,
+              body,
+              labels: [label],
+            });
