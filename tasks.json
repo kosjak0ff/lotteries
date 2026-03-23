@@ -156,12 +156,35 @@
         "hash": "cb150d072298151ed87a811809741631c91e18e5",
         "message": "🌐 T-005 Add .nojekyll for GitHub Pages"
       }
+    },
+    {
+      "id": "T-006",
+      "title": "Notify on IAUI file updates",
+      "description": "Check the IAUI registry page on a schedule and create a GitHub issue when the published lottery registry file metadata changes, without modifying site data.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "github",
+        "automation",
+        "notifications"
+      ],
+      "verify": [
+        "python -m py_compile scripts/check_iaui_update.py",
+        "test -f .github/workflows/check-iaui-update.yml"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: add a lightweight IAUI metadata check script and a scheduled GitHub Actions workflow that opens an issue only when the published file metadata changes."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "3d4b2ff0e78dbb0b79d386a26f8389891292231d1dc6dfbdb4c88ab7d878ff26"
+    "checksum": "bfd8b57343f7b1bd3020302dfd0ebe2507c25c926ef5961276ff9fd0a381a268"
   }
 }
