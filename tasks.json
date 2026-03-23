@@ -256,12 +256,33 @@
         "hash": "73b77f3e316046c6f2418a4bcc409fbc9fda7ff3",
         "message": "✨ T-008 Remove hint and sync title date"
       }
+    },
+    {
+      "id": "T-009",
+      "title": "Ignore local IAUI registry export",
+      "description": "Add a gitignore rule for the local Loteriju reģistrs_16.03.2026..xls export so the working tree stays clean without committing the source spreadsheet.",
+      "status": "TODO",
+      "priority": "low",
+      "owner": "PLANNER",
+      "tags": [
+        "housekeeping",
+        "git"
+      ],
+      "verify": [
+        "git status --short"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Planned per user request: ignore the local IAUI spreadsheet export file so it no longer appears as an untracked file."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "2494ba6d620e6558700d737692987d18ce4ea1b16489e45408cb9d131ee46826"
+    "checksum": "b259085867582d3a70481e94499948d92e972bc4d924146503878a2715686ae1"
   }
 }
