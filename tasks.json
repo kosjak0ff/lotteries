@@ -228,7 +228,7 @@
       "id": "T-008",
       "title": "Remove search hint and make title dynamic",
       "description": "Remove the static search hint text from the site and update the page title so it always reflects the current reference date from the data payload instead of a hardcoded date.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "med",
       "owner": "PLANNER",
       "tags": [
@@ -242,14 +242,26 @@
         {
           "author": "PLANNER",
           "body": "Planned per user request: remove the visible search hint and derive the page title date from the loaded dataset."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: remove the visible search hint from the controls and derive the browser title from payload.reference_date so the page date is no longer hardcoded."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-008 passed; the static search hint was removed, and the page title now follows assets/active_lotteries.json reference_date, currently resolving to 23.03.2026."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "73b77f3e316046c6f2418a4bcc409fbc9fda7ff3",
+        "message": "✨ T-008 Remove hint and sync title date"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "2067ed70c9f2b8b1095d2b50fe94014581225e726f3458c34e50eb5ff68abd82"
+    "checksum": "2494ba6d620e6558700d737692987d18ce4ea1b16489e45408cb9d131ee46826"
   }
 }
