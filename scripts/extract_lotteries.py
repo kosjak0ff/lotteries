@@ -70,18 +70,8 @@ def load_dataframe(path: Path) -> pd.DataFrame:
         cols[7]: "place",
     }
     df = df.rename(columns=rename)
-
-    def parse_lottery_dates(series: pd.Series) -> pd.Series:
-        normalized = (
-            series.astype(str)
-            .str.strip()
-            .str.replace(r"\.+$", "", regex=True)
-            .replace({"": None, "nan": None, "NaT": None})
-        )
-        return pd.to_datetime(normalized, errors="coerce", dayfirst=True)
-
-    df["start"] = parse_lottery_dates(df["start"])
-    df["end"] = parse_lottery_dates(df["end"])
+    df["start"] = pd.to_datetime(df["start"], errors="coerce", dayfirst=True)
+    df["end"] = pd.to_datetime(df["end"], errors="coerce", dayfirst=True)
     return df
 
 
@@ -122,9 +112,6 @@ def parse_args(argv: Sequence[str]) -> argparse.Namespace:
     parser.add_argument("--date", default=DEFAULT_DATE, help="Reference date (YYYY-MM-DD). Default: 2026-03-20")
     parser.add_argument("--input", default=DEFAULT_INPUT, help="Path to XLS file (default: original name)")
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT), help="Output JSON path (default: assets/active_lotteries.json)")
-    parser.add_argument("--source-label", default=None, help="Human-readable source label to include in the JSON payload")
-    parser.add_argument("--source-updated-at", default=None, help="Source update date in DD.MM.YYYY format")
-    parser.add_argument("--source-url", default=None, help="Canonical source download URL to include in the JSON payload")
     parser.add_argument("--check", action="store_true", help="Validation only; do not write output")
     return parser.parse_args(argv)
 
@@ -159,12 +146,6 @@ def main(argv: Sequence[str]) -> int:
         "count": len(records),
         "items": records,
     }
-    if args.source_label:
-        payload["source_label"] = args.source_label
-    if args.source_updated_at:
-        payload["source_updated_at"] = args.source_updated_at
-    if args.source_url:
-        payload["source_url"] = args.source_url
     output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Wrote {output_path} ({len(records)} items)")
     return 0

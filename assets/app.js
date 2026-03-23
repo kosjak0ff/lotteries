@@ -1,7 +1,6 @@
 ﻿const tableBody = document.getElementById("table-body");
 const countEl = document.getElementById("lottery-count");
 const refDateEl = document.getElementById("reference-date");
-const sourceLabelEl = document.getElementById("source-label");
 const searchInput = document.getElementById("search");
 const searchHint = document.getElementById("search-hint");
 const headerCells = Array.from(document.querySelectorAll("th[data-sort]"));
@@ -26,15 +25,6 @@ const escapeHtml = (text) =>
     .replaceAll("'", "&#39;");
 
 const safe = (text) => (text ? escapeHtml(text) : "— данных пока нет");
-
-const formatDisplayDate = (value) => {
-  if (!value) return "—";
-  const isoMatch = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
-  if (isoMatch) {
-    return `${isoMatch[3]}.${isoMatch[2]}.${isoMatch[1]}`;
-  }
-  return value;
-};
 
 const compare = (a, b) => {
   if (!sortKey) return 0;
@@ -168,12 +158,7 @@ async function bootstrap() {
 
     data = payload.items || [];
     countEl.textContent = payload.count ?? data.length;
-    const displayDate = formatDisplayDate(payload.reference_date || "20.03.2026");
-    refDateEl.textContent = displayDate;
-    if (sourceLabelEl && payload.source_label) {
-      sourceLabelEl.textContent = payload.source_label;
-    }
-    document.title = `Активные лотереи Латвии · ${displayDate}`;
+    refDateEl.textContent = payload.reference_date || "20.03.2026";
 
     renderTable(data);
 
