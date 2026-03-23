@@ -54,12 +54,33 @@
         "hash": "757ca98376d27e483822e0ae6019bc153f12ab86",
         "message": "🗑️ T-002 Remove lottery 8830 from published data"
       }
+    },
+    {
+      "id": "T-003",
+      "title": "Normalize line endings in site files",
+      "description": "Convert the accidental CRLF endings back to LF in index.html, assets/app.js, and assets/style.css without any content changes.",
+      "status": "TODO",
+      "priority": "low",
+      "owner": "CODER",
+      "tags": [
+        "web",
+        "hygiene"
+      ],
+      "verify": [
+        "git diff --exit-code -- index.html assets/app.js assets/style.css"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: normalize line endings back to LF in the three modified site files and confirm the diffs disappear."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "71c10ee4619a8a455b02b4d0734382362e7c2554496e63e90c204a03d5f8a273"
+    "checksum": "27b55c3319f33e031f9738fb3b2147bcef093199da1a69758dc868d14a104b6f"
   }
 }
