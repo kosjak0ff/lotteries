@@ -196,7 +196,7 @@
       "id": "T-007",
       "title": "Refresh active lotteries from latest IAUI registry",
       "description": "Download the updated IAUI lottery registry, refresh the active-lottery dataset for 2026-03-23 without rewriting unchanged current-date entries, remove inactive permits, add newly active permits, and research missing public details only for newly added lotteries.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "high",
       "owner": "human",
       "tags": [
@@ -205,7 +205,7 @@
         "data-refresh"
       ],
       "verify": [
-        "python scripts/extract_lotteries.py --date 2026-03-23 --input \"Loteriju reģistrs_16.03.2026..xls\" --check",
+        ".venv/bin/python scripts/extract_lotteries.py --date 2026-03-23 --input \"Loteriju reģistrs_16.03.2026..xls\" --check",
         "python -m json.tool assets/active_lotteries.json",
         "python -m json.tool assets/enriched_info.json"
       ],
@@ -213,14 +213,22 @@
         {
           "author": "PLANNER",
           "body": "Plan: refresh active lotteries for 2026-03-23 from the latest IAUI registry, preserve existing enriched rows where permits remain active, and enrich only newly added permits with verified public data."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: .venv/bin/python scripts/extract_lotteries.py --date 2026-03-23 --input \"Loteriju reģistrs_16.03.2026..xls\" --check, python -m json.tool assets/active_lotteries.json, and python -m json.tool assets/enriched_info.json all passed. Compared HEAD vs refreshed active dataset: 39 existing permits remained unchanged; only 8795, 8830, 8943, and 8955 were added."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "f1b0694fea6a47969c5d75e3b8ba2cd156db1b5e",
+        "message": "📊 T-007 Refresh active lotteries for 2026-03-23"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "ff391829ae0a249d43033bfbc54d33d5138c9c8693c071be425af0b823703166"
+    "checksum": "c7b61ddd364bfbb9f5f89d0a61ac01b5849eaab7380770b035855dabeecc622a"
   }
 }
