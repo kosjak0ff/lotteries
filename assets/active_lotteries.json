@@ -1,6 +1,6 @@
 {
   "reference_date": "2026-03-20",
-  "count": 40,
+  "count": 39,
   "items": [
     {
       "permit": "8755",
@@ -30,16 +30,6 @@
       "product": "KitKat® produkta pirkumam",
       "start": "2026-02-09",
       "end": "2026-04-08",
-      "place": "Latvijas Republika"
-    },
-    {
-      "permit": "8830",
-      "name": "“Kraukšķini sieru, laimē prieku!”",
-      "org": "SIA “Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "Ādažu produktu pirkumam",
-      "start": "2026-02-09",
-      "end": "2026-03-23",
       "place": "Latvijas Republika"
     },
     {
