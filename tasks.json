@@ -191,12 +191,36 @@
         "hash": "cdf1496076cd5eedb91211d204b1596719a15c97",
         "message": "🔔 T-006 Add IAUI update notifier"
       }
+    },
+    {
+      "id": "T-007",
+      "title": "Refresh active lotteries from latest IAUI registry",
+      "description": "Download the updated IAUI lottery registry, refresh the active-lottery dataset for 2026-03-23 without rewriting unchanged current-date entries, remove inactive permits, add newly active permits, and research missing public details only for newly added lotteries.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "human",
+      "tags": [
+        "iaui",
+        "lotteries",
+        "data-refresh"
+      ],
+      "verify": [
+        "python scripts/extract_lotteries.py --date 2026-03-23 --input \"Loteriju reģistrs_16.03.2026..xls\" --check",
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: refresh active lotteries for 2026-03-23 from the latest IAUI registry, preserve existing enriched rows where permits remain active, and enrich only newly added permits with verified public data."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "c3747f7f55d5e48cd0dd053b6399da526f8145cbcbd593c86c26c452f6c568e7"
+    "checksum": "ff391829ae0a249d43033bfbc54d33d5138c9c8693c071be425af0b823703166"
   }
 }
