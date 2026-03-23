@@ -127,7 +127,7 @@
       "id": "T-005",
       "title": "Prepare repo for GitHub Pages",
       "description": "Add the minimal repository files needed so this static site is ready to be published via GitHub Pages from the main branch root.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "med",
       "owner": "CODER",
       "tags": [
@@ -142,14 +142,26 @@
         {
           "author": "PLANNER",
           "body": "Plan: add .nojekyll at the repo root so GitHub Pages serves the static site directly from main/root without Jekyll processing."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: add .nojekyll at the repository root so GitHub Pages serves the static site directly from main/root without Jekyll processing."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: .nojekyll exists at the repository root, so the static site is ready to be served by GitHub Pages from main/root once Pages is enabled in the GitHub UI."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "cb150d072298151ed87a811809741631c91e18e5",
+        "message": "🌐 T-005 Add .nojekyll for GitHub Pages"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "b436bd0867196f608bbeffaa05122ffce18de6e14c8bf50fc10821cce7f71272"
+    "checksum": "3d4b2ff0e78dbb0b79d386a26f8389891292231d1dc6dfbdb4c88ab7d878ff26"
   }
 }
