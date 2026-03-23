@@ -2,7 +2,6 @@
 const countEl = document.getElementById("lottery-count");
 const refDateEl = document.getElementById("reference-date");
 const searchInput = document.getElementById("search");
-const searchHint = document.getElementById("search-hint");
 const headerCells = Array.from(document.querySelectorAll("th[data-sort]"));
 
 let data = [];
@@ -25,6 +24,14 @@ const escapeHtml = (text) =>
     .replaceAll("'", "&#39;");
 
 const safe = (text) => (text ? escapeHtml(text) : "— данных пока нет");
+
+const formatReferenceDate = (value) => {
+  if (!value) return "";
+  const isoMatch = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value).trim());
+  if (!isoMatch) return String(value);
+  const [, year, month, day] = isoMatch;
+  return `${day}.${month}.${year}`;
+};
 
 const compare = (a, b) => {
   if (!sortKey) return 0;
@@ -90,7 +97,6 @@ function applySearch() {
   const query = stripAccents(searchInput.value.trim());
   if (!query) {
     renderTable(data);
-    searchHint.textContent = "Показываются все записи; фильтрация происходит на клиенте.";
     return;
   }
 
@@ -119,7 +125,6 @@ function applySearch() {
   });
 
   renderTable(filtered);
-  searchHint.textContent = `Показано ${filtered.length} из ${data.length}`;
 }
 
 function handleSort(event) {
@@ -157,8 +162,12 @@ async function bootstrap() {
     }
 
     data = payload.items || [];
+    const referenceDate = formatReferenceDate(payload.reference_date) || refDateEl.textContent.trim();
     countEl.textContent = payload.count ?? data.length;
-    refDateEl.textContent = payload.reference_date || "20.03.2026";
+    refDateEl.textContent = referenceDate;
+    document.title = referenceDate && referenceDate !== "—"
+      ? `Активные лотереи Латвии · ${referenceDate}`
+      : "Активные лотереи Латвии";
 
     renderTable(data);
 
