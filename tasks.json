@@ -161,7 +161,7 @@
       "id": "T-006",
       "title": "Notify on IAUI file updates",
       "description": "Check the IAUI registry page on a schedule and create a GitHub issue when the published lottery registry file metadata changes, without modifying site data.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "med",
       "owner": "CODER",
       "tags": [
@@ -177,14 +177,26 @@
         {
           "author": "PLANNER",
           "body": "Plan: add a lightweight IAUI metadata check script and a scheduled GitHub Actions workflow that opens an issue only when the published file metadata changes."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: add a lightweight IAUI metadata check script and a scheduled GitHub Actions workflow that opens an issue only when the published file metadata changes."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: the IAUI metadata check script compiles, the scheduled/manual GitHub Actions workflow exists, and the implementation notifies via GitHub Issues without changing site data or creating content-sync commits."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "cdf1496076cd5eedb91211d204b1596719a15c97",
+        "message": "🔔 T-006 Add IAUI update notifier"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "bfd8b57343f7b1bd3020302dfd0ebe2507c25c926ef5961276ff9fd0a381a268"
+    "checksum": "c3747f7f55d5e48cd0dd053b6399da526f8145cbcbd593c86c26c452f6c568e7"
   }
 }
