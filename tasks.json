@@ -87,12 +87,35 @@
         "hash": "f2356f5feacf705a10e979a1b10c850805f7764a",
         "message": "📝 T-003 Plan line-ending normalization"
       }
+    },
+    {
+      "id": "T-004",
+      "title": "Configure automatic GitHub sync",
+      "description": "Set up this repository so commits are pushed to the private GitHub origin automatically, while ignoring temporary local research files.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "git",
+        "github",
+        "automation"
+      ],
+      "verify": [
+        "git check-ignore -v tmp_bing_8871.html wp-sitemap-posts-lottery-1.xml",
+        "test -x .git/hooks/post-commit"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: ignore temporary research artifacts, install a post-commit hook for automatic push to origin/main, and verify the remaining blocker is GitHub authentication."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "a5834dcc2774f3528c772c3144219d3dd03085d29a6fd3e4f48d3acb76b75b22"
+    "checksum": "f61f1cfd3b2c417c38600506912af6fe96b7cb38ddb0e5f98cb9fdc62c84af75"
   }
 }
