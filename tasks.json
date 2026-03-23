@@ -223,12 +223,33 @@
         "hash": "f1b0694fea6a47969c5d75e3b8ba2cd156db1b5e",
         "message": "📊 T-007 Refresh active lotteries for 2026-03-23"
       }
+    },
+    {
+      "id": "T-008",
+      "title": "Remove search hint and make title dynamic",
+      "description": "Remove the static search hint text from the site and update the page title so it always reflects the current reference date from the data payload instead of a hardcoded date.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "PLANNER",
+      "tags": [
+        "site",
+        "frontend"
+      ],
+      "verify": [
+        "python scripts/agentctl.py task lint"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Planned per user request: remove the visible search hint and derive the page title date from the loaded dataset."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "c7b61ddd364bfbb9f5f89d0a61ac01b5849eaab7380770b035855dabeecc622a"
+    "checksum": "2067ed70c9f2b8b1095d2b50fe94014581225e726f3458c34e50eb5ff68abd82"
   }
 }
