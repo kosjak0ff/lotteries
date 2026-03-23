@@ -192,12 +192,34 @@
         "hash": "f287e7e052f26ec88d09a1494b11947251283f61",
         "message": "🤖 T-006 Add IAUI sync workflow"
       }
+    },
+    {
+      "id": "T-007",
+      "title": "Fix workflow change detection",
+      "description": "Make the IAUI sync workflow detect newly created source/data files so the bot commits changes on the first successful sync run.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "github",
+        "automation",
+        "workflow"
+      ],
+      "verify": [
+        "python - <<'PY'\nfrom pathlib import Path\ntext = Path('.github/workflows/sync-iaui.yml').read_text(encoding='utf-8')\nassert 'git add data/source assets/active_lotteries.json' in text\nassert 'git diff --cached --quiet' in text\nprint('workflow change detection updated')\nPY"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: stage the generated files before checking for changes so newly created files count as modifications and can be committed by the workflow."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "5f44b685723c9f9dfa797409117fe75d7588bf11b8d541a9e2973f08d59b4deb"
+    "checksum": "c329bdebf9c0575837380e1a0d227b1832934fefa54bdd543ba55031592cb069"
   }
 }
