@@ -15,12 +15,39 @@
         "python scripts/extract_lotteries.py --check",
         "python -m json.tool assets/active_lotteries.json"
       ]
+    },
+    {
+      "id": "T-002",
+      "title": "Remove lottery 8830",
+      "description": "Remove permit 8830 from the published lottery dataset and enriched metadata so the site no longer shows this lottery.",
+      "status": "DOING",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "lotteries",
+        "data"
+      ],
+      "verify": [
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json",
+        "rg -n '8830' assets -S"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: remove permit 8830 from both dataset files and verify no remaining references in published assets."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: removing permit 8830 from assets/active_lotteries.json and assets/enriched_info.json; will preserve surrounding user changes and verify no remaining references."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "ede626e5c788e5afd7bb0840c53749f3cc5c3f5923dfee964c36ca29ef544302"
+    "checksum": "b84934c3babff54325149222f88e3ce95284f4fc8f965fb475a54480334e8990"
   }
 }
