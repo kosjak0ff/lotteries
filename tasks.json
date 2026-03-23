@@ -261,7 +261,7 @@
       "id": "T-009",
       "title": "Ignore local IAUI registry export",
       "description": "Add a gitignore rule for the local Loteriju reģistrs_16.03.2026..xls export so the working tree stays clean without committing the source spreadsheet.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "low",
       "owner": "PLANNER",
       "tags": [
@@ -275,14 +275,30 @@
         {
           "author": "PLANNER",
           "body": "Planned per user request: ignore the local IAUI spreadsheet export file so it no longer appears as an untracked file."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: add a repository-level gitignore rule for the local Loteriju reģistrs_16.03.2026..xls export so it no longer shows up as untracked."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-009 passed; git check-ignore confirms Loteriju reģistrs_16.03.2026..xls is now ignored, and git status no longer shows it as untracked."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-009 passed; git check-ignore confirms Loteriju reģistrs_16.03.2026..xls is now ignored, and git status no longer shows it as untracked."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "fccd2c9e56e161f9c9f5a3143310761b1a858c2a",
+        "message": "🧹 T-009 Ignore local registry export"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "b259085867582d3a70481e94499948d92e972bc4d924146503878a2715686ae1"
+    "checksum": "de726294ff01d8f7a1460c5c4a27be82d744c391d798c9195408e9ed1d4efea9"
   }
 }
