@@ -122,12 +122,34 @@
         "hash": "6fcce819b5e7c4b0733287c454be0a7967f9054a",
         "message": "⚙️ T-004 Ignore temporary sync noise"
       }
+    },
+    {
+      "id": "T-005",
+      "title": "Prepare repo for GitHub Pages",
+      "description": "Add the minimal repository files needed so this static site is ready to be published via GitHub Pages from the main branch root.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "github",
+        "pages",
+        "web"
+      ],
+      "verify": [
+        "test -f .nojekyll"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: add .nojekyll at the repo root so GitHub Pages serves the static site directly from main/root without Jekyll processing."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "75ea0e3380369b7bc9911d8e0ddcda3912a400b45e46ccb6b56fbc48e3c74a23"
+    "checksum": "b436bd0867196f608bbeffaa05122ffce18de6e14c8bf50fc10821cce7f71272"
   }
 }
