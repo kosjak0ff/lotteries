@@ -70,9 +70,19 @@ def load_dataframe(path: Path) -> pd.DataFrame:
         cols[7]: "place",
     }
     df = df.rename(columns=rename)
-    df["start"] = pd.to_datetime(df["start"], errors="coerce", dayfirst=True)
-    df["end"] = pd.to_datetime(df["end"], errors="coerce", dayfirst=True)
+    df["start"] = parse_date_series(df["start"])
+    df["end"] = parse_date_series(df["end"])
     return df
+
+
+def parse_date_series(series: pd.Series) -> pd.Series:
+    normalized = (
+        series.astype(str)
+        .str.strip()
+        .replace({"": None, "nan": None, "NaT": None})
+        .str.rstrip(".")
+    )
+    return pd.to_datetime(normalized, errors="coerce", dayfirst=True)
 
 
 def filter_active(df: pd.DataFrame, ref_date: pd.Timestamp) -> pd.DataFrame:
@@ -94,17 +104,24 @@ def df_to_records(df: pd.DataFrame) -> List[dict]:
     for _, row in df.iterrows():
         records.append(
             {
-                "permit": str(row.get("permit", "")).strip(),
-                "name": str(row.get("name", "")).strip(),
-                "org": str(row.get("org", "")).strip(),
-                "org_reg": str(row.get("org_reg", "")).strip(),
-                "product": str(row.get("product", "")).strip(),
+                "permit": clean_text(row.get("permit", "")),
+                "name": clean_text(row.get("name", "")),
+                "org": clean_text(row.get("org", "")),
+                "org_reg": clean_text(row.get("org_reg", "")),
+                "product": clean_text(row.get("product", "")),
                 "start": row.get("start").date().isoformat() if pd.notna(row.get("start")) else None,
                 "end": row.get("end").date().isoformat() if pd.notna(row.get("end")) else None,
-                "place": str(row.get("place", "")).strip(),
+                "place": clean_text(row.get("place", "")),
             }
         )
     return records
+
+
+def clean_text(value: object) -> str:
+    if pd.isna(value):
+        return ""
+    text = str(value).strip()
+    return "" if text.lower() == "nan" else text
 
 
 def parse_args(argv: Sequence[str]) -> argparse.Namespace:
