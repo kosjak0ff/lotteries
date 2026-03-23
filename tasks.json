@@ -156,12 +156,36 @@
         "hash": "cb150d072298151ed87a811809741631c91e18e5",
         "message": "🌐 T-005 Add .nojekyll for GitHub Pages"
       }
+    },
+    {
+      "id": "T-006",
+      "title": "Automate IAUI source sync",
+      "description": "Automatically discover the latest IAUI lottery registry XLS, download it into the repo, regenerate the static site dataset, and run on a scheduled GitHub Actions workflow.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "github",
+        "automation",
+        "data",
+        "web"
+      ],
+      "verify": [
+        "python -m py_compile scripts/extract_lotteries.py scripts/sync_iaui_source.py",
+        "test -f .github/workflows/sync-iaui.yml"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: add a sync script that parses the IAUI registry page for the latest download link, downloads the XLS, regenerates assets/active_lotteries.json with source metadata, and runs from scheduled GitHub Actions."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "3d4b2ff0e78dbb0b79d386a26f8389891292231d1dc6dfbdb4c88ab7d878ff26"
+    "checksum": "c7acebcf6f91810e3e0dddca38a2a7dc4120cad60a6c72fb3e0e760c517449e8"
   }
 }
