@@ -70,8 +70,18 @@ def load_dataframe(path: Path) -> pd.DataFrame:
         cols[7]: "place",
     }
     df = df.rename(columns=rename)
-    df["start"] = pd.to_datetime(df["start"], errors="coerce", dayfirst=True)
-    df["end"] = pd.to_datetime(df["end"], errors="coerce", dayfirst=True)
+
+    def parse_lottery_dates(series: pd.Series) -> pd.Series:
+        normalized = (
+            series.astype(str)
+            .str.strip()
+            .str.replace(r"\.+$", "", regex=True)
+            .replace({"": None, "nan": None, "NaT": None})
+        )
+        return pd.to_datetime(normalized, errors="coerce", dayfirst=True)
+
+    df["start"] = parse_lottery_dates(df["start"])
+    df["end"] = parse_lottery_dates(df["end"])
     return df
 
 

@@ -7,6 +7,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import html
+import json
 import re
 import subprocess
 import sys
@@ -138,6 +139,14 @@ def run_extract(
     subprocess.run(command, cwd=ROOT, check=True)
 
 
+def validate_generated_json(path: Path) -> None:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    count = payload.get("count", 0)
+    items = payload.get("items", [])
+    if count == 0 or not items:
+        raise RuntimeError("Generated JSON is empty; refusing to publish an empty dataset")
+
+
 def parse_args(argv: Sequence[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Sync the latest IAUI lottery registry into the repository.")
     parser.add_argument("--page-url", default=DEFAULT_PAGE_URL, help="IAUI page that links to the current XLS")
@@ -201,6 +210,7 @@ def main(argv: Sequence[str]) -> int:
         source_label = build_source_label(link_text, updated_at)
         print(f"Regenerating JSON for reference date {reference_date}")
         run_extract(source_output, json_output, reference_date, source_label, updated_at, final_download_url)
+        validate_generated_json(json_output)
     else:
         print("Skipping JSON regeneration because the source file did not change")
 
