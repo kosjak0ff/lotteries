@@ -161,7 +161,7 @@
       "id": "T-006",
       "title": "Automate IAUI source sync",
       "description": "Automatically discover the latest IAUI lottery registry XLS, download it into the repo, regenerate the static site dataset, and run on a scheduled GitHub Actions workflow.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "med",
       "owner": "CODER",
       "tags": [
@@ -178,14 +178,26 @@
         {
           "author": "PLANNER",
           "body": "Plan: add a sync script that parses the IAUI registry page for the latest download link, downloads the XLS, regenerates assets/active_lotteries.json with source metadata, and runs from scheduled GitHub Actions."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: add IAUI sync automation with a discovery/download script, scheduled GitHub Actions workflow, extractor metadata support, and dynamic frontend source/date rendering."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: Python automation files compile, the scheduled GitHub Actions workflow exists, the implementation commit is already on GitHub, and the site now supports source metadata from the generated JSON payload."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "f287e7e052f26ec88d09a1494b11947251283f61",
+        "message": "🤖 T-006 Add IAUI sync workflow"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "c7acebcf6f91810e3e0dddca38a2a7dc4120cad60a6c72fb3e0e760c517449e8"
+    "checksum": "5f44b685723c9f9dfa797409117fe75d7588bf11b8d541a9e2973f08d59b4deb"
   }
 }
