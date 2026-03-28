@@ -293,12 +293,36 @@
         "hash": "fccd2c9e56e161f9c9f5a3143310761b1a858c2a",
         "message": "🧹 T-009 Ignore local registry export"
       }
+    },
+    {
+      "id": "T-010",
+      "title": "Refresh active lotteries for 2026-03-28",
+      "description": "Download the latest IAUI lottery registry, refresh the published active-lottery dataset for 2026-03-28, preserve unchanged active entries where possible, remove inactive permits, add newly active permits, and enrich only newly added permits from verified public sources.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "iaui",
+        "lotteries",
+        "data-refresh"
+      ],
+      "verify": [
+        ".venv/bin/python scripts/extract_lotteries.py --date 2026-03-28 --input \"Loteriju reģistrs_16.03.2026..xls\" --check",
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: repeat the T-007 refresh flow for reference date 2026-03-28 using the latest IAUI registry and only enrich newly active permits from verified public sources."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "de726294ff01d8f7a1460c5c4a27be82d744c391d798c9195408e9ed1d4efea9"
+    "checksum": "4915701f9cd00fe806c924cd292f84a3cbc83db4232a014d665053be204a34b3"
   }
 }
