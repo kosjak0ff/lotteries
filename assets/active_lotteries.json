@@ -1,6 +1,6 @@
 {
   "reference_date": "2026-03-28",
-  "count": 43,
+  "count": 44,
   "items": [
     {
       "permit": "8755",
@@ -431,6 +431,16 @@
       "start": "2026-03-23",
       "end": "2026-09-01",
       "place": "BAVA  autoskola, Latvijas Republikā"
+    },
+    {
+      "permit": "8960",
+      "name": "“Automoto PRO loterija”",
+      "org": "SIA Automoto PRO",
+      "org_reg": "40203496838",
+      "product": "Automoto PRO SIA B kategorijas pakalpojumam",
+      "start": "2026-03-19",
+      "end": "2026-07-01",
+      "place": "Autoskola Automoto PRO Kr.Barona 40A, Jelgava"
     }
   ]
 }
