@@ -298,7 +298,7 @@
       "id": "T-010",
       "title": "Refresh active lotteries for 2026-03-28",
       "description": "Download the latest IAUI lottery registry, refresh the published active-lottery dataset for 2026-03-28, preserve unchanged active entries where possible, remove inactive permits, add newly active permits, and enrich only newly added permits from verified public sources.",
-      "status": "DOING",
+      "status": "DONE",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -319,8 +319,16 @@
         {
           "author": "CODER",
           "body": "Start: fetch the latest IAUI registry, recompute the active dataset for 2026-03-28, preserve unchanged active entries where possible, and enrich only newly active permits from verified sources."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-010 passed; the repeated refresh used the downloaded IAUI workbook, increased assets/active_lotteries.json to 44 active permits, added permit 8960, and published verified enrichment for 8960 in assets/enriched_info.json."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "6aff52ad9ba178af259afb9e1acf827c1f35e9f0",
+        "message": "📊 T-010 Refresh with downloaded IAUI workbook"
+      }
     },
     {
       "id": "T-011",
@@ -366,6 +374,6 @@
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "3170fe6d48681019de094bffa848aff3b70a629320a1ffe18a87f4d5bd33d050"
+    "checksum": "a060e27703eb96d3379a06646aa0937dda572e72311d0de252dbd530822a82a6"
   }
 }
