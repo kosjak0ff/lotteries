@@ -298,7 +298,7 @@
       "id": "T-010",
       "title": "Refresh active lotteries for 2026-03-28",
       "description": "Download the latest IAUI lottery registry, refresh the published active-lottery dataset for 2026-03-28, preserve unchanged active entries where possible, remove inactive permits, add newly active permits, and enrich only newly added permits from verified public sources.",
-      "status": "TODO",
+      "status": "DOING",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -315,6 +315,33 @@
         {
           "author": "PLANNER",
           "body": "Plan: repeat the T-007 refresh flow for reference date 2026-03-28 using the latest IAUI registry and only enrich newly active permits from verified public sources."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: fetch the latest IAUI registry, recompute the active dataset for 2026-03-28, preserve unchanged active entries where possible, and enrich only newly active permits from verified sources."
+        }
+      ]
+    },
+    {
+      "id": "T-011",
+      "title": "Enrich permits 8931 and 8953",
+      "description": "Find and verify public details for permits 8931 and 8953, then add the confirmed requirements, prizes, registration URL, and notes to assets/enriched_info.json so the site shows richer data for those two lotteries.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "lotteries",
+        "enrichment",
+        "web-research"
+      ],
+      "verify": [
+        "python -m json.tool assets/enriched_info.json",
+        "python -m json.tool assets/active_lotteries.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: research and verify public details for permits 8931 and 8953, then publish only the confirmed enrichment fields to the site."
         }
       ]
     }
@@ -323,6 +350,6 @@
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "4915701f9cd00fe806c924cd292f84a3cbc83db4232a014d665053be204a34b3"
+    "checksum": "83e5d587a480dc9fe1a5c6f2a628517e9ac2850bf3808da2bacb7249e412c30d"
   }
 }
