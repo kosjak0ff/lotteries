@@ -326,7 +326,7 @@
       "id": "T-011",
       "title": "Enrich permits 8931 and 8953",
       "description": "Find and verify public details for permits 8931 and 8953, then add the confirmed requirements, prizes, registration URL, and notes to assets/enriched_info.json so the site shows richer data for those two lotteries.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -342,14 +342,30 @@
         {
           "author": "PLANNER",
           "body": "Plan: research and verify public details for permits 8931 and 8953, then publish only the confirmed enrichment fields to the site."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: verify public details for permits 8931 and 8953 from reliable sources and prepare confirmed enrichment fields for the site."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-011 passed; permits 8931 and 8953 were added to assets/enriched_info.json with only publicly confirmed details, and the site can now render the richer fields for both rows."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-011 passed; permits 8931 and 8953 were added to assets/enriched_info.json with only publicly confirmed details, and the site can now render the richer fields for both rows."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "4682f67d749bc39fe632df0349fb24c2c16c6f4e",
+        "message": "🔎 T-011 Enrich permits 8931 and 8953"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "83e5d587a480dc9fe1a5c6f2a628517e9ac2850bf3808da2bacb7249e412c30d"
+    "checksum": "3170fe6d48681019de094bffa848aff3b70a629320a1ffe18a87f4d5bd33d050"
   }
 }
