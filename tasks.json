@@ -368,12 +368,36 @@
         "hash": "4682f67d749bc39fe632df0349fb24c2c16c6f4e",
         "message": "🔎 T-011 Enrich permits 8931 and 8953"
       }
+    },
+    {
+      "id": "T-012",
+      "title": "Refresh active lotteries from local IAUI workbook 2026-03-25",
+      "description": "Re-run the active-lotteries refresh using the local workbook Loteriju reģistrs_25.03.2026..xls, compare the result against the published 2026-03-28 dataset, update site data only if the recomputed set differs, and enrich only newly added permits from verified public sources.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "iaui",
+        "lotteries",
+        "data-refresh"
+      ],
+      "verify": [
+        ".venv/bin/python scripts/extract_lotteries.py --date 2026-03-28 --input \"Loteriju reģistrs_25.03.2026..xls\" --check",
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: rerun the 2026-03-28 refresh from the local workbook Loteriju reģistrs_25.03.2026..xls, compare with the published dataset, and update only if the recomputed active set or enrichments differ."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "a060e27703eb96d3379a06646aa0937dda572e72311d0de252dbd530822a82a6"
+    "checksum": "78030dd6d0a203d1bfd6ba1a2b1603b4ca1b515d69d066eb79a1345ba35e2393"
   }
 }
