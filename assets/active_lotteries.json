@@ -1,5 +1,5 @@
 {
-  "reference_date": "2026-03-23",
+  "reference_date": "2026-03-28",
   "count": 43,
   "items": [
     {
@@ -9,18 +9,8 @@
       "org_reg": "40103207278",
       "product": "jebkura Nutella® zīmola produkta pirkumam",
       "start": "2026-02-02",
-      "end": "2026-04-05",
+      "end": "2026-04-09",
       "place": "Latvijas Republika"
-    },
-    {
-      "permit": "8795",
-      "name": "“TRENTINI loterija”",
-      "org": "SIA “Trentini”",
-      "org_reg": "40103238403",
-      "product": "SIA “Trentini” pakalpojumam",
-      "start": "2025-11-14",
-      "end": "2026-03-23",
-      "place": "SIA “Trentini” interjera salons, Strēlnieku iela 8, Rīga,  LV-1010"
     },
     {
       "permit": "8819",
@@ -43,23 +33,13 @@
       "place": "Latvijas Republika"
     },
     {
-      "permit": "8830",
-      "name": "“Kraukšķini sieru, laimē prieku!”",
-      "org": "SIA “Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "Ādažu produktu pirkumam",
-      "start": "2026-02-09",
-      "end": "2026-03-23",
-      "place": "Latvijas Republika"
-    },
-    {
       "permit": "8840",
       "name": "„Gardākas maltītes ar Coca-Cola”",
       "org": "SIA \"Guilty\"",
       "org_reg": "50003254051",
       "product": "SIA „Coca-Cola HBC Latvia” produktu pirkumam",
       "start": "2026-01-05",
-      "end": "2026-04-08",
+      "end": "2026-04-07",
       "place": "Latvijas Republika"
     },
     {
@@ -383,6 +363,16 @@
       "place": "Latvijas Republika"
     },
     {
+      "permit": "8931",
+      "name": "“Nescafe loterija Maxima veikalos”",
+      "org": "SIA “Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "jebkuru zīmola Nescafe vai Nescafé Dolce Gusto produktu pirkumam vismaz 3.00 EUR vērtībā",
+      "start": "2026-03-24",
+      "end": "2026-04-07",
+      "place": "veikals MAXIMA Latvijas Republikā"
+    },
+    {
       "permit": "8934",
       "name": "“PEPSI loterija veikalos Rimi”",
       "org": "SIA “PROMO TEAM BALTIC”",
@@ -421,6 +411,16 @@
       "start": "2026-03-10",
       "end": "2026-05-11",
       "place": "Latvijas Republika"
+    },
+    {
+      "permit": "8953",
+      "name": "“Dino Zoo loterija Dzimšanas dienas loterija”",
+      "org": "SIA “Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "vismaz 21.00 EUR vērtībā pirkumam",
+      "start": "2026-03-27",
+      "end": "2026-05-05",
+      "place": "veikalu tīkls “Dino Zoo” visā Latvijas Republikā vai www.dinozoo.lv"
     },
     {
       "permit": "8955",
