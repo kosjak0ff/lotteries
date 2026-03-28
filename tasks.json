@@ -373,7 +373,7 @@
       "id": "T-012",
       "title": "Refresh active lotteries from local IAUI workbook 2026-03-25",
       "description": "Re-run the active-lotteries refresh using the local workbook Loteriju reģistrs_25.03.2026..xls, compare the result against the published 2026-03-28 dataset, update site data only if the recomputed set differs, and enrich only newly added permits from verified public sources.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -390,14 +390,26 @@
         {
           "author": "PLANNER",
           "body": "Plan: rerun the 2026-03-28 refresh from the local workbook Loteriju reģistrs_25.03.2026..xls, compare with the published dataset, and update only if the recomputed active set or enrichments differ."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: recompute the 2026-03-28 active dataset from the local workbook Loteriju reģistrs_25.03.2026..xls, compare it with the published site data, and update site files only if the recomputed result differs."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-012 passed; the local workbook Loteriju reģistrs_25.03.2026..xls reproduces the published 44-permit dataset without data changes, and the source label in index.html was updated to show the actual workbook date 25.03.2026."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "ffa7633ad58fd6c534610f0d6a60440bd5ec59b2",
+        "message": "🖥️ T-012 Update source label to latest workbook"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "78030dd6d0a203d1bfd6ba1a2b1603b4ca1b515d69d066eb79a1345ba35e2393"
+    "checksum": "f5ad18da0ba5511ac10341c77832f5c28d4be3aab8ebbb9b85bc2265f83e6e12"
   }
 }
