@@ -53,7 +53,7 @@ jobs:
             const issues = await github.paginate(github.rest.issues.listForRepo, {
               owner,
               repo,
-              state: "open",
+              state: "all",
               labels: label,
               per_page: 100,
             });
@@ -61,11 +61,35 @@ jobs:
             const fingerprintMarker = `fingerprint: ${metadata.fingerprint}`;
             const matchingIssue = issues.find((issue) => (issue.body || "").includes(fingerprintMarker));
             if (matchingIssue) {
-              core.info(`No notification needed; matching issue already exists: #${matchingIssue.number}`);
+              if (matchingIssue.state === "closed") {
+                await github.rest.issues.update({
+                  owner,
+                  repo,
+                  issue_number: matchingIssue.number,
+                  state: "open",
+                });
+              }
+
+              for (const issue of issues) {
+                if (issue.number === matchingIssue.number || issue.state !== "open") {
+                  continue;
+                }
+                await github.rest.issues.update({
+                  owner,
+                  repo,
+                  issue_number: issue.number,
+                  state: "closed",
+                });
+              }
+
+              core.info(`No notification needed; reusing existing issue: #${matchingIssue.number}`);
               return;
             }
 
             for (const issue of issues) {
+              if (issue.state !== "open") {
+                continue;
+              }
               await github.rest.issues.update({
                 owner,
                 repo,

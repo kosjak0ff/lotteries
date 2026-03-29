@@ -409,9 +409,9 @@
       "id": "T-013",
       "title": "Deduplicate IAUI update issues across history",
       "description": "Prevent duplicate GitHub issues for unchanged IAUI registry metadata by deduplicating notifications against all existing iaui-update issues, not only currently open ones.",
-      "status": "TODO",
+      "status": "DOING",
       "priority": "med",
-      "owner": "PLANNER",
+      "owner": "CODER",
       "tags": [
         "github",
         "automation",
@@ -419,12 +419,16 @@
       ],
       "verify": [
         "python -m py_compile scripts/check_iaui_update.py",
-        "python - <<'PY'\nfrom pathlib import Path\ntext = Path('.github/workflows/check-iaui-update.yml').read_text()\nassert 'state: open' not in text\nassert 'all' in text\nassert 'matchingIssue.state === closed' in text\nprint('workflow assertions passed')\nPY"
+        "python - <<'PY'\nfrom pathlib import Path\ntext = Path('.github/workflows/check-iaui-update.yml').read_text()\nassert 'state: \"all\"' in text\nassert 'const matchingIssue = issues.find' in text\nassert 'if (matchingIssue.state === \"closed\")' in text\nassert 'reusing existing issue' in text\nprint('workflow assertions passed')\nPY"
       ],
       "comments": [
         {
           "author": "PLANNER",
           "body": "Plan: update the IAUI notification workflow so identical metadata fingerprints reuse prior issue history instead of creating duplicate issues when a previous notification was closed."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: update the IAUI notification workflow to deduplicate against the full issue history and reuse an existing issue when the metadata fingerprint repeats."
         }
       ]
     }
@@ -433,6 +437,6 @@
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "725339521018548c52404be47549914ec2919b3b77c15f2fad68521d8ad62f99"
+    "checksum": "76fdea8d510235bc6a57633d8b1f5b7e1dc6985be9b7a3f7e3ba57bc7654cd56"
   }
 }
