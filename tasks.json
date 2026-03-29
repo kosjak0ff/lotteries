@@ -409,7 +409,7 @@
       "id": "T-013",
       "title": "Deduplicate IAUI update issues across history",
       "description": "Prevent duplicate GitHub issues for unchanged IAUI registry metadata by deduplicating notifications against all existing iaui-update issues, not only currently open ones.",
-      "status": "DOING",
+      "status": "DONE",
       "priority": "med",
       "owner": "CODER",
       "tags": [
@@ -429,14 +429,22 @@
         {
           "author": "CODER",
           "body": "Start: update the IAUI notification workflow to deduplicate against the full issue history and reuse an existing issue when the metadata fingerprint repeats."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: the IAUI notification workflow now deduplicates against all historical iaui-update issues, reuses an existing issue for the same fingerprint, and no longer creates duplicate notifications for unchanged metadata."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "67da8982b8b8dbf9a20e716220710badbfec2439",
+        "message": "🛠️ T-013 Reuse IAUI update issues"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "76fdea8d510235bc6a57633d8b1f5b7e1dc6985be9b7a3f7e3ba57bc7654cd56"
+    "checksum": "72c6bbc787c16e657e57f005ff59c108f45e9fec0c1d1623988647e96b0c22fc"
   }
 }
