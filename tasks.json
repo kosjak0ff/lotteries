@@ -444,7 +444,7 @@
       "id": "T-014",
       "title": "Fix IAUI update workflow failure",
       "description": "Investigate the failed GitHub Actions run 'Check IAUI Update - main (3c48564)', identify the runtime failure in the IAUI notification workflow, and ship the minimal fix so the workflow completes successfully without regressing issue deduplication behavior.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "med",
       "owner": "CODER",
       "tags": [
@@ -460,14 +460,26 @@
         {
           "author": "PLANNER",
           "body": "Plan: investigate the failed 'Check IAUI Update - main (3c48564)' run, isolate the runtime failure in the IAUI notification workflow, and apply the smallest safe fix while preserving historical issue deduplication."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: inspect the failed 'Check IAUI Update - main (3c48564)' run logs, isolate the runtime failure in the notification workflow, and patch the smallest possible surface while preserving issue deduplication behavior."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: inspected the failed GitHub Actions logs for runs 23938053763 (2026-04-03) and 23889640031 (2026-04-02), confirmed the failure came from scripts/check_iaui_update.py after the IAUI page migration to VID, validated the updated parser locally with python -m py_compile scripts/check_iaui_update.py, python scripts/check_iaui_update.py --output /tmp/iaui-metadata.json, and python scripts/agentctl.py verify T-014, and confirmed the workflow contract still preserves fingerprint-based issue deduplication."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "6f6108ddd3c1601fc61f93b5314f3328f904e3e9",
+        "message": "🛠️ T-014 Fix IAUI metadata source"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "0d2a540cf94ca08034c047f3d65f8d0e30f9e72039c0ada98698392ae58eaf33"
+    "checksum": "63f8d0a570e01357461f4f9e788c2cd61387bde1ff6c6b4926e78993f6590791"
   }
 }
