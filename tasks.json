@@ -439,12 +439,35 @@
         "hash": "67da8982b8b8dbf9a20e716220710badbfec2439",
         "message": "🛠️ T-013 Reuse IAUI update issues"
       }
+    },
+    {
+      "id": "T-014",
+      "title": "Fix IAUI update workflow failure",
+      "description": "Investigate the failed GitHub Actions run 'Check IAUI Update - main (3c48564)', identify the runtime failure in the IAUI notification workflow, and ship the minimal fix so the workflow completes successfully without regressing issue deduplication behavior.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "github",
+        "automation",
+        "notifications"
+      ],
+      "verify": [
+        "python scripts/check_iaui_update.py --output /tmp/iaui-metadata.json",
+        "python - <<'PY'\nfrom pathlib import Path\ntext = Path('.github/workflows/check-iaui-update.yml').read_text()\nassert 'github.paginate(github.rest.issues.listForRepo' in text\nassert 'fingerprintMarker' in text\nprint('workflow assertions passed')\nPY"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: investigate the failed 'Check IAUI Update - main (3c48564)' run, isolate the runtime failure in the IAUI notification workflow, and apply the smallest safe fix while preserving historical issue deduplication."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "72c6bbc787c16e657e57f005ff59c108f45e9fec0c1d1623988647e96b0c22fc"
+    "checksum": "0d2a540cf94ca08034c047f3d65f8d0e30f9e72039c0ada98698392ae58eaf33"
   }
 }
