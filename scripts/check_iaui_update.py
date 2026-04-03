@@ -10,19 +10,56 @@ import html
 import json
 import re
 import sys
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Sequence
 from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 
-DEFAULT_PAGE_URL = "https://www.iaui.gov.lv/lv/precu-un-pakalpojumu-loteriju-registra-dati?="
+DEFAULT_PAGE_URL = "https://www.vid.gov.lv/lv/loterijas"
 DEFAULT_USER_AGENT = "Mozilla/5.0 (compatible; lotteries-iaui-check/1.0; +https://github.com/kosjak0ff/lotteries)"
+TARGET_LINK_TEXT = "Izsniegtās preču un pakalpojumu loteriju atļaujas"
+UPDATED_AT_PATTERN = re.compile(r"Atjaunināts:\s*([0-9]{2}\.[0-9]{2}\.[0-9]{4})\.?")
 
-DOWNLOAD_LINK_PATTERN = re.compile(
-    r'<a[^>]+href="(?P<href>[^"]*download[^"]*)"[^>]*>(?P<text>.*?)</a>',
-    re.IGNORECASE | re.DOTALL,
-)
-UPDATED_AT_PATTERN = re.compile(r"Atjaunināts:\s*([0-9]{2}\.[0-9]{2}\.[0-9]{4})")
+
+class LinkExtractor(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.links: list[dict[str, str]] = []
+        self._current_href: str | None = None
+        self._current_attrs: dict[str, str] = {}
+        self._current_chunks: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag != "a":
+            return
+        self._current_href = ""
+        self._current_attrs = {key: value or "" for key, value in attrs}
+        self._current_chunks = []
+
+    def handle_data(self, data: str) -> None:
+        if self._current_href is None:
+            return
+        self._current_chunks.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag != "a" or self._current_href is None:
+            return
+        href = self._current_attrs.get("href", "")
+        text = clean_whitespace("".join(self._current_chunks))
+        aria_label = clean_whitespace(self._current_attrs.get("aria-label", ""))
+        title = clean_whitespace(self._current_attrs.get("title", ""))
+        self.links.append(
+            {
+                "href": href,
+                "text": text,
+                "aria_label": aria_label,
+                "title": title,
+            }
+        )
+        self._current_href = None
+        self._current_attrs = {}
+        self._current_chunks = []
 
 
 def strip_tags(text: str) -> str:
@@ -33,27 +70,36 @@ def clean_whitespace(text: str) -> str:
     return " ".join(text.split())
 
 
-def fetch_page(url: str) -> str:
+def fetch_page(url: str) -> tuple[str, str]:
     request = Request(url, headers={"User-Agent": DEFAULT_USER_AGENT})
     with urlopen(request, timeout=60) as response:
-        return response.read().decode("utf-8", errors="replace")
+        return response.read().decode("utf-8", errors="replace"), response.geturl()
 
 
 def discover_download_link(page_html: str, page_url: str) -> tuple[str, str]:
+    parser = LinkExtractor()
+    parser.feed(page_html)
+
     first_download_url = None
     first_download_text = None
 
-    for match in DOWNLOAD_LINK_PATTERN.finditer(page_html):
-        href = html.unescape(match.group("href"))
-        text = clean_whitespace(strip_tags(html.unescape(match.group("text"))))
+    for link in parser.links:
+        href = html.unescape(link["href"])
+        if not href:
+            continue
+
+        combined_text = clean_whitespace(
+            " ".join(part for part in (link["text"], link["aria_label"], link["title"]) if part)
+        )
         absolute_url = urljoin(page_url, href)
+        is_download = "download?attachment" in href or "/media/" in href
 
-        if first_download_url is None:
+        if is_download and first_download_url is None:
             first_download_url = absolute_url
-            first_download_text = text
+            first_download_text = combined_text
 
-        if "Izsniegtās preču un pakalpojumu loteriju atļaujas" in text:
-            return absolute_url, text
+        if TARGET_LINK_TEXT in combined_text:
+            return absolute_url, TARGET_LINK_TEXT
 
     if first_download_url:
         return first_download_url, first_download_text or "IAUI lottery registry"
@@ -88,12 +134,12 @@ def parse_args(argv: Sequence[str]) -> argparse.Namespace:
 
 def main(argv: Sequence[str]) -> int:
     args = parse_args(argv)
-    page_html = fetch_page(args.page_url)
-    download_url, link_text = discover_download_link(page_html, args.page_url)
+    page_html, final_url = fetch_page(args.page_url)
+    download_url, link_text = discover_download_link(page_html, final_url)
     updated_at = extract_updated_at(page_html)
 
     payload = {
-        "page_url": args.page_url,
+        "page_url": final_url,
         "download_url": download_url,
         "link_text": link_text,
         "updated_at": updated_at,
