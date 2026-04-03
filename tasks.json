@@ -474,12 +474,35 @@
         "hash": "6f6108ddd3c1601fc61f93b5314f3328f904e3e9",
         "message": "🛠️ T-014 Fix IAUI metadata source"
       }
+    },
+    {
+      "id": "T-015",
+      "title": "Remove agent workflow files from GitHub",
+      "description": "Stop tracking the local agent workflow files in git so they are removed from GitHub while remaining available in each developer's local workspace, and prevent them from resurfacing as untracked files locally.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "git",
+        "workflow",
+        "cleanup"
+      ],
+      "verify": [
+        "git ls-files AGENTS.md .AGENTS docs/workflow docs/agentctl.md scripts/agentctl.py tasks.json | test ! -s /dev/stdin",
+        "test -f AGENTS.md && test -f tasks.json && test -f scripts/agentctl.py && test -d .AGENTS && test -d docs/workflow"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: remove the agent workflow files from git tracking so they disappear from GitHub but remain present locally for development, and ignore them going forward to avoid local untracked noise."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "63f8d0a570e01357461f4f9e788c2cd61387bde1ff6c6b4926e78993f6590791"
+    "checksum": "b54f34a65c11e40766bc2d80bc0139ca4dc7bef39d41fbeb13ca82bc42924690"
   }
 }
