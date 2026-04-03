@@ -8,3 +8,9 @@ __pycache__
 tmp_*
 wp-sitemap-posts-lottery-*.xml
 Loteriju reģistrs_16.03.2026..xls
+AGENTS.md
+.AGENTS/
+tasks.json
+docs/agentctl.md
+docs/workflow/
+scripts/agentctl.py
