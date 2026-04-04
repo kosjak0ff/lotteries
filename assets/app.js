@@ -25,6 +25,26 @@ const escapeHtml = (text) =>
 
 const safe = (text) => (text ? escapeHtml(text) : "— данных пока нет");
 
+const buildRequirementsCell = (row, details) => {
+  const parts = [];
+
+  if (details.requirements) {
+    parts.push(escapeHtml(details.requirements));
+  }
+
+  if (row.place) {
+    parts.push(`<strong>Где действует:</strong> ${escapeHtml(row.place)}`);
+  }
+
+  if (details.registration_until) {
+    parts.push(
+      `<strong>Регистрация до:</strong> ${escapeHtml(formatReferenceDate(details.registration_until))}`
+    );
+  }
+
+  return parts.length ? parts.join("<br><br>") : "— данных пока нет";
+};
+
 const formatReferenceDate = (value) => {
   if (!value) return "";
   const isoMatch = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value).trim());
@@ -62,13 +82,14 @@ function renderTable(rows) {
   const sorted = sortKey ? [...rows].sort(compare) : rows;
 
   if (!sorted.length) {
-    tableBody.innerHTML = '<tr><td colspan="10" class="muted">Ничего не найдено по запросу</td></tr>';
+    tableBody.innerHTML = '<tr><td colspan="9" class="muted">Ничего не найдено по запросу</td></tr>';
     return;
   }
 
   const html = sorted
     .map((row) => {
       const details = enriched[row.permit] || {};
+      const requirementsCell = buildRequirementsCell(row, details);
       const registrationCell = details.registration_url
         ? `<a class="reg-link" href="${escapeHtml(details.registration_url)}" target="_blank" rel="noopener">Ссылка</a>`
         : "—";
@@ -81,8 +102,7 @@ function renderTable(rows) {
           <td>${escapeHtml(row.name)}</td>
           <td>${escapeHtml(row.start)}</td>
           <td>${escapeHtml(row.end)}</td>
-          <td>${escapeHtml(row.place)}</td>
-          <td>${safe(details.requirements)}</td>
+          <td>${requirementsCell}</td>
           <td>${safe(details.prizes)}</td>
           <td>${registrationCell}</td>
         </tr>
@@ -174,7 +194,7 @@ async function bootstrap() {
     searchInput.addEventListener("input", applySearch);
     headerCells.forEach((th) => th.addEventListener("click", handleSort));
   } catch (error) {
-    tableBody.innerHTML = `<tr><td colspan="10" class="muted">Не удалось загрузить данные (${escapeHtml(error.message)})</td></tr>`;
+    tableBody.innerHTML = `<tr><td colspan="9" class="muted">Не удалось загрузить данные (${escapeHtml(error.message)})</td></tr>`;
   }
 }
 

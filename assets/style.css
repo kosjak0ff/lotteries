@@ -129,9 +129,10 @@ h1 {
 
 table {
   width: 100%;
-  min-width: 1680px;
+  min-width: 1280px;
   border-collapse: collapse;
   color: var(--text);
+  table-layout: fixed;
 }
 
 th {
@@ -174,6 +175,10 @@ td:first-child {
   left: 0;
   z-index: 2;
   background: inherit;
+  width: 74px;
+  min-width: 74px;
+  max-width: 74px;
+  text-align: center;
 }
 
 thead th:first-child {
@@ -187,6 +192,7 @@ td:nth-child(5),
 td:nth-child(6) {
   white-space: nowrap;
   text-align: center;
+  width: 96px;
 }
 
 /* prevent long unbroken links/text from breaking table layout */
@@ -194,9 +200,39 @@ td:nth-child(2),
 td:nth-child(3),
 td:nth-child(4),
 td:nth-child(7),
-td:nth-child(8),
-td:nth-child(9) {
+td:nth-child(8) {
   word-break: break-word;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 180px;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 210px;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 220px;
+}
+
+th:nth-child(7),
+td:nth-child(7) {
+  width: 300px;
+}
+
+th:nth-child(8),
+td:nth-child(8) {
+  width: 220px;
+}
+
+th:nth-child(9),
+td:nth-child(9) {
+  width: 96px;
+  text-align: center;
 }
 
 tbody tr:nth-child(odd) {
@@ -242,7 +278,7 @@ tbody tr:hover {
   }
 
   table {
-    min-width: 1320px;
+    min-width: 1080px;
   }
 }
 
@@ -263,6 +299,6 @@ tbody tr:hover {
   }
 
   table {
-    min-width: 1160px;
+    min-width: 940px;
   }
 }
