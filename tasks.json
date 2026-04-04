@@ -580,12 +580,35 @@
         "hash": "74cce267a8a8beec060618c4546aaa05b1b6e07b",
         "message": "🎛️ T-017 Narrow table and merge venue"
       }
+    },
+    {
+      "id": "T-018",
+      "title": "Clean requirements text and show registration deadline column",
+      "description": "Remove redundant line breaks and duplicate registration text from the requirements cell, rename the end-date column to registration deadline, and render that column from enriched registration_until data with a safe fallback.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "ui",
+        "table",
+        "copy"
+      ],
+      "verify": [
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: make requirements text more compact, stop duplicating registration deadline inside the requirements cell, and repurpose the current end-date column into a registration-deadline column."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "c4172b84243594d6ee03f22f00909d9da00b0776ed43da90f390bff212fde10c"
+    "checksum": "696cc83bc67bbf48fc756d06b27600be39ba2b959950932b2e35a332e8acccb7"
   }
 }
