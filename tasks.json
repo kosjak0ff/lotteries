@@ -545,12 +545,35 @@
         "hash": "0f2cefcddcaa76277dfd9d8f0f365c4b2d629ab1",
         "message": "🗂️ T-016 Refresh lotteries for 2026-04-04"
       }
+    },
+    {
+      "id": "T-017",
+      "title": "Narrow lottery table and merge venue into requirements",
+      "description": "Reduce the visible table width so it fits the page better, remove the venue column, keep permit numbers compact, and fold useful venue information into the requirements column without losing searchable content.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "ui",
+        "table",
+        "layout"
+      ],
+      "verify": [
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: narrow the published lottery table, remove the dedicated venue column, keep the permit column compact, and merge useful venue details into the requirements cell so the table fits the viewport better without losing context."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "1fffb7b5544415ca8e5088c4eb246b63277ef0f0001716090a072dba22f0c9c7"
+    "checksum": "3b6a47ff50ae4e213035e8d28c2aa51dc6c52d1656ce796b2ad268f516e0e044"
   }
 }
