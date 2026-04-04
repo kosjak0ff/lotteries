@@ -514,7 +514,7 @@
       "id": "T-016",
       "title": "Refresh active lotteries for 2026-04-04",
       "description": "Recompute the active lotteries dataset for 2026-04-04 from the local workbook Loteriju_reģistrs_25.03.2026..xls, remove permits that are no longer active, add newly active permits, and enrich newly added permits from verified public web sources before publishing the refreshed site data.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -531,14 +531,26 @@
         {
           "author": "PLANNER",
           "body": "Plan: refresh the published dataset for 2026-04-04 from the local workbook, remove expired permits, enrich only newly active permits from verified public sources, and update the site data if the recomputed output differs."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: recompute the 2026-04-04 active dataset from the local workbook, replace expired permits, enrich only newly active permits from verified public sources, and update the published site data."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: .venv/bin/python scripts/extract_lotteries.py --date 2026-04-04 --input \"Loteriju_reģistrs_25.03.2026..xls\" --check, python -m json.tool assets/active_lotteries.json, python -m json.tool assets/enriched_info.json, and permit-key parity check all passed. Published dataset now contains 38 active permits for 2026-04-04; newly added permits 8897, 8944, 8948, 8950, 8951, 8961, 8965, 8966, and 8973 were enriched from verified public sources with explicit fallback notes where a dedicated current rules page was not available."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "0f2cefcddcaa76277dfd9d8f0f365c4b2d629ab1",
+        "message": "🗂️ T-016 Refresh lotteries for 2026-04-04"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "6b0ffa5b9cb22efbb66f9986aabf6d4eb55e62a7dd737288bb2421ad5a557f4e"
+    "checksum": "1fffb7b5544415ca8e5088c4eb246b63277ef0f0001716090a072dba22f0c9c7"
   }
 }
