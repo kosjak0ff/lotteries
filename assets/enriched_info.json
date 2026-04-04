@@ -27,13 +27,6 @@
     "registration_until": "2026-03-30",
     "notes": "Лотерея 05.01–08.04.2026; покупки/регистрация 05.01–30.03.2026; Atļaujas Nr. 8840; организатор SIA Guilty, izplatītājs SIA Coca-Cola HBC Latvia."
   },
-  "8849": {
-    "requirements": "Купить любую продукцию Laima (упаковка или ≥100 г на развес) в период 23.02–12.04.2026, сохранить чек и зарегистрировать номер чека на www.laimasloterija.lv.",
-    "prizes": "3× подарочная карта Novatours по 2000 EUR; 14× дизайнерский столовый текстиль Kristīne Luīze Avotiņa; 49× наборы продуктов Laima.",
-    "registration_url": "https://laimasloterija.lv",
-    "registration_until": "2026-04-12",
-    "notes": "Лотерея 23.02–13.04.2026; излозes в течение периода, балвu fonda vērtība 9162.18 EUR; Atļaujas Nr. 8849; организатор SIA “Visas Loterijas”, ražotājs SIA “Orkla Latvija”."
-  },
   "8841": {
     "requirements": "Купить акционный Sprite (список тар в правилах) с уникальным кодом под крышкой и до 31.03.2026 (17:00) зарегистрировать код на сайте Coca-Cola; возраст 18+.",
     "prizes": "5× полёт на воздушном шаре на 2 чел. + 100 EUR ресторан 36.līnija; 300× Tinder Gold купон; 150× Wolt карта 20 EUR.",
@@ -41,110 +34,12 @@
     "registration_until": "2026-03-31",
     "notes": "Лотерея 02.02–07.04.2026; покупки/регистрация 02.02–31.03.2026; Atļaujas Nr. 8841; организатор SIA Guilty, izplatītājs SIA Coca-Cola HBC Latvia; излозes с 10.02 по 02.04, итоговый список до 07.04."
   },
-  "8850": {
-    "requirements": "Купить монтажную клей-ленту Moment FIX в любом магазине Латвии 12.01–31.03.2026, сохранить чек и зарегистрировать его на loterija.moment-limes.lv (бесплатно).",
-    "prizes": "1× подарочная карта 1000 EUR на выбор: Ksenukai, Mājai un Dārzam или Būvniecības ABC.",
-    "registration_url": "https://loterija.moment-limes.lv",
-    "registration_until": "2026-03-31",
-    "notes": "Лотерея 12.01–02.04.2026; регистрации до 31.03.2026; публикация победителей до 02.04.2026; Atļaujas Nr. 8850; организатор SIA SOMESE Baltic."
-  },
-  "8854": {
-    "requirements": "Совершить покупку в магазине AIBE минимум на 7 EUR, в чеке должны быть ≥2 акционные товары (saraks PDF). Чек подписать (имя, фамилия, телефон, e‑mail) и опустить в ящик или зарегистрировать онлайн; регистрировать до 10.03.2026.",
-    "prizes": "4× 500 EUR наличными; 4× 200 EUR наличными; 12× 100 EUR наличными; 20× подарочная карта AIBE 50 EUR; 100× подарочная карта AIBE 20 EUR (итого 140 призов, фонд 7000 EUR).",
-    "registration_url": "https://aibe.lv/aibe-loterija/",
-    "registration_until": "2026-03-10",
-    "notes": "Лотерея 22.12.2025–01.04.2026; излозes 20.01, 21.01, 17.02, 18.02, 10.03, 11.03, 31.03, 01.04; Atļaujas Nr. 8854; организатор SIA “Latvijas Neatkarīgo Tirgotāju Kooperācija”."
-  },
-  "8858": {
-    "requirements": "Купить Fazer Svaigi Cepta Tev! maizi в MAXIMA или на www.barbora.lv до 30.03.2026, сохранить чек и зарегистрировать его через форму на loterijas.lv или по SMS на 1838 (FAZER + данные чека и участника).",
-    "prizes": "1× KitchenAid кухонный комплект; 8× Fazer подарочный набор + MAXIMA подарочная карта 35 EUR.",
-    "registration_url": "https://www.loterijas.lv/loterija/mosties-kopa-ar-fazer-3/",
-    "registration_until": "2026-03-30",
-    "notes": "Atļaujas Nr. 8858; loterijas periods 03.02–30.03.2026; 8 izlozes no 10.02 līdz 31.03.2026; организатор SIA “Visas Loterijas”."
-  },
-  "8867": {
-    "requirements": "Купить любую Fazer maizi veikalos top!/mini top! 04.02–01.04.2026, сохранить čeku и зарегистрировать его на loterijas.lv.",
-    "prizes": "1× velosipēds Merida Speeder 200; 8× top! dāvanu kartes 35 EUR.",
-    "registration_url": "https://www.loterijas.lv",
-    "registration_until": "2026-04-01",
-    "notes": "Loterija “Baudi ierauga maģiju un laimē” 04.02–02.04.2026; pirkumi līdz 01.04.2026; izloze 02.04.2026; raksts top! mediju telpā 02.02.2026."
-  },
-  "8868": {
-    "requirements": "Купить любой продукт Pringles в Латвии и до 31.03.2026 зарегистрировать чек на странице лотерии.",
-    "prizes": "1× комплект Corsair (монитор + Secret Lab кресло); 10× мышь Corsair; 10× наушники Corsair; 10× клавиатура Corsair.",
-    "registration_url": "https://www.loterijas.lv/loterija/pringles-vislatvijas-loterija-7/",
-    "registration_until": "2026-03-31",
-    "notes": "Лотерея 17.02–31.03.2026; излозes 24.02, 03.03, 10.03, 17.03, 24.03, 01.04; Atļaujas Nr. 8868; organizators SIA “Visas Loterijas”."
-  },
-  "8878": {
-    "requirements": "Быть клиентом ZZ Pēcapmaksa (или подключиться к ней) и отправить SMS \"BONUSS\" на 1620 в периоде розыгрыша; дополнительных плат за участие нет.",
-    "prizes": "1× Samsung TV 75\" (QE75Q7FAAUXXH); 2× денежный приз по 700 EUR.",
-    "registration_url": "https://www.zeltazivtina.lv/bonusu-klubs",
-    "registration_until": "2026-04-30",
-    "notes": "Pakalpojuma loterija “Zelta Zivtiņa Bonusu klubs”, Atļaujas Nr. 8878; излозes 04.03, 07.04, 07.05.2026; noteikumi: https://www.zeltazivtina.lv/storage/app/media/ZZ_Bonusu_klubs_2026_Q1.pdf; prognozētais dalībnieku skaits 150000, iespējamība 3:150000."
-  },
-  "8885": {
-    "requirements": "Купить 2 продукта Sensodyne/Parodontax/Aquafresh/Corega в одной покупке с 01.03 по 31.03.2026, сохранить чек и зарегистрировать номер чека на www.smaidakampana.lv (имя, фамилия, телефон).",
-    "prizes": "1× денежный приз 5000 EUR; 30× продуктовый набор брендов Sensodyne/Parodontax/Aquafresh/Corega.",
-    "registration_url": "https://www.smaidakampana.lv",
-    "registration_until": "2026-03-31",
-    "notes": "Atļaujas Nr. 8885; loterijas periods 01.03–01.04.2026; pilnie noteikumi: https://smaidakampana.lv/noteikumi.pdf; prognozētais dalībnieku skaits 6000, iespēja laimēt 31/6000."
-  },
-  "8899": {
-    "requirements": "Купить любой акционный продукт NIVEA в Drogas или на drogas.lv до 01.04.2026, сохранить чек и зарегистрировать его на странице loterijas.lv (номер чека, имя, фамилия, телефон, e-pasts).",
-    "prizes": "2× подарочная карта Drogas на 600 EUR; 10× продуктовый набор NIVEA.",
-    "registration_url": "https://www.loterijas.lv/loterija/nivea-loterija-veikalos-drogas/",
-    "registration_until": "2026-04-01",
-    "notes": "Atļaujas Nr. 8899; loterijas periods 03.03–01.04.2026; izloze 02.04.2026; organizators SIA “Visas Loterijas”."
-  },
-  "8874": {
-    "requirements": "Купить технику Gorenje в магазине PTA (Dambja iela 3A, Rīga), заполнить купон с именем, фамилией, телефоном и номером чека и опустить в лотерейный ящик (регистрация до 31.05.2026 17:00).",
-    "prizes": "50× пылесос Gorenje SVC 222480AA; 1× плита Gorenje GECS5B70CLI; 1× морозильник Gorenje F 4142 PW; 1× стиральная машина Gorenje WNPI82BS.",
-    "registration_url": "https://ptaveikals.lv/akcijas-piedavajumi/",
-    "registration_until": "2026-05-31",
-    "notes": "Loterija “Pērc Gorenje tehniku un laimē”, atļaujas Nr. 8874; periods 15.02–01.06.2026; apkopota iespējamība ~2% (53 balvas no ~2650 pirkumiem)."
-  },
-  "8875": {
-    "requirements": "Купить минимум 1 продукт Sensodyne в Drogas или на drogas.lv, сохранить чек и зарегистрировать его на loterijas.lv (имя, фамилия, номер чека, телефон) до 01.04.2026.",
-    "prizes": "1× Apple iPhone Air 256GB.",
-    "registration_url": "https://www.loterijas.lv/loterija/sensodyne-loterija-veikalos-drogas-3/",
-    "registration_until": "2026-04-01",
-    "notes": "Loterija Sensodyne veikalos Drogas; periods 03.03–02.04.2026, reģistrācija līdz 01.04.2026; Atļaujas Nr. 8875; organizators SIA “Visas Loterijas”; noteikumi: https://media.drogas.lv/api/v2/drlv/wp/blog/wp-content/uploads/2026/02/sensodyne_loterijas_noteikumi_LV.pdf; aptuvena iespēja ~0,0167% (1 no ~6000)."
-  },
-  "8890": {
-    "requirements": "Купить любой продукт Oral-B в магазине Drogas или на drogas.lv до 01.04.2026 и зарегистрировать чек на странице лотереи.",
-    "prizes": "1× подарочная карта Latvia Tours на 3000 EUR; 8× набор продуктов Oral-B.",
-    "registration_url": "https://www.loterijas.lv/loterija/oral-b-loterija-veikalos-drogas-5/",
-    "registration_until": "2026-04-01",
-    "notes": "Atļaujas Nr. 8890; период лотереи 03.03–01.04.2026; розыгрыши 11.03, 18.03, 25.03, 02.04.2026; регистрация ведет на gudrspirkums.lv."
-  },
-  "8884": {
-    "requirements": "Купить минимум 1 продукт Lacmi в период 16.02.2026–12.04.2026, сохранить чек (или накладную) и бесплатно зарегистрировать покупку на roshenloterija.lv.",
-    "prizes": "1× ноутбук LENOVO LOQ 15IRX10 i5 (Luna Grey).",
-    "registration_url": "https://roshenloterija.lv/",
+  "8849": {
+    "requirements": "Купить любую продукцию Laima (упаковка или ≥100 г на развес) в период 23.02–12.04.2026, сохранить чек и зарегистрировать номер чека на www.laimasloterija.lv.",
+    "prizes": "3× подарочная карта Novatours по 2000 EUR; 14× дизайнерский столовый текстиль Kristīne Luīze Avotiņa; 49× наборы продуктов Laima.",
+    "registration_url": "https://laimasloterija.lv",
     "registration_until": "2026-04-12",
-    "notes": "Atļaujas Nr. 8884; период лотереи 16.02–16.04.2026, но регистрация покупок только до 12.04.2026; розыгрыш 13.04.2026; публикация победителя до 16.04.2026; прогноз участников 1000 (шанс ~0,1%)."
-  },
-  "8887": {
-    "requirements": "Купить минимум 2 продукта Pampers в одной покупке в Drogas или на drogas.lv до 01.04.2026 и зарегистрировать чек на странице кампании.",
-    "prizes": "10× подарочная карта Drogas номиналом 100 EUR.",
-    "registration_url": "https://www.gudrspirkums.lv/",
-    "registration_until": "2026-04-01",
-    "notes": "Atļaujas Nr. 8887; период лотереи 03.03–01.04.2026; 4 розыгрыша: 11.03, 18.03, 25.03 и 02.04.2026; карточка лотереи: https://www.loterijas.lv/loterija/pampers-loterija-veikalos-drogas-4/."
-  },
-  "8893": {
-    "requirements": "Купить любой продукт Old Spice в Drogas или на drogas.lv до 01.04.2026 и зарегистрировать чек на странице кампании.",
-    "prizes": "1× Sony PlayStation 5 Pro Digital (2TB); 20× подарочный набор Old Spice.",
-    "registration_url": "https://www.gudrspirkums.lv/",
-    "registration_until": "2026-04-01",
-    "notes": "Atļaujas Nr. 8893; период лотереи 03.03–01.04.2026; 4 розыгрыша: 11.03, 18.03, 25.03 и 02.04.2026; карточка лотереи: https://www.loterijas.lv/loterija/old-spice-loterija-veikalos-drogas-6/."
-  },
-  "8892": {
-    "requirements": "Купить любой продукт Listerine в Drogas или на drogas.lv до 01.04.2026 и зарегистрировать чек на странице кампании.",
-    "prizes": "1× Apple iPhone 17 Pro 256 GB; 15× набор Listerine.",
-    "registration_url": "https://veiksmigi.lv/",
-    "registration_until": "2026-04-01",
-    "notes": "Atļaujas Nr. 8892; период лотереи 03.03–01.04.2026; финальный розыгрыш 02.04.2026; карточка лотереи: https://www.loterijas.lv/loterija/listerine-zimola-dienas-veikalos-drogas/."
+    "notes": "Лотерея 23.02–13.04.2026; излозes в течение периода, балвu fonda vērtība 9162.18 EUR; Atļaujas Nr. 8849; организатор SIA “Visas Loterijas”, ražotājs SIA “Orkla Latvija”."
   },
   "8865": {
     "requirements": "Купить лотерейный продукт Latvijas Maiznieks в Maxima или на barbora.lv до 06.04.2026, сохранить чек и зарегистрировать его в форме на странице лотереи.",
@@ -153,12 +48,89 @@
     "registration_until": "2026-04-06",
     "notes": "Atļaujas Nr. 8865; период лотереи 10.02–05.04.2026, регистрации принимаются до 06.04.2026; 8 розыгрышей с 17.02 по 07.04.2026."
   },
-  "8894": {
-    "requirements": "Купить любой акционный продукт Gillette, Gillette Venus или King C Gillette в Drogas или на drogas.lv до 01.04.2026 и зарегистрировать чек на странице кампании.",
-    "prizes": "8× часы Gillette; 20× набор Gillette Labs.",
-    "registration_url": "https://www.gudrspirkums.lv/",
-    "registration_until": "2026-04-01",
-    "notes": "Atļaujas Nr. 8894; период лотереи 03.03–01.04.2026; 4 розыгрыша: 11.03, 18.03, 25.03 и 02.04.2026; карточка лотереи: https://www.loterijas.lv/loterija/gillette-loterijas-drogas/."
+  "8871": {
+    "requirements": "Купить 1 продукт Palmolive (кроме кускового мыла) или Speed Stick в любой торговой точке Латвии и зарегистрировать чек на registertowin.eu (имя, фамилия, номер чека, телефон, e-mail) до 05.04.2026 23:59.",
+    "prizes": "1 x комплект гоночного симулятора (NLR Gttrack Sim + Logitech G920); 10 x комплектов продукции Palmolive/Speed Stick.",
+    "registration_url": "https://registertowin.eu/win/palmolive_simulators",
+    "registration_until": "2026-04-05",
+    "notes": "Atļaujas Nr. 8871; официальные правила кампании “Laimē sacīkšu simulatora komplektu!” подтверждают период 23.02–09.04.2026, регистрацию до 05.04.2026 23:59, организатора SIA “ADgett”. Правила: https://registertowin.eu/storage/app/uploads/public/697/0d1/cfd/6970d1cfd1d4a701948939.pdf."
+  },
+  "8874": {
+    "requirements": "Купить технику Gorenje в магазине PTA (Dambja iela 3A, Rīga), заполнить купон с именем, фамилией, телефоном и номером чека и опустить в лотерейный ящик (регистрация до 31.05.2026 17:00).",
+    "prizes": "50× пылесос Gorenje SVC 222480AA; 1× плита Gorenje GECS5B70CLI; 1× морозильник Gorenje F 4142 PW; 1× стиральная машина Gorenje WNPI82BS.",
+    "registration_url": "https://ptaveikals.lv/akcijas-piedavajumi/",
+    "registration_until": "2026-05-31",
+    "notes": "Loterija “Pērc Gorenje tehniku un laimē”, atļaujas Nr. 8874; periods 15.02–01.06.2026; apkopota iespējamība ~2% (53 balvas no ~2650 pirkumiem)."
+  },
+  "8878": {
+    "requirements": "Быть клиентом ZZ Pēcapmaksa (или подключиться к ней) и отправить SMS \"BONUSS\" на 1620 в периоде розыгрыша; дополнительных плат за участие нет.",
+    "prizes": "1× Samsung TV 75\" (QE75Q7FAAUXXH); 2× денежный приз по 700 EUR.",
+    "registration_url": "https://www.zeltazivtina.lv/bonusu-klubs",
+    "registration_until": "2026-04-30",
+    "notes": "Pakalpojuma loterija “Zelta Zivtiņa Bonusu klubs”, Atļaujas Nr. 8878; излозes 04.03, 07.04, 07.05.2026; noteikumi: https://www.zeltazivtina.lv/storage/app/media/ZZ_Bonusu_klubs_2026_Q1.pdf; prognozētais dalībnieku skaits 150000, iespējamība 3:150000."
+  },
+  "8879": {
+    "requirements": "Купить минимум 1 акционный продукт бренда “Nākotne” в период 16.03–10.05.2026, сохранить чек и зарегистрировать его на сайте лотереи.",
+    "prizes": "1× газовый гриль Weber Genesis E-435; 8× аэрогриль Electrolux EAF12B.",
+    "registration_url": "https://www.loterijatev.lv/nakotne",
+    "registration_until": "2026-05-10",
+    "notes": "Atļaujas Nr. 8879; участвуют лица 18+; список акционных товаров размещен на странице (раздел “Loterijas produkti”): https://www.loterijatev.lv/nakotne; полные правила: https://www.loterijatev.lv/loterija/nakotne/@rules/WEB_Noteikumi_Nakotne_loterija_2026_.pdf; победители публикуются до 14.05.2026."
+  },
+  "8880": {
+    "requirements": "Купить любой продукт Ajax и зарегистрировать покупку в период лотереи.",
+    "prizes": "Техника SMEG для кухни (точные модели и количество призов публично не указаны).",
+    "registration_url": "https://registertowin.eu/win?lang=lv",
+    "registration_until": "2026-05-07",
+    "notes": "Atļaujas Nr. 8880; период в реестре: 23.02–07.05.2026. Публичная страница с формой регистрации не найдена; на главной Loterijas.lv есть только краткая карточка в блоке “Loterijas citviet”."
+  },
+  "8882": {
+    "requirements": "Сдать металлолом на площадках партнёров SIA “Tolmets Latvija” и зарегистрировать участие (публичная форма регистрации для кампании 2026 не найдена).",
+    "prizes": "Денежные призы (точный призовой фонд для кампании 2026 публично не подтверждён).",
+    "registration_url": "https://www.loterijas.lv/loterija/tolmets-loterija-2/",
+    "registration_until": "2026-09-16",
+    "notes": "Atļaujas Nr. 8882; в реестре: “Metāli Tolmetā – nauda cūciņā”, период 16.03–16.09.2026, организатор SIA “Marketing Angels”. Найдены только старые страницы Tolmets/loterija (в т.ч. завершённые кампании 2023–2024); отдельная публичная страница правил/регистрации именно для Atļaujas Nr. 8882 не обнаружена."
+  },
+  "8884": {
+    "requirements": "Купить минимум 1 продукт Lacmi в период 16.02.2026–12.04.2026, сохранить чек (или накладную) и бесплатно зарегистрировать покупку на roshenloterija.lv.",
+    "prizes": "1× ноутбук LENOVO LOQ 15IRX10 i5 (Luna Grey).",
+    "registration_url": "https://roshenloterija.lv/",
+    "registration_until": "2026-04-12",
+    "notes": "Atļaujas Nr. 8884; период лотереи 16.02–16.04.2026, но регистрация покупок только до 12.04.2026; розыгрыш 13.04.2026; публикация победителя до 16.04.2026; прогноз участников 1000 (шанс ~0,1%)."
+  },
+  "8886": {
+    "requirements": "Купить в MAXIMA любые 2 товара из списка акции SMEG, затем зарегистрировать чек на www.maxima.lv/smeg (номер чека, дата, имя, фамилия, телефон).",
+    "prizes": "3 x холодильник SMEG FAB28RCR5.",
+    "registration_url": "https://www.maxima.lv/smeg",
+    "registration_until": "2026-06-14",
+    "notes": "Atļaujas Nr. 8886; официальные правила на maxima.lv подтверждают период регистрации 03.03.2026 00:00 — 14.06.2026 23:59, итог розыгрыша 15.06.2026; организатор SIA “Sprintlab group”. Список участвующих товаров (EAN) опубликован в правилах: https://www.maxima.lv/uploads/file/Loterijas-noteikumi_SMEG2026-Final.pdf."
+  },
+  "8897": {
+    "requirements": "Сделать покупку в Tet veikalā t/c Ditton минимум на 100 EUR или подключить услугу Tet в период акции.",
+    "prizes": "1× телевизор Samsung 55\" QLED Q7F 4K Vision AI Smart TV (2025) QE55Q7FAAUXXH.",
+    "registration_url": "https://www.tet.lv/veikals/",
+    "registration_until": "",
+    "notes": "Atļaujas Nr. 8897; в реестре период 01.04–05.05.2026 и место проведения — Tet veikals t/c Ditton, Cietokšņa iela 60, Daugavpils. На официальном Tet подтверждена модель приза QE55Q7FAAUXXH, но отдельная публичная страница с правилами или регистрацией этой лотереи не найдена."
+  },
+  "8900": {
+    "requirements": "Купить лотерейный продукт Latvijas Maiznieks в магазинах Elvi до 05.05.2026, сохранить чек и зарегистрировать его в форме на странице лотереи.",
+    "prizes": "1× комплект садовой мебели; 7× подарочная карта Depo на 50 EUR.",
+    "registration_url": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-produktu-loterijas-elvi-veikalos/",
+    "registration_until": "2026-05-05",
+    "notes": "Atļaujas Nr. 8900; период лотереи 11.03–05.05.2026; 8 розыгрышей: первый 18.03, финальный 06.05.2026."
+  },
+  "8901": {
+    "requirements": "Купить лотерейный продукт Latvijas Maiznieks “Latvijas Tost Maize” в магазинах Elvi до 05.05.2026, сохранить чек и зарегистрировать его в форме на странице лотереи.",
+    "prizes": "1× газовый гриль Weber Spirit EP-435; 7× подарочная карта Elvi на 50 EUR.",
+    "registration_url": "https://www.loterijas.lv/loterija/latvijas-tost-maize-loterija-elvi-veikalos/",
+    "registration_until": "2026-05-05",
+    "notes": "Atļaujas Nr. 8901; период лотереи 11.03–05.05.2026; 8 розыгрышей: первый 18.03, финальный 06.05.2026."
+  },
+  "8904": {
+    "requirements": "Купить товары брендов ELIĒR или BDK минимум на 25 EUR в указанных точках (автоматы ELIĒR в TC Spice, TC Rīga Plaza и в отеле Bellevue). Публичная форма регистрации в интернете не найдена.",
+    "prizes": "— данных пока нет (публичные правила/призовой фонд по Atļaujas Nr. 8904 не обнаружены в открытых источниках).",
+    "registration_url": "https://www.loterijas.lv/",
+    "registration_until": "2026-06-07",
+    "notes": "Atļaujas Nr. 8904; в реестре период 21.02–07.06.2026 и организатор SIA “Beauty Retail”. Поиск по loterijas.lv, rimi.lv и общим источникам не дал официальной публичной страницы с правилами/регистрацией именно этой лотереи."
   },
   "8905": {
     "requirements": "Сделать заказ в Rimi e-veikals минимум на 20 EUR в период 03.03–30.03.2026 и зарегистрировать номер заказа или финального счета на странице лотереи.",
@@ -174,62 +146,6 @@
     "registration_until": "2026-04-27",
     "notes": "Atļaujas Nr. 8906; период лотереи 03.03–27.04.2026; 8 розыгрышей: первый 10.03, финальный 28.04.2026."
   },
-  "8901": {
-    "requirements": "Купить лотерейный продукт Latvijas Maiznieks “Latvijas Tost Maize” в магазинах Elvi до 05.05.2026, сохранить чек и зарегистрировать его в форме на странице лотереи.",
-    "prizes": "1× газовый гриль Weber Spirit EP-435; 7× подарочная карта Elvi на 50 EUR.",
-    "registration_url": "https://www.loterijas.lv/loterija/latvijas-tost-maize-loterija-elvi-veikalos/",
-    "registration_until": "2026-05-05",
-    "notes": "Atļaujas Nr. 8901; период лотереи 11.03–05.05.2026; 8 розыгрышей: первый 18.03, финальный 06.05.2026."
-  },
-  "8900": {
-    "requirements": "Купить лотерейный продукт Latvijas Maiznieks в магазинах Elvi до 05.05.2026, сохранить чек и зарегистрировать его в форме на странице лотереи.",
-    "prizes": "1× комплект садовой мебели; 7× подарочная карта Depo на 50 EUR.",
-    "registration_url": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-produktu-loterijas-elvi-veikalos/",
-    "registration_until": "2026-05-05",
-    "notes": "Atļaujas Nr. 8900; период лотереи 11.03–05.05.2026; 8 розыгрышей: первый 18.03, финальный 06.05.2026."
-  },
-  "8879": {
-    "requirements": "Купить минимум 1 акционный продукт бренда “Nākotne” в период 16.03–10.05.2026, сохранить чек и зарегистрировать его на сайте лотереи.",
-    "prizes": "1× газовый гриль Weber Genesis E-435; 8× аэрогриль Electrolux EAF12B.",
-    "registration_url": "https://www.loterijatev.lv/nakotne",
-    "registration_until": "2026-05-10",
-    "notes": "Atļaujas Nr. 8879; участвуют лица 18+; список акционных товаров размещен на странице (раздел “Loterijas produkti”): https://www.loterijatev.lv/nakotne; полные правила: https://www.loterijatev.lv/loterija/nakotne/@rules/WEB_Noteikumi_Nakotne_loterija_2026_.pdf; победители публикуются до 14.05.2026."
-  },
-  "8935": {
-    "requirements": "Сделать покупку минимум на 20 EUR в магазинах/услугах ТЦ “AKROPOLE Rīga” или “AKROPOLE Alfa” до 26.04.2026 и зарегистрировать чек на странице кампании.",
-    "prizes": "1× Škoda Fabia Monte Carlo (Velvet Red); 42× подарочная карта AKROPOLE на 100 EUR.",
-    "registration_url": "https://akropole.loterija.lv/",
-    "registration_until": "2026-04-26",
-    "notes": "Atļaujas Nr. 8935; период лотереи 16.03–26.04.2026; 28 розыгрышей: первый 17.03, финальный 27.04.2026; есть исключенные категории покупок (см. п. 3.1 правил)."
-  },
-  "8945": {
-    "requirements": "Сделать покупку в любой торговой или сервисной точке ТЦ “Mc2” до 10.05.2026, сохранить чек и зарегистрировать его на странице лотереи.",
-    "prizes": "1× подарочная карта airBaltic на 2000 EUR.",
-    "registration_url": "https://www.loterijas.lv/loterija/mc2-loterija/",
-    "registration_until": "2026-05-10",
-    "notes": "Atļaujas Nr. 8945; период лотереи 10.03–10.05.2026; финальный розыгрыш 11.05.2026."
-  },
-  "8877": {
-    "requirements": "Купить 2 продукта Palmolive (кроме кускового мыла) или Speed Stick в Drogas / drogas.lv и зарегистрировать покупку в период лотереи.",
-    "prizes": "Подарочная карта sporta komplekss 333 (количество призов публично не указано).",
-    "registration_url": "https://registertowin.eu/win?lang=lv",
-    "registration_until": "2026-04-02",
-    "notes": "Atļaujas Nr. 8877; период в реестре: 03.03–02.04.2026. Публичная страница с условиями/формой регистрации не найдена: на главной Loterijas.lv есть только краткое описание без ссылки."
-  },
-  "8880": {
-    "requirements": "Купить любой продукт Ajax и зарегистрировать покупку в период лотереи.",
-    "prizes": "Техника SMEG для кухни (точные модели и количество призов публично не указаны).",
-    "registration_url": "https://registertowin.eu/win?lang=lv",
-    "registration_until": "2026-05-07",
-    "notes": "Atļaujas Nr. 8880; период в реестре: 23.02–07.05.2026. Публичная страница с формой регистрации не найдена; на главной Loterijas.lv есть только краткая карточка в блоке “Loterijas citviet”."
-  },
-  "8883": {
-    "requirements": "Сделать покупку от 100 EUR или подключить услугу в Tet veikalā t/c Akropole Alfa в период акции.",
-    "prizes": "Sony PlayStation 5 (по публичным материалам без подтвержденного количества призов).",
-    "registration_url": "https://www.tet.lv/veikals/",
-    "registration_until": "2026-03-31",
-    "notes": "Atļaujas Nr. 8883; в карточке Tet promotions найдено: “Tet veikalu dienas Alfā”, даты акции 02.03–31.03.2026 и визуал с Sony PlayStation 5. Отдельная публичная форма регистрации и полные правила по этой лотерее не найдены."
-  },
   "8930": {
     "requirements": "Сделать покупку на www.cec.lv на сумму от 59,90 EUR в период акции и зарегистрировать участие (публичная форма не найдена).",
     "prizes": "iPhone (модель и количество призов публично не подтверждены).",
@@ -244,34 +160,6 @@
     "registration_until": "",
     "notes": "Atļaujas Nr. 8931; в реестре IAUI период указан как 24.03–07.04.2026. Официальная страница NESCAFÉ подтверждает название кампании и порог покупки 3 EUR, а карточка Loterijas.lv подтверждает призы; при этом на обоих публичных источниках часть данных неполная или противоречивая, поэтому в запись внесены только совпадающие и проверяемые сведения."
   },
-  "8882": {
-    "requirements": "Сдать металлолом на площадках партнёров SIA “Tolmets Latvija” и зарегистрировать участие (публичная форма регистрации для кампании 2026 не найдена).",
-    "prizes": "Денежные призы (точный призовой фонд для кампании 2026 публично не подтверждён).",
-    "registration_url": "https://www.loterijas.lv/loterija/tolmets-loterija-2/",
-    "registration_until": "2026-09-16",
-    "notes": "Atļaujas Nr. 8882; в реестре: “Metāli Tolmetā – nauda cūciņā”, период 16.03–16.09.2026, организатор SIA “Marketing Angels”. Найдены только старые страницы Tolmets/loterija (в т.ч. завершённые кампании 2023–2024); отдельная публичная страница правил/регистрации именно для Atļaujas Nr. 8882 не обнаружена."
-  },
-  "8886": {
-    "requirements": "Купить в MAXIMA любые 2 товара из списка акции SMEG, затем зарегистрировать чек на www.maxima.lv/smeg (номер чека, дата, имя, фамилия, телефон).",
-    "prizes": "3 x холодильник SMEG FAB28RCR5.",
-    "registration_url": "https://www.maxima.lv/smeg",
-    "registration_until": "2026-06-14",
-    "notes": "Atļaujas Nr. 8886; официальные правила на maxima.lv подтверждают период регистрации 03.03.2026 00:00 — 14.06.2026 23:59, итог розыгрыша 15.06.2026; организатор SIA “Sprintlab group”. Список участвующих товаров (EAN) опубликован в правилах: https://www.maxima.lv/uploads/file/Loterijas-noteikumi_SMEG2026-Final.pdf."
-  },
-  "8871": {
-    "requirements": "Купить 1 продукт Palmolive (кроме кускового мыла) или Speed Stick в любой торговой точке Латвии и зарегистрировать чек на registertowin.eu (имя, фамилия, номер чека, телефон, e-mail) до 05.04.2026 23:59.",
-    "prizes": "1 x комплект гоночного симулятора (NLR Gttrack Sim + Logitech G920); 10 x комплектов продукции Palmolive/Speed Stick.",
-    "registration_url": "https://registertowin.eu/win/palmolive_simulators",
-    "registration_until": "2026-04-05",
-    "notes": "Atļaujas Nr. 8871; официальные правила кампании “Laimē sacīkšu simulatora komplektu!” подтверждают период 23.02–09.04.2026, регистрацию до 05.04.2026 23:59, организатора SIA “ADgett”. Правила: https://registertowin.eu/storage/app/uploads/public/697/0d1/cfd/6970d1cfd1d4a701948939.pdf."
-  },
-  "8904": {
-    "requirements": "Купить товары брендов ELIĒR или BDK минимум на 25 EUR в указанных точках (автоматы ELIĒR в TC Spice, TC Rīga Plaza и в отеле Bellevue). Публичная форма регистрации в интернете не найдена.",
-    "prizes": "— данных пока нет (публичные правила/призовой фонд по Atļaujas Nr. 8904 не обнаружены в открытых источниках).",
-    "registration_url": "https://www.loterijas.lv/",
-    "registration_until": "2026-06-07",
-    "notes": "Atļaujas Nr. 8904; в реестре период 21.02–07.06.2026 и организатор SIA “Beauty Retail”. Поиск по loterijas.lv, rimi.lv и общим источникам не дал официальной публичной страницы с правилами/регистрацией именно этой лотереи."
-  },
   "8934": {
     "requirements": "Купить продукт(ы) бренда PEPSI в период акции. Публичная страница регистрации именно для “PEPSI loterija veikalos Rimi” (Atļaujas Nr. 8934) не найдена.",
     "prizes": "— данных пока нет (публичные правила и призовой фонд именно по Atļaujas Nr. 8934 не обнаружены).",
@@ -279,19 +167,12 @@
     "registration_until": "2026-04-28",
     "notes": "Atļaujas Nr. 8934; в реестре период 05.03–28.04.2026 и организатор SIA “PROMO TEAM BALTIC”. Проверены loterijas.lv sitemap и раздел акций/лотерей rimi.lv: публичная карточка с правилами и формой регистрации именно для этого номера разрешения не найдена."
   },
-  "8795": {
-    "requirements": "Быть автором проекта интерьера/архитектором или клиентом-автором проекта, зарегистрировать проект и в период 14.11.2025–22.03.2026 оформить в салоне Trentini заказ минимум на 3000 EUR без НДС.",
-    "prizes": "1× мотороллер Vespa.",
-    "registration_url": "https://www.trentini.lv/konkurss",
-    "registration_until": "2026-03-22",
-    "notes": "Atļaujas Nr. 8795; официальный лендинг Trentini подтверждает период лотереи 14.11.2025–22.03.2026 и дату розыгрыша 23.03.2026."
-  },
-  "8830": {
-    "requirements": "Купить минимум 1 продукт Ādažu в Латвии до 22.03.2026, сохранить чек и бесплатно зарегистрировать его на странице акции; обязательные поля: имя, фамилия, номер чека и телефон. Участие с 16 лет, для более молодых требуется согласие родителя/законного представителя.",
-    "prizes": "1× Apple iPhone 17 Pro 512GB Cosmic Orange; 6× денежный приз по 500 EUR; 60× наборов Ādažu čipsu maiss.",
-    "registration_url": "https://cipsi.loterija.lv/",
-    "registration_until": "2026-03-22",
-    "notes": "Atļaujas Nr. 8830; официальные правила подтверждают период лотереи 09.02–23.03.2026, регистрацию 09.02–22.03.2026 и главный розыгрыш 23.03.2026."
+  "8935": {
+    "requirements": "Сделать покупку минимум на 20 EUR в магазинах/услугах ТЦ “AKROPOLE Rīga” или “AKROPOLE Alfa” до 26.04.2026 и зарегистрировать чек на странице кампании.",
+    "prizes": "1× Škoda Fabia Monte Carlo (Velvet Red); 42× подарочная карта AKROPOLE на 100 EUR.",
+    "registration_url": "https://akropole.loterija.lv/",
+    "registration_until": "2026-04-26",
+    "notes": "Atļaujas Nr. 8935; период лотереи 16.03–26.04.2026; 28 розыгрышей: первый 17.03, финальный 27.04.2026; есть исключенные категории покупок (см. п. 3.1 правил)."
   },
   "8943": {
     "requirements": "С 23.03 по 31.05.2026 купить в одном чеке любые 2 акционных товара из списка брендов акции в магазинах “Mego”, “Vesko” или “Mini Vesko”, сохранить чек и зарегистрироваться на сайте или по SMS на 1881; действует ограничение 1 чек на человека в день.",
@@ -299,6 +180,41 @@
     "registration_url": "https://www.megoloterija.lv/",
     "registration_until": "2026-05-31",
     "notes": "Atļaujas Nr. 8943; официальные правила и PDF разрешения подтверждают период лотереи 23.03–02.06.2026, период регистрации до 31.05.2026 23:59 и серию розыгрышей начиная с 30.03.2026."
+  },
+  "8944": {
+    "requirements": "Купить лотерейный продукт Latvijas Maiznieks Latvijas Graudu Maize в магазинах top! или mini top! до 26.05.2026 и зарегистрировать номер чека на странице лотерии.",
+    "prizes": "Робот-газонокосилка STIHL RMI и подарочные карты top! по 50 EUR.",
+    "registration_url": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-top-loterija/",
+    "registration_until": "2026-05-26",
+    "notes": "Atļaujas Nr. 8944; период лотерии 01.04–26.05.2026; 8 розыгрышей: первый 08.04, финальный 27.05.2026."
+  },
+  "8945": {
+    "requirements": "Сделать покупку в любой торговой или сервисной точке ТЦ “Mc2” до 10.05.2026, сохранить чек и зарегистрировать его на странице лотереи.",
+    "prizes": "1× подарочная карта airBaltic на 2000 EUR.",
+    "registration_url": "https://www.loterijas.lv/loterija/mc2-loterija/",
+    "registration_until": "2026-05-10",
+    "notes": "Atļaujas Nr. 8945; период лотереи 10.03–10.05.2026; финальный розыгрыш 11.05.2026."
+  },
+  "8948": {
+    "requirements": "Купить билет на сеанс фильма “Super Mario Galaktika: Filma” в Apollo Kino с 01.04 по 30.04.2026 и заполнить форму на странице акции.",
+    "prizes": "1× игровая консоль Nintendo Switch 2 с игрой Mario Kart World.",
+    "registration_url": "https://www.apollokino.lv/offers/loterija",
+    "registration_until": "2026-04-30",
+    "notes": "Atļaujas Nr. 8948; по странице Apollo Kino участвуют билеты на фильм “Super Mario Galaktika: Filma”, купленные 01.04–30.04.2026; победитель объявляется 01.05.2026; правила доступны на https://www.apollokino.lv/info/loterijasnoteikumi."
+  },
+  "8950": {
+    "requirements": "Купить минимум 2 продукта NIVEA MEN в одной покупке в любой торговой точке Латвии до 30.04.2026 и зарегистрировать чек на странице лотерии.",
+    "prizes": "Sony PlayStation 5 Pro или рюкзак NIVEA MEN.",
+    "registration_url": "https://www.loterijas.lv/loterija/nivea-men-loterija-2/",
+    "registration_until": "2026-04-30",
+    "notes": "Atļaujas Nr. 8950; период лотерии 31.03–30.04.2026; итоговый розыгрыш 05.05.2026."
+  },
+  "8951": {
+    "requirements": "Купить товары Duracell минимум на 5 EUR с НДС в любой торговой точке Латвии до 31.05.2026 и зарегистрировать чек на странице лотерии.",
+    "prizes": "Apple iPhone 17 Pro 256, беспроводная колонка JBL GO 4 или наушники Apple AirPods Pro 3.",
+    "registration_url": "https://www.loterijas.lv/loterija/duracell-loterija-2/",
+    "registration_until": "2026-05-31",
+    "notes": "Atļaujas Nr. 8951; период лотерии 01.04–31.05.2026; 9 розыгрышей: первый 08.04, финальный 01.06.2026."
   },
   "8953": {
     "requirements": "С 27.03 по 30.04.2026 совершить покупку минимум на 21 EUR (с НДС, без учёта подарочных карт) в любом магазине Dino Zoo в Латвии или на www.dinozoo.lv, сохранить чек и зарегистрировать его по SMS на 1838 или через форму на Loterijas.lv.",
@@ -320,5 +236,33 @@
     "registration_url": "https://automotopro.lv/loterija/",
     "registration_until": "2026-06-20",
     "notes": "Atļaujas Nr. 8960; официальный лендинг Automoto PRO подтверждает период лотереи 19.03–01.07.2026, регистрацию до 20.06.2026, розыгрыш 30.06.2026 12:00 в Jelgava, публикацию победителя 01.07.2026 и выдачу приза до 10.07.2026."
+  },
+  "8961": {
+    "requirements": "Купить любые 2 продукта Filorga на apotheka.lv, в магазинах “Apotheka Health & Beauty”, любой физической аптеке “Apotheka” или франшизной аптеке Apotheka до 04.05.2026 и зарегистрировать чек на странице лотерии.",
+    "prizes": "Продукты бренда Filorga на 1000 EUR.",
+    "registration_url": "https://www.loterijas.lv/loterija/filorga-loterija-2/",
+    "registration_until": "2026-05-04",
+    "notes": "Atļaujas Nr. 8961; период лотерии 01.04–04.05.2026; розыгрыш 05.05.2026."
+  },
+  "8965": {
+    "requirements": "Если вы уже клиент Tele2, отправить бесплатное SMS с текстом TELE2PAVASARIS на номер 1620; если ещё не клиент — оставить номер на странице Tele2, перейти к Tele2 и участвовать в лотерее.",
+    "prizes": "6 призов для дома, включая подарочную карту Akropole на 1000 EUR.",
+    "registration_url": "https://www.tele2.lv/superpiedavajums/?b2c=1",
+    "registration_until": "2026-06-30",
+    "notes": "Atļaujas Nr. 8965; официальный PDF правил подтверждает период регистрации 01.04.2026 00:00 — 30.06.2026 23:59 и участие по SMS TELE2PAVASARIS на 1620; результаты публикуются на www.tele2.lv после розыгрышей."
+  },
+  "8966": {
+    "requirements": "Сделать заказ в Rimi e-veikals минимум на 20 EUR с 31.03 по 27.04.2026, исключая перечисленные в правилах категории товаров, и зарегистрировать номер заказа или итогового счёта на странице лотерии.",
+    "prizes": "2× Karcher FCV 4 Extra+ и 2× робот-пылесос Karcher RVM 4 Comfort Extra.",
+    "registration_url": "https://www.rimiloterija.lv/aprilis/",
+    "registration_until": "2026-04-27",
+    "notes": "Atļaujas Nr. 8966; участвуют только покупки в www.rimi.lv/e-veikals, офлайн-магазины Rimi не участвуют; победители публикуются до 30.04.2026."
+  },
+  "8973": {
+    "requirements": "Оформить договор на обучение в Tālmācības vidusskola “Rīgas Komercskola” на 2026/2027 учебный год; отдельная публичная текущая страница с точными правилами участия для Atļaujas Nr. 8973 не найдена.",
+    "prizes": "1 семестр обучения в Tālmācības vidusskola “Rīgas Komercskola”.",
+    "registration_url": "https://www.rigaskomercskola.lv/",
+    "registration_until": "",
+    "notes": "Atļaujas Nr. 8973; в реестре IAUI указаны период 01.04–11.09.2026 и услуга для 2026/2027 mācību gada. На официальном сайте школы найдена текущая промо-форма “Laimē budžeta vietu tālmācības vidusskolā”, но отдельная публичная страница правил именно для permit 8973 пока не обнаружена; старые страницы относятся к прежним разрешениям 8759/7884 и не использовались как источник текущих дат."
   }
 }
