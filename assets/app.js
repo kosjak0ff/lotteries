@@ -25,6 +25,10 @@ const escapeHtml = (text) =>
 
 const safe = (text) => (text ? escapeHtml(text) : "— данных пока нет");
 
+const formatRegistrationDate = (row, details) => {
+  return formatReferenceDate(details.registration_until || row.end || "");
+};
+
 const buildRequirementsCell = (row, details) => {
   const parts = [];
 
@@ -36,13 +40,7 @@ const buildRequirementsCell = (row, details) => {
     parts.push(`<strong>Где действует:</strong> ${escapeHtml(row.place)}`);
   }
 
-  if (details.registration_until) {
-    parts.push(
-      `<strong>Регистрация до:</strong> ${escapeHtml(formatReferenceDate(details.registration_until))}`
-    );
-  }
-
-  return parts.length ? parts.join("<br><br>") : "— данных пока нет";
+  return parts.length ? parts.join("<br>") : "— данных пока нет";
 };
 
 const formatReferenceDate = (value) => {
@@ -90,6 +88,7 @@ function renderTable(rows) {
     .map((row) => {
       const details = enriched[row.permit] || {};
       const requirementsCell = buildRequirementsCell(row, details);
+      const registrationDeadlineCell = escapeHtml(formatRegistrationDate(row, details) || "—");
       const registrationCell = details.registration_url
         ? `<a class="reg-link" href="${escapeHtml(details.registration_url)}" target="_blank" rel="noopener">Ссылка</a>`
         : "—";
@@ -101,7 +100,7 @@ function renderTable(rows) {
           <td>${escapeHtml(row.product)}</td>
           <td>${escapeHtml(row.name)}</td>
           <td>${escapeHtml(row.start)}</td>
-          <td>${escapeHtml(row.end)}</td>
+          <td>${registrationDeadlineCell}</td>
           <td>${requirementsCell}</td>
           <td>${safe(details.prizes)}</td>
           <td>${registrationCell}</td>
