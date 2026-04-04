@@ -550,7 +550,7 @@
       "id": "T-017",
       "title": "Narrow lottery table and merge venue into requirements",
       "description": "Reduce the visible table width so it fits the page better, remove the venue column, keep permit numbers compact, and fold useful venue information into the requirements column without losing searchable content.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -566,14 +566,26 @@
         {
           "author": "PLANNER",
           "body": "Plan: narrow the published lottery table, remove the dedicated venue column, keep the permit column compact, and merge useful venue details into the requirements cell so the table fits the viewport better without losing context."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: remove the venue column from the published table, move useful venue context into the requirements cell, compact the permit column, and tighten table widths so the layout fits the page better."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: table layout was reduced from 10 visible columns to 9, the dedicated venue column was removed, permit width was compacted, venue context now appears inside the requirements cell, and JSON validation for assets/active_lotteries.json plus assets/enriched_info.json passed."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "74cce267a8a8beec060618c4546aaa05b1b6e07b",
+        "message": "🎛️ T-017 Narrow table and merge venue"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "3b6a47ff50ae4e213035e8d28c2aa51dc6c52d1656ce796b2ad268f516e0e044"
+    "checksum": "c4172b84243594d6ee03f22f00909d9da00b0776ed43da90f390bff212fde10c"
   }
 }
