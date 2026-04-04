@@ -585,7 +585,7 @@
       "id": "T-018",
       "title": "Clean requirements text and show registration deadline column",
       "description": "Remove redundant line breaks and duplicate registration text from the requirements cell, rename the end-date column to registration deadline, and render that column from enriched registration_until data with a safe fallback.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -601,14 +601,26 @@
         {
           "author": "PLANNER",
           "body": "Plan: make requirements text more compact, stop duplicating registration deadline inside the requirements cell, and repurpose the current end-date column into a registration-deadline column."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: remove duplicated registration deadline text from the requirements cell, compact the line breaks there, and repurpose the current end-date column into a registration-deadline column rendered from enriched data with fallback."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: the requirements cell no longer duplicates the registration deadline, internal spacing there is compact, the former end-date column now renders as registration deadline, and JSON validation for assets/active_lotteries.json plus assets/enriched_info.json passed."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "9c3e6b6d1a61b99041ca331ab0e6813c7f9209da",
+        "message": "🧹 T-018 Clean requirements and registration column"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "696cc83bc67bbf48fc756d06b27600be39ba2b959950932b2e35a332e8acccb7"
+    "checksum": "3ec9029f4281ef095741237e78cdc7bd02334de0e4d43ba492490a046e55d9c3"
   }
 }
