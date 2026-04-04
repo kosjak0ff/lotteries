@@ -1,0 +1,544 @@
+{
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "Active Latvian lotteries 2026-03-20 (RU site)",
+      "description": "Extract active lotteries as of 2026-03-20 from Loteriju reģistrs_16.03.2026..xls, exclude magazine/newspaper-related entries; produce JSON and Russian static site.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "lotteries",
+        "web"
+      ],
+      "verify": [
+        "python scripts/extract_lotteries.py --check",
+        "python -m json.tool assets/active_lotteries.json"
+      ]
+    },
+    {
+      "id": "T-002",
+      "title": "Remove lottery 8830",
+      "description": "Remove permit 8830 from the published lottery dataset and enriched metadata so the site no longer shows this lottery.",
+      "status": "DONE",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "lotteries",
+        "data"
+      ],
+      "verify": [
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json",
+        "sh -c \"! rg -n '8830' assets -S\""
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: remove permit 8830 from both dataset files and verify no remaining references in published assets."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: removing permit 8830 from assets/active_lotteries.json and assets/enriched_info.json; will preserve surrounding user changes and verify no remaining references."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verification note: replaced the raw rg verify command with a shell wrapper that returns success when no 8830 matches remain in assets."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: JSON structure validated for assets/active_lotteries.json and assets/enriched_info.json; no 8830 references remain in published assets."
+        }
+      ],
+      "commit": {
+        "hash": "757ca98376d27e483822e0ae6019bc153f12ab86",
+        "message": "🗑️ T-002 Remove lottery 8830 from published data"
+      }
+    },
+    {
+      "id": "T-003",
+      "title": "Normalize line endings in site files",
+      "description": "Convert the accidental CRLF endings back to LF in index.html, assets/app.js, and assets/style.css without any content changes.",
+      "status": "DONE",
+      "priority": "low",
+      "owner": "CODER",
+      "tags": [
+        "web",
+        "hygiene"
+      ],
+      "verify": [
+        "git diff --exit-code -- index.html assets/app.js assets/style.css"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: normalize line endings back to LF in the three modified site files and confirm the diffs disappear."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: normalizing accidental CRLF endings back to LF in index.html, assets/app.js, and assets/style.css without any content changes."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: index.html, assets/app.js, and assets/style.css were normalized back to LF; git diff for those files is now empty, so no standalone implementation commit was necessary."
+        }
+      ],
+      "commit": {
+        "hash": "f2356f5feacf705a10e979a1b10c850805f7764a",
+        "message": "📝 T-003 Plan line-ending normalization"
+      }
+    },
+    {
+      "id": "T-004",
+      "title": "Configure automatic GitHub sync",
+      "description": "Set up this repository so commits are pushed to the private GitHub origin automatically, while ignoring temporary local research files.",
+      "status": "DONE",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "git",
+        "github",
+        "automation"
+      ],
+      "verify": [
+        "git check-ignore -v tmp_bing_8871.html wp-sitemap-posts-lottery-1.xml",
+        "test -x .git/hooks/post-commit"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: ignore temporary research artifacts, install a post-commit hook for automatic push to origin/main, and verify the remaining blocker is GitHub authentication."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: update .gitignore for temporary research artifacts and install a local post-commit hook that pushes origin/main automatically."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: temporary research files are ignored, the local post-commit hook is executable, HTTPS authentication is configured, and pushes to origin/main succeed automatically after commit creation."
+        }
+      ],
+      "commit": {
+        "hash": "6fcce819b5e7c4b0733287c454be0a7967f9054a",
+        "message": "⚙️ T-004 Ignore temporary sync noise"
+      }
+    },
+    {
+      "id": "T-005",
+      "title": "Prepare repo for GitHub Pages",
+      "description": "Add the minimal repository files needed so this static site is ready to be published via GitHub Pages from the main branch root.",
+      "status": "DONE",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "github",
+        "pages",
+        "web"
+      ],
+      "verify": [
+        "test -f .nojekyll"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: add .nojekyll at the repo root so GitHub Pages serves the static site directly from main/root without Jekyll processing."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: add .nojekyll at the repository root so GitHub Pages serves the static site directly from main/root without Jekyll processing."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: .nojekyll exists at the repository root, so the static site is ready to be served by GitHub Pages from main/root once Pages is enabled in the GitHub UI."
+        }
+      ],
+      "commit": {
+        "hash": "cb150d072298151ed87a811809741631c91e18e5",
+        "message": "🌐 T-005 Add .nojekyll for GitHub Pages"
+      }
+    },
+    {
+      "id": "T-006",
+      "title": "Notify on IAUI file updates",
+      "description": "Check the IAUI registry page on a schedule and create a GitHub issue when the published lottery registry file metadata changes, without modifying site data.",
+      "status": "DONE",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "github",
+        "automation",
+        "notifications"
+      ],
+      "verify": [
+        "python -m py_compile scripts/check_iaui_update.py",
+        "test -f .github/workflows/check-iaui-update.yml"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: add a lightweight IAUI metadata check script and a scheduled GitHub Actions workflow that opens an issue only when the published file metadata changes."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: add a lightweight IAUI metadata check script and a scheduled GitHub Actions workflow that opens an issue only when the published file metadata changes."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: the IAUI metadata check script compiles, the scheduled/manual GitHub Actions workflow exists, and the implementation notifies via GitHub Issues without changing site data or creating content-sync commits."
+        }
+      ],
+      "commit": {
+        "hash": "cdf1496076cd5eedb91211d204b1596719a15c97",
+        "message": "🔔 T-006 Add IAUI update notifier"
+      }
+    },
+    {
+      "id": "T-007",
+      "title": "Refresh active lotteries from latest IAUI registry",
+      "description": "Download the updated IAUI lottery registry, refresh the active-lottery dataset for 2026-03-23 without rewriting unchanged current-date entries, remove inactive permits, add newly active permits, and research missing public details only for newly added lotteries.",
+      "status": "DONE",
+      "priority": "high",
+      "owner": "human",
+      "tags": [
+        "iaui",
+        "lotteries",
+        "data-refresh"
+      ],
+      "verify": [
+        ".venv/bin/python scripts/extract_lotteries.py --date 2026-03-23 --input \"Loteriju reģistrs_16.03.2026..xls\" --check",
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: refresh active lotteries for 2026-03-23 from the latest IAUI registry, preserve existing enriched rows where permits remain active, and enrich only newly added permits with verified public data."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: .venv/bin/python scripts/extract_lotteries.py --date 2026-03-23 --input \"Loteriju reģistrs_16.03.2026..xls\" --check, python -m json.tool assets/active_lotteries.json, and python -m json.tool assets/enriched_info.json all passed. Compared HEAD vs refreshed active dataset: 39 existing permits remained unchanged; only 8795, 8830, 8943, and 8955 were added."
+        }
+      ],
+      "commit": {
+        "hash": "f1b0694fea6a47969c5d75e3b8ba2cd156db1b5e",
+        "message": "📊 T-007 Refresh active lotteries for 2026-03-23"
+      }
+    },
+    {
+      "id": "T-008",
+      "title": "Remove search hint and make title dynamic",
+      "description": "Remove the static search hint text from the site and update the page title so it always reflects the current reference date from the data payload instead of a hardcoded date.",
+      "status": "DONE",
+      "priority": "med",
+      "owner": "PLANNER",
+      "tags": [
+        "site",
+        "frontend"
+      ],
+      "verify": [
+        "python scripts/agentctl.py task lint"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Planned per user request: remove the visible search hint and derive the page title date from the loaded dataset."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: remove the visible search hint from the controls and derive the browser title from payload.reference_date so the page date is no longer hardcoded."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-008 passed; the static search hint was removed, and the page title now follows assets/active_lotteries.json reference_date, currently resolving to 23.03.2026."
+        }
+      ],
+      "commit": {
+        "hash": "73b77f3e316046c6f2418a4bcc409fbc9fda7ff3",
+        "message": "✨ T-008 Remove hint and sync title date"
+      }
+    },
+    {
+      "id": "T-009",
+      "title": "Ignore local IAUI registry export",
+      "description": "Add a gitignore rule for the local Loteriju reģistrs_16.03.2026..xls export so the working tree stays clean without committing the source spreadsheet.",
+      "status": "DONE",
+      "priority": "low",
+      "owner": "PLANNER",
+      "tags": [
+        "housekeeping",
+        "git"
+      ],
+      "verify": [
+        "git status --short"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Planned per user request: ignore the local IAUI spreadsheet export file so it no longer appears as an untracked file."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: add a repository-level gitignore rule for the local Loteriju reģistrs_16.03.2026..xls export so it no longer shows up as untracked."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-009 passed; git check-ignore confirms Loteriju reģistrs_16.03.2026..xls is now ignored, and git status no longer shows it as untracked."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-009 passed; git check-ignore confirms Loteriju reģistrs_16.03.2026..xls is now ignored, and git status no longer shows it as untracked."
+        }
+      ],
+      "commit": {
+        "hash": "fccd2c9e56e161f9c9f5a3143310761b1a858c2a",
+        "message": "🧹 T-009 Ignore local registry export"
+      }
+    },
+    {
+      "id": "T-010",
+      "title": "Refresh active lotteries for 2026-03-28",
+      "description": "Download the latest IAUI lottery registry, refresh the published active-lottery dataset for 2026-03-28, preserve unchanged active entries where possible, remove inactive permits, add newly active permits, and enrich only newly added permits from verified public sources.",
+      "status": "DONE",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "iaui",
+        "lotteries",
+        "data-refresh"
+      ],
+      "verify": [
+        ".venv/bin/python scripts/extract_lotteries.py --date 2026-03-28 --input \"Loteriju reģistrs_16.03.2026..xls\" --check",
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: repeat the T-007 refresh flow for reference date 2026-03-28 using the latest IAUI registry and only enrich newly active permits from verified public sources."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: fetch the latest IAUI registry, recompute the active dataset for 2026-03-28, preserve unchanged active entries where possible, and enrich only newly active permits from verified sources."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-010 passed; the repeated refresh used the downloaded IAUI workbook, increased assets/active_lotteries.json to 44 active permits, added permit 8960, and published verified enrichment for 8960 in assets/enriched_info.json."
+        }
+      ],
+      "commit": {
+        "hash": "6aff52ad9ba178af259afb9e1acf827c1f35e9f0",
+        "message": "📊 T-010 Refresh with downloaded IAUI workbook"
+      }
+    },
+    {
+      "id": "T-011",
+      "title": "Enrich permits 8931 and 8953",
+      "description": "Find and verify public details for permits 8931 and 8953, then add the confirmed requirements, prizes, registration URL, and notes to assets/enriched_info.json so the site shows richer data for those two lotteries.",
+      "status": "DONE",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "lotteries",
+        "enrichment",
+        "web-research"
+      ],
+      "verify": [
+        "python -m json.tool assets/enriched_info.json",
+        "python -m json.tool assets/active_lotteries.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: research and verify public details for permits 8931 and 8953, then publish only the confirmed enrichment fields to the site."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: verify public details for permits 8931 and 8953 from reliable sources and prepare confirmed enrichment fields for the site."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-011 passed; permits 8931 and 8953 were added to assets/enriched_info.json with only publicly confirmed details, and the site can now render the richer fields for both rows."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-011 passed; permits 8931 and 8953 were added to assets/enriched_info.json with only publicly confirmed details, and the site can now render the richer fields for both rows."
+        }
+      ],
+      "commit": {
+        "hash": "4682f67d749bc39fe632df0349fb24c2c16c6f4e",
+        "message": "🔎 T-011 Enrich permits 8931 and 8953"
+      }
+    },
+    {
+      "id": "T-012",
+      "title": "Refresh active lotteries from local IAUI workbook 2026-03-25",
+      "description": "Re-run the active-lotteries refresh using the local workbook Loteriju reģistrs_25.03.2026..xls, compare the result against the published 2026-03-28 dataset, update site data only if the recomputed set differs, and enrich only newly added permits from verified public sources.",
+      "status": "DONE",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "iaui",
+        "lotteries",
+        "data-refresh"
+      ],
+      "verify": [
+        ".venv/bin/python scripts/extract_lotteries.py --date 2026-03-28 --input \"Loteriju reģistrs_25.03.2026..xls\" --check",
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: rerun the 2026-03-28 refresh from the local workbook Loteriju reģistrs_25.03.2026..xls, compare with the published dataset, and update only if the recomputed active set or enrichments differ."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: recompute the 2026-03-28 active dataset from the local workbook Loteriju reģistrs_25.03.2026..xls, compare it with the published site data, and update site files only if the recomputed result differs."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python scripts/agentctl.py verify T-012 passed; the local workbook Loteriju reģistrs_25.03.2026..xls reproduces the published 44-permit dataset without data changes, and the source label in index.html was updated to show the actual workbook date 25.03.2026."
+        }
+      ],
+      "commit": {
+        "hash": "ffa7633ad58fd6c534610f0d6a60440bd5ec59b2",
+        "message": "🖥️ T-012 Update source label to latest workbook"
+      }
+    },
+    {
+      "id": "T-013",
+      "title": "Deduplicate IAUI update issues across history",
+      "description": "Prevent duplicate GitHub issues for unchanged IAUI registry metadata by deduplicating notifications against all existing iaui-update issues, not only currently open ones.",
+      "status": "DONE",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "github",
+        "automation",
+        "notifications"
+      ],
+      "verify": [
+        "python -m py_compile scripts/check_iaui_update.py",
+        "python - <<'PY'\nfrom pathlib import Path\ntext = Path('.github/workflows/check-iaui-update.yml').read_text()\nassert 'state: \"all\"' in text\nassert 'const matchingIssue = issues.find' in text\nassert 'if (matchingIssue.state === \"closed\")' in text\nassert 'reusing existing issue' in text\nprint('workflow assertions passed')\nPY"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: update the IAUI notification workflow so identical metadata fingerprints reuse prior issue history instead of creating duplicate issues when a previous notification was closed."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: update the IAUI notification workflow to deduplicate against the full issue history and reuse an existing issue when the metadata fingerprint repeats."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: the IAUI notification workflow now deduplicates against all historical iaui-update issues, reuses an existing issue for the same fingerprint, and no longer creates duplicate notifications for unchanged metadata."
+        }
+      ],
+      "commit": {
+        "hash": "67da8982b8b8dbf9a20e716220710badbfec2439",
+        "message": "🛠️ T-013 Reuse IAUI update issues"
+      }
+    },
+    {
+      "id": "T-014",
+      "title": "Fix IAUI update workflow failure",
+      "description": "Investigate the failed GitHub Actions run 'Check IAUI Update - main (3c48564)', identify the runtime failure in the IAUI notification workflow, and ship the minimal fix so the workflow completes successfully without regressing issue deduplication behavior.",
+      "status": "DONE",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "github",
+        "automation",
+        "notifications"
+      ],
+      "verify": [
+        "python scripts/check_iaui_update.py --output /tmp/iaui-metadata.json",
+        "python - <<'PY'\nfrom pathlib import Path\ntext = Path('.github/workflows/check-iaui-update.yml').read_text()\nassert 'github.paginate(github.rest.issues.listForRepo' in text\nassert 'fingerprintMarker' in text\nprint('workflow assertions passed')\nPY"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: investigate the failed 'Check IAUI Update - main (3c48564)' run, isolate the runtime failure in the IAUI notification workflow, and apply the smallest safe fix while preserving historical issue deduplication."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: inspect the failed 'Check IAUI Update - main (3c48564)' run logs, isolate the runtime failure in the notification workflow, and patch the smallest possible surface while preserving issue deduplication behavior."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: inspected the failed GitHub Actions logs for runs 23938053763 (2026-04-03) and 23889640031 (2026-04-02), confirmed the failure came from scripts/check_iaui_update.py after the IAUI page migration to VID, validated the updated parser locally with python -m py_compile scripts/check_iaui_update.py, python scripts/check_iaui_update.py --output /tmp/iaui-metadata.json, and python scripts/agentctl.py verify T-014, and confirmed the workflow contract still preserves fingerprint-based issue deduplication."
+        }
+      ],
+      "commit": {
+        "hash": "6f6108ddd3c1601fc61f93b5314f3328f904e3e9",
+        "message": "🛠️ T-014 Fix IAUI metadata source"
+      }
+    },
+    {
+      "id": "T-015",
+      "title": "Remove agent workflow files from GitHub",
+      "description": "Stop tracking the local agent workflow files in git so they are removed from GitHub while remaining available in each developer's local workspace, and prevent them from resurfacing as untracked files locally.",
+      "status": "DONE",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "git",
+        "workflow",
+        "cleanup"
+      ],
+      "verify": [
+        "git ls-files AGENTS.md .AGENTS docs/workflow docs/agentctl.md scripts/agentctl.py tasks.json | test ! -s /dev/stdin",
+        "test -f AGENTS.md && test -f tasks.json && test -f scripts/agentctl.py && test -d .AGENTS && test -d docs/workflow"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: remove the agent workflow files from git tracking so they disappear from GitHub but remain present locally for development, and ignore them going forward to avoid local untracked noise."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: remove the agent workflow files from git tracking while keeping the files on disk locally, add ignore rules so they stop surfacing as untracked, and limit the change to the agent-specific workflow paths."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: the agent workflow files were removed from git tracking and pushed out of the repository, .gitignore now keeps them hidden locally, git ls-files no longer lists the targeted paths, and the same files still remain present on disk for local development."
+        }
+      ],
+      "commit": {
+        "hash": "a45b263d5854a90dd36c9159cf7039ee3549b406",
+        "message": "🧹 T-015 Untrack agent workflow files"
+      }
+    },
+    {
+      "id": "T-016",
+      "title": "Refresh active lotteries for 2026-04-04",
+      "description": "Recompute the active lotteries dataset for 2026-04-04 from the local workbook Loteriju_reģistrs_25.03.2026..xls, remove permits that are no longer active, add newly active permits, and enrich newly added permits from verified public web sources before publishing the refreshed site data.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "iaui",
+        "lotteries",
+        "data-refresh"
+      ],
+      "verify": [
+        ".venv/bin/python scripts/extract_lotteries.py --date 2026-04-04 --input \"Loteriju_reģistrs_25.03.2026..xls\" --check",
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: refresh the published dataset for 2026-04-04 from the local workbook, remove expired permits, enrich only newly active permits from verified public sources, and update the site data if the recomputed output differs."
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "schema_version": 1,
+    "managed_by": "agentctl",
+    "checksum_algo": "sha256",
+    "checksum": "6b0ffa5b9cb22efbb66f9986aabf6d4eb55e62a7dd737288bb2421ad5a557f4e"
+  }
+}
