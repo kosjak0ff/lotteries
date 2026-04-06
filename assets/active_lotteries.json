@@ -1,27 +1,7 @@
 {
-  "reference_date": "2026-04-04",
-  "count": 38,
+  "reference_date": "2026-04-06",
+  "count": 33,
   "items": [
-    {
-      "permit": "8755",
-      "name": "“Nutella® loterija”",
-      "org": "SIA “SOMESE Baltic”",
-      "org_reg": "40103207278",
-      "product": "jebkura Nutella® zīmola produkta pirkumam",
-      "start": "2026-02-02",
-      "end": "2026-04-09",
-      "place": "Latvijas Republika"
-    },
-    {
-      "permit": "8819",
-      "name": "“Tele2 loterija”",
-      "org": "SIA “Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "Tele2 pakalpojumam",
-      "start": "2026-01-01",
-      "end": "2026-04-07",
-      "place": "Latvijas Republika"
-    },
     {
       "permit": "8829",
       "name": "“KitKat® loterija”",
@@ -30,26 +10,6 @@
       "product": "KitKat® produkta pirkumam",
       "start": "2026-02-09",
       "end": "2026-04-08",
-      "place": "Latvijas Republika"
-    },
-    {
-      "permit": "8840",
-      "name": "„Gardākas maltītes ar Coca-Cola”",
-      "org": "SIA \"Guilty\"",
-      "org_reg": "50003254051",
-      "product": "SIA „Coca-Cola HBC Latvia” produktu pirkumam",
-      "start": "2026-01-05",
-      "end": "2026-04-07",
-      "place": "Latvijas Republika"
-    },
-    {
-      "permit": "8841",
-      "name": "„Piešķil randiņiem uguntiņu ar Sprite & Tinder”",
-      "org": "SIA ,,Guilty “",
-      "org_reg": "50003254051",
-      "product": "Sprite produktu pirkumam",
-      "start": "2026-02-02",
-      "end": "2026-04-07",
       "place": "Latvijas Republika"
     },
     {
@@ -71,16 +31,6 @@
       "start": "2026-02-10",
       "end": "2026-04-07",
       "place": "veikali MAXIMA visā Latvijas Republikā un www.barbora.lv"
-    },
-    {
-      "permit": "8871",
-      "name": "„Laimē sacīkšu simulatora komplektu!”",
-      "org": "SIA “ADgett”",
-      "org_reg": "40103715778",
-      "product": "jebkura Palmolive (izņemot gabaliņziepes) un Speed Stick produkta pirkumam",
-      "start": "2026-02-23",
-      "end": "2026-04-09",
-      "place": "Latvijas Republika"
     },
     {
       "permit": "8874",
@@ -193,16 +143,6 @@
       "place": "\"ELIĒR\" pašapkalpošanas pārdošanas aparāts TC \"Spice\", Rīgā, Lielirbes ielā  29, TC \"Rīga Plaza\", Rīgā, Mūkusalas ielā  71 un viesnīcā  \"Bellevue\", Rīgā, Slokas ielā  1"
     },
     {
-      "permit": "8905",
-      "name": "“Rimi interneta veikala marta loterija 2026”",
-      "org": "SIA “SOMESE Baltic”",
-      "org_reg": "40103207278",
-      "product": "vismaz 20,00 EUR  vērtībā pirkumam",
-      "start": "2026-03-03",
-      "end": "2026-04-07",
-      "place": "www.rimi.lv/e-veikals Latvijas Republikā"
-    },
-    {
       "permit": "8906",
       "name": "“Svētku garša katrai dienai!”",
       "org": "SIA „Visas Loterijas”",
@@ -293,6 +233,16 @@
       "place": "Apollo Kino Akropole Rīga, Apollo Kino Plaza vai Apollo Kino  Domina, Latvijas Republikā"
     },
     {
+      "permit": "8949",
+      "name": "„Milka Monopoly”",
+      "org": "SIA „Magnet Promotions”",
+      "org_reg": "40003639069",
+      "product": "Milka preču pirkumam",
+      "start": "2026-04-06",
+      "end": "2026-06-16",
+      "place": "Latvijas Republika"
+    },
+    {
       "permit": "8950",
       "name": "”Uzvari, kā čempions”",
       "org": "SIA „Visas Loterijas”",
@@ -324,7 +274,7 @@
     },
     {
       "permit": "8955",
-      "name": "",
+      "name": "“Vasaras mērķis - tiesības + BMW?”",
       "org": "SIA Burnickis",
       "org_reg": "40203192231",
       "product": "BAVA autoskolas pakalpojumam",
