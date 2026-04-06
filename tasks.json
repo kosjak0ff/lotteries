@@ -725,7 +725,7 @@
       "id": "T-022",
       "title": "Track workflow docs in git again",
       "description": "Re-track the existing docs/workflow files so they are published to GitHub again, while preserving the current local .gitignore change that stops ignoring the workflow directory.",
-      "status": "DOING",
+      "status": "DONE",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -744,14 +744,22 @@
         {
           "author": "CODER",
           "body": "Start: re-track the existing docs/workflow files and commit the current .gitignore change that stops ignoring that directory, without touching unrelated local files."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: docs/workflow/T-001.md through T-015.md are tracked by git again, .gitignore no longer excludes docs/workflow, and git ls-files confirms representative workflow files are present in the index."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "f63ef450c0a64662873c09b659e085c7d06f90a9",
+        "message": "📚 T-022 Track workflow docs in git again"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "fd2591aa7373ee2967f5e4b85873240a3ba76432fcd54fec857df8bedfda9476"
+    "checksum": "c54d7b33c7a4c3b99835b0cced5fb6977a0392ca94bcc801e689a19e121e0963"
   }
 }
