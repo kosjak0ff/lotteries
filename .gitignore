@@ -12,5 +12,4 @@ AGENTS.md
 .AGENTS/
 tasks.json
 docs/agentctl.md
-docs/workflow/
 scripts/agentctl.py
