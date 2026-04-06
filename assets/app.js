@@ -58,6 +58,10 @@ const buildRequirementsCell = (row, details) => {
     parts.push(escapeHtml(details.requirements));
   }
 
+  if (details.eligible_brands) {
+    parts.push(`<strong>Подходят бренды:</strong> ${escapeHtml(details.eligible_brands)}`);
+  }
+
   if (row.place) {
     parts.push(`<strong>Где действует:</strong> ${escapeHtml(row.place)}`);
   }
@@ -164,6 +168,7 @@ function applySearch() {
         row.end,
         row.place,
         details.requirements,
+        details.eligible_brands,
         details.prizes,
         details.registration_url,
         details.registration_until,

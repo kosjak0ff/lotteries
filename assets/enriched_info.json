@@ -176,10 +176,11 @@
   },
   "8943": {
     "requirements": "С 23.03 по 31.05.2026 купить в одном чеке любые 2 акционных товара из списка брендов акции в магазинах “Mego”, “Vesko” или “Mini Vesko”, сохранить чек и зарегистрироваться на сайте или по SMS на 1881; действует ограничение 1 чек на человека в день.",
+    "eligible_brands": "RIBELLA, FRIENDLY VIKINGS, Cido, Pepsi, Mangaļi, FARCHIONI, La'Asta, NĀKOTNE, BULDAK, Tangle, Illy, JACOBS, Roshen, Colgate, Palmolive, Frozana, Frosta, OKF, JUMI JUMI, Rūjiena, Fronieri, SUN YAN, Cloetta, Bazooka, TERE, EMMA, Alpro, ACTIMEL, Fantasia, MARGE, JEGA, Pringles, Lavazza, Merrild, Mālpils, MUUBI, Bianchi kafija, VIDAL, Baltais, Hellmann's, KNORR, Magnum, Super Viva, Profeel, Tēja SHERLOCK SECRETS, Cafe Peppino, Saulespuķu sēklas BC, DŽIUGAS, RAMBYNO, ŽEMAITIJOS.",
     "prizes": "1× Škoda Kamiq Essence 1.0 TSI 70kW 5-man; 5× Sony PlayStation 5 Slim Digital Edition; 25× подарочная карта Mēness Aptieka на 100 EUR; 25× подарочная карта sollo.lv на 100 EUR для оплаты коммунальных услуг; 50× подарочная карта Bolt Food на 50 EUR для покупок из магазинов MEGO.",
     "registration_url": "https://www.megoloterija.lv/",
     "registration_until": "2026-05-31",
-    "notes": "Atļaujas Nr. 8943; официальные правила и PDF разрешения подтверждают период лотереи 23.03–02.06.2026, период регистрации до 31.05.2026 23:59 и серию розыгрышей начиная с 30.03.2026."
+    "notes": "Atļaujas Nr. 8943; официальные правила и PDF разрешения подтверждают период лотереи 23.03–02.06.2026, период регистрации до 31.05.2026 23:59 и серию розыгрышей начиная с 30.03.2026. Список участвующих брендов взят из приложения Nr. 2 к официальным правилам."
   },
   "8944": {
     "requirements": "Купить лотерейный продукт Latvijas Maiznieks Latvijas Graudu Maize в магазинах top! или mini top! до 26.05.2026 и зарегистрировать номер чека на странице лотерии.",
