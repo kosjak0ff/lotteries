@@ -690,7 +690,7 @@
       "id": "T-021",
       "title": "Clarify Mego brands in requirements table",
       "description": "Update the published Mego lottery entry for permit 8943 so the requirements column explicitly shows which participating goods/brands qualify, using the official rules PDF as the source of truth.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -706,14 +706,26 @@
         {
           "author": "PLANNER",
           "body": "Plan: clarify the Mego permit 8943 table entry so users can immediately see which brands qualify, based on the official rules PDF appendix."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: add an explicit list of qualifying Mego brands for permit 8943 in the table data, using the official rules appendix as the source and keeping the UI change minimal."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: added an explicit eligible_brands field for permit 8943 from the official rules appendix, rendered it as a dedicated line in the requirements cell, and confirmed JSON plus app.js validation commands passed."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "230fb1beab36616158aab0b0e356f2e105ac231d",
+        "message": "🧾 T-021 Clarify Mego brands in table"
+      }
     },
     {
       "id": "T-022",
       "title": "Track workflow docs in git again",
       "description": "Re-track the existing docs/workflow files so they are published to GitHub again, while preserving the current local .gitignore change that stops ignoring the workflow directory.",
-      "status": "TODO",
+      "status": "DOING",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -728,6 +740,10 @@
         {
           "author": "PLANNER",
           "body": "Plan: restore the existing docs/workflow files to git tracking so they appear on GitHub again, using the current .gitignore change as part of the fix."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: re-track the existing docs/workflow files and commit the current .gitignore change that stops ignoring that directory, without touching unrelated local files."
         }
       ]
     }
@@ -736,6 +752,6 @@
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "ae1ea7148f80c2477a984cdf1e4ddb051f6c3cb60c1554e9ef09241f7d349b55"
+    "checksum": "fd2591aa7373ee2967f5e4b85873240a3ba76432fcd54fec857df8bedfda9476"
   }
 }
