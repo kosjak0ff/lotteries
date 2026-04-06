@@ -656,7 +656,7 @@
       "id": "T-020",
       "title": "Normalize date columns and sorting",
       "description": "Render the Start and Registration deadline columns in the same visible date format and ensure both columns sort by real date values rather than by raw strings.",
-      "status": "DOING",
+      "status": "DONE",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -675,14 +675,22 @@
         {
           "author": "CODER",
           "body": "Start: normalize visible date formatting for the Start and Registration deadline columns and switch both sorts to effective date values."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: assets/app.js now renders both Start and Registration deadline in the same dd.mm.yyyy format, sorts Start by parsed start dates, sorts the registration deadline column by registration_until with row.end fallback, and passes node syntax validation."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "48049dfb3c1b11dee095b5b0bf33b89ef6b0e693",
+        "message": "🗓️ T-020 Normalize date columns and sorting"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "b84b36d933937bb99715f7f9721ccbaac88e79ebd1ff8ef0fc3d699fe099c7bc"
+    "checksum": "82b43718ddad8fdbb6ed44596dcd7a9ebcfa261dc958b6ceaf8da490a725d501"
   }
 }
