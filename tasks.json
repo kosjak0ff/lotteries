@@ -685,12 +685,57 @@
         "hash": "48049dfb3c1b11dee095b5b0bf33b89ef6b0e693",
         "message": "🗓️ T-020 Normalize date columns and sorting"
       }
+    },
+    {
+      "id": "T-021",
+      "title": "Clarify Mego brands in requirements table",
+      "description": "Update the published Mego lottery entry for permit 8943 so the requirements column explicitly shows which participating goods/brands qualify, using the official rules PDF as the source of truth.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "ui",
+        "data",
+        "mego"
+      ],
+      "verify": [
+        "python -m json.tool assets/enriched_info.json",
+        "node --check assets/app.js"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: clarify the Mego permit 8943 table entry so users can immediately see which brands qualify, based on the official rules PDF appendix."
+        }
+      ]
+    },
+    {
+      "id": "T-022",
+      "title": "Track workflow docs in git again",
+      "description": "Re-track the existing docs/workflow files so they are published to GitHub again, while preserving the current local .gitignore change that stops ignoring the workflow directory.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "git",
+        "docs",
+        "workflow"
+      ],
+      "verify": [
+        "git ls-files docs/workflow/T-001.md docs/workflow/T-015.md docs/workflow/T-020.md"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: restore the existing docs/workflow files to git tracking so they appear on GitHub again, using the current .gitignore change as part of the fix."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "82b43718ddad8fdbb6ed44596dcd7a9ebcfa261dc958b6ceaf8da490a725d501"
+    "checksum": "ae1ea7148f80c2477a984cdf1e4ddb051f6c3cb60c1554e9ef09241f7d349b55"
   }
 }
