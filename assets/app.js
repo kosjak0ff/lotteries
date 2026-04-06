@@ -25,9 +25,31 @@ const escapeHtml = (text) =>
 
 const safe = (text) => (text ? escapeHtml(text) : "— данных пока нет");
 
-const formatRegistrationDate = (row, details) => {
-  return formatReferenceDate(details.registration_until || row.end || "");
+const getDetails = (row) => enriched[row.permit] || {};
+
+const getEffectiveRegistrationDate = (row, details = getDetails(row)) =>
+  details.registration_until || row.end || "";
+
+const parseSortableDate = (value) => {
+  if (!value) return null;
+  const trimmed = String(value).trim();
+  const isoMatch = /^(\d{4})-(\d{2})-(\d{2})$/.exec(trimmed);
+  if (isoMatch) {
+    const [, year, month, day] = isoMatch;
+    return Date.UTC(Number(year), Number(month) - 1, Number(day));
+  }
+
+  const parsed = new Date(trimmed).getTime();
+  return Number.isFinite(parsed) ? parsed : null;
 };
+
+const formatLotteryDate = (value) => formatReferenceDate(value) || "—";
+
+const formatRegistrationDate = (row, details) => {
+  return formatLotteryDate(getEffectiveRegistrationDate(row, details));
+};
+
+const formatStartDate = (row) => formatLotteryDate(row.start);
 
 const buildRequirementsCell = (row, details) => {
   const parts = [];
@@ -55,8 +77,6 @@ const compare = (a, b) => {
   if (!sortKey) return 0;
   const dir = sortDir === "desc" ? -1 : 1;
 
-  const parseDate = (val) => (val ? new Date(val).getTime() || 0 : 0);
-
   let va = a[sortKey];
   let vb = b[sortKey];
 
@@ -64,8 +84,19 @@ const compare = (a, b) => {
     va = Number(va) || 0;
     vb = Number(vb) || 0;
   } else if (sortKey === "start" || sortKey === "end") {
-    va = parseDate(va);
-    vb = parseDate(vb);
+    const dateA = sortKey === "start"
+      ? parseSortableDate(a.start)
+      : parseSortableDate(getEffectiveRegistrationDate(a));
+    const dateB = sortKey === "start"
+      ? parseSortableDate(b.start)
+      : parseSortableDate(getEffectiveRegistrationDate(b));
+
+    if (dateA === null && dateB === null) return 0;
+    if (dateA === null) return 1;
+    if (dateB === null) return -1;
+
+    va = dateA;
+    vb = dateB;
   } else {
     va = stripAccents(String(va ?? ""));
     vb = stripAccents(String(vb ?? ""));
@@ -86,9 +117,10 @@ function renderTable(rows) {
 
   const html = sorted
     .map((row) => {
-      const details = enriched[row.permit] || {};
+      const details = getDetails(row);
       const requirementsCell = buildRequirementsCell(row, details);
-      const registrationDeadlineCell = escapeHtml(formatRegistrationDate(row, details) || "—");
+      const startDateCell = escapeHtml(formatStartDate(row));
+      const registrationDeadlineCell = escapeHtml(formatRegistrationDate(row, details));
       const registrationCell = details.registration_url
         ? `<a class="reg-link" href="${escapeHtml(details.registration_url)}" target="_blank" rel="noopener">Ссылка</a>`
         : "—";
@@ -99,7 +131,7 @@ function renderTable(rows) {
           <td>${escapeHtml(row.org)}</td>
           <td>${escapeHtml(row.product)}</td>
           <td>${escapeHtml(row.name)}</td>
-          <td>${escapeHtml(row.start)}</td>
+          <td>${startDateCell}</td>
           <td>${registrationDeadlineCell}</td>
           <td>${requirementsCell}</td>
           <td>${safe(details.prizes)}</td>
