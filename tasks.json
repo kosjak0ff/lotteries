@@ -615,12 +615,58 @@
         "hash": "9c3e6b6d1a61b99041ca331ab0e6813c7f9209da",
         "message": "🧹 T-018 Clean requirements and registration column"
       }
+    },
+    {
+      "id": "T-019",
+      "title": "Refresh active lotteries for 2026-04-06",
+      "description": "Recompute the active lotteries dataset for 2026-04-06 from the local workbook, remove expired permits, add newly active permits, and enrich newly added or incomplete permits from verified public web sources before publishing the refreshed site data.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "iaui",
+        "lotteries",
+        "data-refresh"
+      ],
+      "verify": [
+        ".venv/bin/python scripts/extract_lotteries.py --date 2026-04-06 --input \"Loteriju_reģistrs_25.03.2026..xls\" --check",
+        "python -m json.tool assets/active_lotteries.json > /dev/null",
+        "python -m json.tool assets/enriched_info.json > /dev/null"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: refresh the published dataset for 2026-04-06 from the local workbook, remove expired permits, enrich newly active permits, and revisit permits with incomplete public data."
+        }
+      ]
+    },
+    {
+      "id": "T-020",
+      "title": "Normalize date columns and sorting",
+      "description": "Render the Start and Registration deadline columns in the same visible date format and ensure both columns sort by real date values rather than by raw strings.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "ui",
+        "table",
+        "dates"
+      ],
+      "verify": [
+        "python -m json.tool assets/active_lotteries.json > /dev/null"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: unify the visible format of the Start and Registration deadline columns and make both table sorts date-aware."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "3ec9029f4281ef095741237e78cdc7bd02334de0e4d43ba492490a046e55d9c3"
+    "checksum": "0d53300a63f3f14eead9f6313cef6a98a3e510d3734a33ac6c9320ab862999d3"
   }
 }
