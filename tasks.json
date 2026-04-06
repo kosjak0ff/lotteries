@@ -620,7 +620,7 @@
       "id": "T-019",
       "title": "Refresh active lotteries for 2026-04-06",
       "description": "Recompute the active lotteries dataset for 2026-04-06 from the local workbook, remove expired permits, add newly active permits, and enrich newly added or incomplete permits from verified public web sources before publishing the refreshed site data.",
-      "status": "DOING",
+      "status": "DONE",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -641,8 +641,16 @@
         {
           "author": "CODER",
           "body": "Start: recompute the 2026-04-06 active dataset from the local workbook, identify expired and newly active permits, then enrich newly added or incomplete permits from verified public sources before updating the published JSON files."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: refreshed the published 2026-04-06 dataset, removed expired visible permits, added permit 8949, validated assets/active_lotteries.json and assets/enriched_info.json, and confirmed the workbook extraction check reported 39 remaining non-media lotteries before publication filtering."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "28a44002b0e290cf4892f3b89e60d89cbee274e1",
+        "message": "📦 T-019 Refresh 2026-04-06 active lottery data"
+      }
     },
     {
       "id": "T-020",
@@ -675,6 +683,6 @@
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "0b9cc35786288bfdd69d25d00f07d2ab4805e75b7eead5e745b01ff38335a08f"
+    "checksum": "b84b36d933937bb99715f7f9721ccbaac88e79ebd1ff8ef0fc3d699fe099c7bc"
   }
 }
