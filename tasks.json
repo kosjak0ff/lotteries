@@ -754,12 +754,35 @@
         "hash": "f63ef450c0a64662873c09b659e085c7d06f90a9",
         "message": "📚 T-022 Track workflow docs in git again"
       }
+    },
+    {
+      "id": "T-023",
+      "title": "Harden IAUI file change monitoring",
+      "description": "Improve the daily IAUI/VID lottery registry monitor so it detects actual XLS file changes, refuses unrelated fallback downloads, and stays resilient to page markup changes.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "github",
+        "automation",
+        "monitoring"
+      ],
+      "verify": [
+        "python -m py_compile scripts/check_iaui_update.py",
+        "python -m unittest discover -s tests -p \"test_*.py\""
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: harden the IAUI monitor by hashing the target XLS payload, making target link selection strict, and adding regression tests for the parser and fingerprint contract."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "c54d7b33c7a4c3b99835b0cced5fb6977a0392ca94bcc801e689a19e121e0963"
+    "checksum": "17deb61f60bf92a81e0ce7dbc3264a2793ea58ee052c02adfe569110815985f6"
   }
 }
