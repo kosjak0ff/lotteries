@@ -759,7 +759,7 @@
       "id": "T-023",
       "title": "Harden IAUI file change monitoring",
       "description": "Improve the daily IAUI/VID lottery registry monitor so it detects actual XLS file changes, refuses unrelated fallback downloads, and stays resilient to page markup changes.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "med",
       "owner": "CODER",
       "tags": [
@@ -775,14 +775,22 @@
         {
           "author": "PLANNER",
           "body": "Plan: harden the IAUI monitor by hashing the target XLS payload, making target link selection strict, and adding regression tests for the parser and fingerprint contract."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: hardened the IAUI monitor to hash the published XLS payload, reject unrelated fallback downloads, updated the issue summary with file SHA-256, and validated with py_compile, unittest discovery, the live metadata fetch, and agentctl verify."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "7fd45ec8c7245bdb09dd5ccae4f0e2181a62c0f7",
+        "message": "🛠️ T-023 Harden IAUI file monitor"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "17deb61f60bf92a81e0ce7dbc3264a2793ea58ee052c02adfe569110815985f6"
+    "checksum": "ca971eb5d1f582dcb6c6a652140f48a8365735c0cd175fc0c65e9082338b601a"
   }
 }
