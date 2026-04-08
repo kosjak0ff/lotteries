@@ -105,6 +105,7 @@ jobs:
               `- Updated at: ${metadata.updated_at || "unknown"}`,
               `- Link text: ${metadata.link_text}`,
               `- Download URL: ${metadata.download_url}`,
+              `- File SHA-256: ${metadata.file_sha256}`,
               "",
               fingerprintMarker,
             ].join("\n");
