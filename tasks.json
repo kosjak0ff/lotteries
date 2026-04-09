@@ -785,12 +785,35 @@
         "hash": "7fd45ec8c7245bdb09dd5ccae4f0e2181a62c0f7",
         "message": "🛠️ T-023 Harden IAUI file monitor"
       }
+    },
+    {
+      "id": "T-024",
+      "title": "Refresh active lotteries for 2026-04-10",
+      "description": "Recompute the active lotteries dataset for 2026-04-10 from the latest official VID registry workbook, remove inactive permits, add newly active permits, and enrich newly added or incomplete permits from verified public web sources before publishing the refreshed site data.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "PLANNER",
+      "tags": [
+        "iaui",
+        "lotteries",
+        "data-refresh"
+      ],
+      "verify": [
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: refresh the published dataset for 2026-04-10 from the latest official VID workbook, remove inactive permits, add newly active permits, and revisit permits with incomplete public data using verified public sources."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "ca971eb5d1f582dcb6c6a652140f48a8365735c0cd175fc0c65e9082338b601a"
+    "checksum": "ce57486fa7d06fb31dacd310388a8c3f319fabd443b9d5d1c229812a02bd7d9b"
   }
 }
