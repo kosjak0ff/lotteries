@@ -1,17 +1,7 @@
 {
-  "reference_date": "2026-04-06",
-  "count": 33,
+  "reference_date": "2026-04-10",
+  "count": 37,
   "items": [
-    {
-      "permit": "8829",
-      "name": "“KitKat® loterija”",
-      "org": "SIA „Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "KitKat® produkta pirkumam",
-      "start": "2026-02-09",
-      "end": "2026-04-08",
-      "place": "Latvijas Republika"
-    },
     {
       "permit": "8849",
       "name": "“Laima loterija”",
@@ -21,16 +11,6 @@
       "start": "2026-02-23",
       "end": "2026-04-13",
       "place": "Latvijas Republika"
-    },
-    {
-      "permit": "8865",
-      "name": "“Kūkas, tortes, ruletes! loterija Maxima veikalos”",
-      "org": "SIA “Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "Latvijas Maiznieks produktu pirkumam",
-      "start": "2026-02-10",
-      "end": "2026-04-07",
-      "place": "veikali MAXIMA visā Latvijas Republikā un www.barbora.lv"
     },
     {
       "permit": "8874",
@@ -103,6 +83,16 @@
       "place": "Veikalu tīkla  “Maxima” veikali visā Latvijas Republikā"
     },
     {
+      "permit": "8889",
+      "name": "“Tupla loterija”",
+      "org": "SIA „BSMS”",
+      "org_reg": "40003471367",
+      "product": "TUPLA  preču pirkumam",
+      "start": "2026-04-07",
+      "end": "2026-05-11",
+      "place": "Latvijas Republika"
+    },
+    {
       "permit": "8897",
       "name": "“Iepērcies virs 100 EUR vai piesaki kādu no pakalpojumiem Tet veikalā t/c Ditton un laimē televizoru Samsung 55\" QLED Q7F 4K Vision AI Smart TV (2025) QE55Q7FAAUXXH”",
       "org": "SIA “Tet”",
@@ -163,16 +153,6 @@
       "place": "Latvijas Republika"
     },
     {
-      "permit": "8931",
-      "name": "“Nescafe loterija Maxima veikalos”",
-      "org": "SIA “Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "jebkuru zīmola Nescafe vai Nescafé Dolce Gusto produktu pirkumam vismaz 3.00 EUR vērtībā",
-      "start": "2026-03-24",
-      "end": "2026-04-07",
-      "place": "veikals MAXIMA Latvijas Republikā"
-    },
-    {
       "permit": "8934",
       "name": "“PEPSI loterija veikalos Rimi”",
       "org": "SIA “PROMO TEAM BALTIC”",
@@ -223,6 +203,16 @@
       "place": "Latvijas Republika"
     },
     {
+      "permit": "8947",
+      "name": "\"LATS\" PAVASARA LOTERIJA \"DESMIT ŠTUKAS\"",
+      "org": "SIA SMS solutions",
+      "org_reg": "40203006794",
+      "product": "vismaz 15.00 € vērtībā  preču pirkumam",
+      "start": "2026-04-07",
+      "end": "2026-06-10",
+      "place": "SIA \"Latvijas tirgotāju savienība\" veikalu tīkls \"LaTS\" visā Latvijas Republikā un https://www.e-latts.lv"
+    },
+    {
       "permit": "8948",
       "name": "“Super Mario loterija”",
       "org": "SIA Apollo Kino",
@@ -263,6 +253,16 @@
       "place": "Latvijas Republika"
     },
     {
+      "permit": "8952",
+      "name": "“Makšķernieku loterija!”",
+      "org": "SIA „Latvijas Lauku  konsultāciju un izglītības centrs”",
+      "org_reg": "40003347699",
+      "product": "MAKŠĶERĒŠANAS, VĒŽOŠANAS, ZEMŪDENS MEDĪBU KARTE GADAM",
+      "start": "2026-04-10",
+      "end": "2026-04-28",
+      "place": "Latvijas Republika"
+    },
+    {
       "permit": "8953",
       "name": "“Dino Zoo loterija Dzimšanas dienas loterija”",
       "org": "SIA “Visas Loterijas”",
@@ -273,6 +273,16 @@
       "place": "veikalu tīkls “Dino Zoo” visā Latvijas Republikā vai www.dinozoo.lv"
     },
     {
+      "permit": "8954",
+      "name": "“Pērc LEGO par vismaz 49,99 EUR un laimē dāvanu karti ceļojumam uz  Ferrari Land un PortAventura Parku  Spānijā vai vienu no 18 LEGO komplektiem”",
+      "org": "SIA “KOTRYNA”",
+      "org_reg": "50003582081",
+      "product": "LEGO konstruktoru par vismaz 49,99 EUR pirkumam",
+      "start": "2026-04-07",
+      "end": "2026-06-03",
+      "place": "Toy’s Planet veikali Latvijas Republikā"
+    },
+    {
       "permit": "8955",
       "name": "“Vasaras mērķis - tiesības + BMW?”",
       "org": "SIA Burnickis",
@@ -281,6 +291,16 @@
       "start": "2026-03-23",
       "end": "2026-09-01",
       "place": "BAVA  autoskola, Latvijas Republikā"
+    },
+    {
+      "permit": "8959",
+      "name": "„Laimē Lumi gaismas terapijas masku!”",
+      "org": "SIA “ADgett”",
+      "org_reg": "40103715778",
+      "product": "jebkura Colgate, Palmolive (izņemot gabaliņziepes), Lady Speed Stick vai Speed Stick produktu pirkumam",
+      "start": "2026-04-09",
+      "end": "2026-04-30",
+      "place": "veikali „MAXIMA Latvija“ Latvijas Republikā un www.barbora.lv"
     },
     {
       "permit": "8960",
@@ -301,6 +321,16 @@
       "start": "2026-04-01",
       "end": "2026-05-05",
       "place": "www.apotheka.lv, veikali “Apotheka  Health & Beauty”, jebkura fiziska “Apotheka” aptieka Latvijas Republikā"
+    },
+    {
+      "permit": "8964",
+      "name": "“Latvijā cepts” loterija Maxima veikalos”",
+      "org": "SIA “Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "Latvijas Maiznieks produktu pirkumam",
+      "start": "2026-04-07",
+      "end": "2026-06-02",
+      "place": "veikali MAXIMA visā Latvijas Republikā un www.barbora.lv"
     },
     {
       "permit": "8965",
@@ -331,6 +361,16 @@
       "start": "2026-04-01",
       "end": "2026-09-11",
       "place": "Rīga"
+    },
+    {
+      "permit": "8975",
+      "name": "“Santa Maria loterija Maxima veikalos”",
+      "org": "SIA “Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "zīmola Santa Maria produktu pirkumam",
+      "start": "2026-04-07",
+      "end": "2026-05-05",
+      "place": "veikali MAXIMA visā Latvijas Republikā vai www.barbora.lv."
     }
   ]
 }

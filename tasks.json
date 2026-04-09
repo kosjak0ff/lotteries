@@ -790,7 +790,7 @@
       "id": "T-024",
       "title": "Refresh active lotteries for 2026-04-10",
       "description": "Recompute the active lotteries dataset for 2026-04-10 from the latest official VID registry workbook, remove inactive permits, add newly active permits, and enrich newly added or incomplete permits from verified public web sources before publishing the refreshed site data.",
-      "status": "TODO",
+      "status": "DOING",
       "priority": "high",
       "owner": "PLANNER",
       "tags": [
@@ -806,6 +806,10 @@
         {
           "author": "PLANNER",
           "body": "Plan: refresh the published dataset for 2026-04-10 from the latest official VID workbook, remove inactive permits, add newly active permits, and revisit permits with incomplete public data using verified public sources."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: fetch the latest official VID workbook, recompute the active 2026-04-10 dataset, identify removed and newly active permits, then verify public details for all new or incomplete active permits before updating the published JSON files."
         }
       ]
     }
@@ -814,6 +818,6 @@
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "ce57486fa7d06fb31dacd310388a8c3f319fabd443b9d5d1c229812a02bd7d9b"
+    "checksum": "7fdf62a9efa860837a49ba5c3f05a5eb2808d07012e5ea6e758f63574d18d703"
   }
 }
