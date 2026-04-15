@@ -820,12 +820,35 @@
         "hash": "747cbd092532dba1dc5ff2e293628dd5a880532d",
         "message": "🧩 T-024 Refresh lottery data for 2026-04-10"
       }
+    },
+    {
+      "id": "T-025",
+      "title": "Refresh active lotteries for 2026-04-15",
+      "description": "Refresh the published lottery datasets so the site reflects the active permits as of 2026-04-15; remove expired permits, add newly active permits from the official VID registry snapshot, and fill missing public details from reliable public sources where available.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "lotteries",
+        "web",
+        "refresh"
+      ],
+      "verify": [
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Planned 2026-04-15 refresh task for the public RU site; implementation will recompute the active list and recheck missing public enrichment."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "f1655faa0ce09b5f6333bfcc0ab6075435740cf4269b56e2a52989329866dbe3"
+    "checksum": "81e498db56d796abb0b12e7ae86f80078cdf9a27b2e26d0db812127ff0950b25"
   }
 }
