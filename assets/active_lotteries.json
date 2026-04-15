@@ -1,17 +1,7 @@
 {
-  "reference_date": "2026-04-10",
-  "count": 37,
+  "reference_date": "2026-04-15",
+  "count": 42,
   "items": [
-    {
-      "permit": "8849",
-      "name": "“Laima loterija”",
-      "org": "SIA “Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "zīmola “Laima” produkta iepakojums vai vismaz 100 g zīmola “Laima” sveramo produktu pirkumam",
-      "start": "2026-02-23",
-      "end": "2026-04-13",
-      "place": "Latvijas Republika"
-    },
     {
       "permit": "8874",
       "name": "“Pērc Gorenje tehniku un laimē”",
@@ -173,6 +163,16 @@
       "place": "I/C “AKROPOLE Rīga”, Latgales ielā 257, Rīgā, LV-1063, I/C“AKROPOLE Alfa”, Brīvības gatve 372, Rīga, Latvija,"
     },
     {
+      "permit": "8936",
+      "name": "“Müller Vislatvijas loterija”",
+      "org": "SIA „Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "Müller produktu pirkumam",
+      "start": "2026-04-15",
+      "end": "2026-06-01",
+      "place": "Latvijas Republika"
+    },
+    {
       "permit": "8943",
       "name": "\"MEGO LIELĀ LOTERIJA 2026!\"",
       "org": "SIA SMS solutions",
@@ -293,6 +293,16 @@
       "place": "BAVA  autoskola, Latvijas Republikā"
     },
     {
+      "permit": "8958",
+      "name": "“Latvijas Zeltene loterija veikalos Rimi”",
+      "org": "SIA “Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "Latvijas Maiznieks produktu pirkumam",
+      "start": "2026-04-14",
+      "end": "2026-06-09",
+      "place": "veikali RIMI visā Latvijas Republikā un www.rimi.lv/e-veikals"
+    },
+    {
       "permit": "8959",
       "name": "„Laimē Lumi gaismas terapijas masku!”",
       "org": "SIA “ADgett”",
@@ -321,6 +331,26 @@
       "start": "2026-04-01",
       "end": "2026-05-05",
       "place": "www.apotheka.lv, veikali “Apotheka  Health & Beauty”, jebkura fiziska “Apotheka” aptieka Latvijas Republikā"
+    },
+    {
+      "permit": "8962",
+      "name": "“Mosties kopā ar Fazer!”",
+      "org": "SIA „Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "jebkura Fazer maizes pirkumam",
+      "start": "2026-04-14",
+      "end": "2026-06-09",
+      "place": "Veikals Rimi Latvijas Republikā vai interneta veikals www.erimi.lv"
+    },
+    {
+      "permit": "8963",
+      "name": "“HEINZ loterija 2026”",
+      "org": "SIA “SOMESE Baltic”",
+      "org_reg": "40103207278",
+      "product": "“HEINZ” zīmola produktu pirkumam",
+      "start": "2026-04-13",
+      "end": "2026-05-28",
+      "place": "Latvijas Republika"
     },
     {
       "permit": "8964",
@@ -353,6 +383,16 @@
       "place": "www.rimi.lv/e-veikals. Latvijas Republikā"
     },
     {
+      "permit": "8969",
+      "name": "“ALEJA pavasara loterija 2026”",
+      "org": "SIA “SOMESE Baltic”",
+      "org_reg": "40103207278",
+      "product": "pirkumam vismaz 10,00 EUR vērtībā jebkurā no TC “Aleja” tirdzniecības vietām vai pakalpojumu sniegšanas vietām (izņemot veikalu “Rimi”)",
+      "start": "2026-04-14",
+      "end": "2026-05-15",
+      "place": "Tirdzniecības centra “Aleja” veikali, Rīgā, Vienības gatv. 194A."
+    },
+    {
       "permit": "8973",
       "name": "“Laimē 1 semestra mācību maksu”",
       "org": "SIA “Rīgas Komercskola”",
@@ -361,6 +401,16 @@
       "start": "2026-04-01",
       "end": "2026-09-11",
       "place": "Rīga"
+    },
+    {
+      "permit": "8974",
+      "name": "“Kūkas, tortes, ruletes! loterija Rimi veikalos”",
+      "org": "SIA “Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "Latvijas Maiznieks produktu pirkumam",
+      "start": "2026-04-14",
+      "end": "2026-06-09",
+      "place": "veikali RIMI visā Latvijas Republikā un www.rimi.lv/e-veikals."
     },
     {
       "permit": "8975",

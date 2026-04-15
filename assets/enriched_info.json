@@ -1,11 +1,4 @@
 {
-  "8849": {
-    "requirements": "Купить любую продукцию Laima (упаковка или ≥100 г на развес) в период 23.02–12.04.2026, сохранить чек и зарегистрировать номер чека на www.laimasloterija.lv.",
-    "prizes": "3× подарочная карта Novatours по 2000 EUR; 14× дизайнерский столовый текстиль Kristīne Luīze Avotiņa; 49× наборы продуктов Laima.",
-    "registration_url": "https://laimasloterija.lv",
-    "registration_until": "2026-04-12",
-    "notes": "Лотерея 23.02–13.04.2026; излозes в течение периода, балвu fonda vērtība 9162.18 EUR; Atļaujas Nr. 8849; организатор SIA “Visas Loterijas”, ražotājs SIA “Orkla Latvija”."
-  },
   "8874": {
     "requirements": "Купить технику Gorenje в магазине PTA (Dambja iela 3A, Rīga), заполнить купон с именем, фамилией, телефоном и номером чека и опустить в лотерейный ящик (регистрация до 31.05.2026 17:00).",
     "prizes": "50× пылесос Gorenje SVC 222480AA; 1× плита Gorenje GECS5B70CLI; 1× морозильник Gorenje F 4142 PW; 1× стиральная машина Gorenje WNPI82BS.",
@@ -118,6 +111,13 @@
     "registration_until": "2026-04-26",
     "notes": "Atļaujas Nr. 8935; период лотереи 16.03–26.04.2026; 28 розыгрышей: первый 17.03, финальный 27.04.2026; есть исключенные категории покупок (см. п. 3.1 правил)."
   },
+  "8936": {
+    "requirements": "Купить минимум 2 продукта Müller в одной покупке в любой торговой точке Латвии до 31.05.2026 и зарегистрировать документ покупки на странице лотереи.",
+    "prizes": "1× денежный приз 2000 EUR; 3× iPhone 17 Pro 256GB.",
+    "registration_url": "https://www.loterijas.lv/loterija/muller-vislatvijas-loterija/",
+    "registration_until": "2026-05-31",
+    "notes": "Atļaujas Nr. 8936; публичная страница Loterijas.lv подтверждает период 15.04–31.05.2026, регистрацию до 31.05.2026, 4 розыгрыша с первым 27.04 и финальным 01.06.2026."
+  },
   "8943": {
     "requirements": "С 23.03 по 31.05.2026 купить в одном чеке любые 2 акционных товара из списка брендов акции в магазинах “Mego”, “Vesko” или “Mini Vesko”, сохранить чек и зарегистрироваться на сайте или по SMS на 1881; действует ограничение 1 чек на человека в день.",
     "eligible_brands": "RIBELLA, FRIENDLY VIKINGS, Cido, Pepsi, Mangaļi, FARCHIONI, La'Asta, NĀKOTNE, BULDAK, Tangle, Illy, JACOBS, Roshen, Colgate, Palmolive, Frozana, Frosta, OKF, JUMI JUMI, Rūjiena, Fronieri, SUN YAN, Cloetta, Bazooka, TERE, EMMA, Alpro, ACTIMEL, Fantasia, MARGE, JEGA, Pringles, Lavazza, Merrild, Mālpils, MUUBI, Bianchi kafija, VIDAL, Baltais, Hellmann's, KNORR, Magnum, Super Viva, Profeel, Tēja SHERLOCK SECRETS, Cafe Peppino, Saulespuķu sēklas BC, DŽIUGAS, RAMBYNO, ŽEMAITIJOS.",
@@ -203,6 +203,13 @@
     "registration_until": "2026-08-31",
     "notes": "Atļaujas Nr. 8955; официальная страница BAVA “Vasaras mērķis - tiesības + BMW?” подтверждает название акции, приз BMW 318d (F30), условия участия, дедлайн 31.08.2026 и розыгрыш 01.09.2026."
   },
+  "8958": {
+    "requirements": "Купить лотерейный продукт Latvijas Zeltene в магазине Rimi или в интернет-магазине www.rimi.lv/e-veikals до 08.06.2026 и зарегистрировать документ покупки на странице лотереи.",
+    "prizes": "1× Apple iPhone 17 256GB; 8× денежный приз 50 EUR.",
+    "registration_url": "https://www.loterijas.lv/loterija/latvijas-zeltene-loterija-veikalos-rimi-5/",
+    "registration_until": "2026-06-08",
+    "notes": "Atļaujas Nr. 8958; публичная страница Loterijas.lv подтверждает период 14.04–08.06.2026, регистрацию до 08.06.2026, 8 розыгрышей с первым 21.04 и финальным 09.06.2026."
+  },
   "8959": {
     "requirements": "Купить любой 1 продукт Colgate, Palmolive (кроме кускового мыла), Lady Speed Stick или Speed Stick в Maxima или на barbora.lv, сохранить чек и зарегистрировать его на RegisterToWin.",
     "prizes": "3× Lumi gaismas terapijas sejas maska; 20× продуктовых наборов Colgate/Palmolive/Speed Stick.",
@@ -223,6 +230,20 @@
     "registration_url": "https://www.loterijas.lv/loterija/filorga-loterija-2/",
     "registration_until": "2026-05-04",
     "notes": "Atļaujas Nr. 8961; период лотерии 01.04–04.05.2026; розыгрыш 05.05.2026."
+  },
+  "8962": {
+    "requirements": "Купить хлеб Fazer Svaigi Cepta Tev! в магазине Rimi или в интернет-магазине www.rimi.lv/e-veikals до 08.06.2026 и зарегистрировать покупку: по SMS на 1838 в формате FAZERMOSTIES ... или через форму на странице лотереи.",
+    "prizes": "1× KitchenAid кухонный комплект; 8× подарочная корзина Fazer и подарочная карта Rimi на 35 EUR.",
+    "registration_url": "https://www.loterijas.lv/loterija/mosties-kopa-ar-fazer-4/",
+    "registration_until": "2026-06-08",
+    "notes": "Atļaujas Nr. 8962; публичная страница Loterijas.lv подтверждает период 14.04–08.06.2026, регистрацию по SMS 1838 или через веб-форму, а также 8 розыгрышей с первым 21.04 и финальным 09.06.2026."
+  },
+  "8963": {
+    "requirements": "Купить любой продукт HEINZ в любой торговой точке или интернет-магазине Латвии до 24.05.2026 и зарегистрировать документ покупки на странице кампании.",
+    "prizes": "3× подарочная карта Euronics на 250 EUR; 24× продуктовые корзины HEINZ.",
+    "registration_url": "https://www.loterijatev.lv/heinz",
+    "registration_until": "2026-05-24",
+    "notes": "Atļaujas Nr. 8963; страница LoterijaTev подтверждает период покупок и регистрации 13.04–24.05.2026, публикацию всех победителей до 28.05.2026 и 6 дат розыгрышей/публикации победителей с 23.04 по 28.05.2026."
   },
   "8964": {
     "requirements": "Купить любой продукт Latvijas Maiznieks “Latvijā Cepts” в Maxima или на www.barbora.lv до 01.06.2026 и зарегистрировать документ покупки на странице лотерии.",
@@ -245,12 +266,26 @@
     "registration_until": "2026-04-27",
     "notes": "Atļaujas Nr. 8966; участвуют только покупки в www.rimi.lv/e-veikals, офлайн-магазины Rimi не участвуют; победители публикуются до 30.04.2026."
   },
+  "8969": {
+    "requirements": "Сделать покупку минимум на 10 EUR в любой торговой или сервисной точке ТЦ “Aleja”, кроме магазина Rimi. Актуальная публичная страница регистрации или полные правила кампании 2026 в открытых источниках не найдены.",
+    "prizes": "— данных пока нет (публичные правила и призовой фонд именно по Atļaujas Nr. 8969 не обнаружены).",
+    "registration_url": "",
+    "registration_until": "2026-05-15",
+    "notes": "Atļaujas Nr. 8969; в официальном реестре VID указаны период 14.04–15.05.2026, порог покупки 10 EUR и место проведения TC “Aleja”, Vienības gatve 194A, Rīga. Повторная проверка открытых источников на 15.04.2026 выявила только старый домен kampaņas 2021. gada, без подтверждённой публичной страницы правил или регистрации для кампании 2026."
+  },
   "8973": {
     "requirements": "Оформить договор на обучение в Tālmācības vidusskola “Rīgas Komercskola” на 2026/2027 учебный год; на официальном сайте есть активная форма кампании “Laimē budžeta vietu”, но отдельные текущие правила именно для Atļaujas Nr. 8973 публично не опубликованы.",
     "prizes": "1 семестр обучения в Tālmācības vidusskola “Rīgas Komercskola”.",
     "registration_url": "https://rigaskomercskola.lv/laime-budzeta-vietu/",
     "registration_until": "",
     "notes": "Atļaujas Nr. 8973; в реестре IAUI указаны период 01.04–11.09.2026 и услуга для 2026/2027 mācību gada. Официальный лендинг “Laimē budžeta vietu” активен, но ссылка на отдельные правила ведёт на старую страницу permit 8759, поэтому подтверждённый дедлайн регистрации для текущего permit-а публично не установлен."
+  },
+  "8974": {
+    "requirements": "Купить лотерейный продукт Latvijas Maiznieks в магазине Rimi или в интернет-магазине www.rimi.lv/e-veikals до 08.06.2026 и зарегистрировать документ покупки на странице лотереи.",
+    "prizes": "1× подарочная карта IMPRO CEĻOJUMI на 1000 EUR; 8× подарочная карта Rimi на 50 EUR.",
+    "registration_url": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-loterija-rimi-veikalos-5/",
+    "registration_until": "2026-06-08",
+    "notes": "Atļaujas Nr. 8974; публичная страница Loterijas.lv подтверждает период 14.04–08.06.2026, регистрацию до 08.06.2026, 8 розыгрышей с первым 21.04 и финальным 09.06.2026."
   },
   "8975": {
     "requirements": "Купить минимум 2 продукта Santa Maria в одной покупке в магазине Maxima или на www.barbora.lv и зарегистрировать документ покупки на странице лотерии.",
