@@ -825,7 +825,7 @@
       "id": "T-025",
       "title": "Refresh active lotteries for 2026-04-15",
       "description": "Refresh the published lottery datasets so the site reflects the active permits as of 2026-04-15; remove expired permits, add newly active permits from the official VID registry snapshot, and fill missing public details from reliable public sources where available.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "med",
       "owner": "CODER",
       "tags": [
@@ -841,14 +841,26 @@
         {
           "author": "PLANNER",
           "body": "Planned 2026-04-15 refresh task for the public RU site; implementation will recompute the active list and recheck missing public enrichment."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: refreshing the 2026-04-15 public dataset, checking the official VID registry source, recomputing active permits, and revalidating missing public enrichment."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: python -m json.tool assets/active_lotteries.json; python -m json.tool assets/enriched_info.json; .venv/bin/python scripts/extract_lotteries.py --date 2026-04-15 --input \"Loteriju_reģistrs_25.03.2026..xls\" --check; permit parity confirmed 42 active permits and 42 enrichment entries in matching order. No blocking review findings."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "dc5ed397266ba14e97acbabf8b216fda2369dd84",
+        "message": "🧾 T-025 Refresh lotteries for 2026-04-15"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "81e498db56d796abb0b12e7ae86f80078cdf9a27b2e26d0db812127ff0950b25"
+    "checksum": "91e8ead38c5ea7e3ca929cf6ea2811742181092f0179b3a0266330e13d75b485"
   }
 }
