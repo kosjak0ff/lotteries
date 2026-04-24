@@ -1,6 +1,6 @@
 {
   "reference_date": "2026-04-24",
-  "count": 42,
+  "count": 48,
   "items": [
     {
       "permit": "8874",
@@ -121,6 +121,16 @@
       "start": "2026-03-03",
       "end": "2026-04-28",
       "place": "veikali Rimi visā Latvijas Republikā vai www.erimi.lv"
+    },
+    {
+      "permit": "8908",
+      "name": "“Snickers loterija”",
+      "org": "SIA „Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "jebkuru trīs izvēlēto Snicker, Twix, Mars, Bounty, Milky Way šokolādes batoniņu pirkumam",
+      "start": "2026-04-20",
+      "end": "2026-06-03",
+      "place": "Latvijas Republika"
     },
     {
       "permit": "8930",
@@ -413,13 +423,63 @@
       "place": "veikali MAXIMA visā Latvijas Republikā vai www.barbora.lv."
     },
     {
+      "permit": "8976",
+      "name": "“OSTMALA pavasara loterija 2026”",
+      "org": "SIA “SOMESE Baltic”",
+      "org_reg": "40103207278",
+      "product": "vismaz 10,00 EUR  vērtībā preču pirkumam",
+      "start": "2026-04-14",
+      "end": "2026-05-15",
+      "place": "T/C “Ostmala” ,  Liepāja, Kārļa Zāles laukums 8, LV-3401"
+    },
+    {
+      "permit": "8977",
+      "name": "“VIVO pavasara loterija 2026”",
+      "org": "SIA “SOMESE Baltic”",
+      "org_reg": "40103207278",
+      "product": "vismaz 10,00 EUR  vērtībā pirkumam",
+      "start": "2026-04-14",
+      "end": "2026-05-15",
+      "place": "T/C “VIVO” Jelgava, Katoļu iela 18, LV-3001, Latvija"
+    },
+    {
+      "permit": "8978",
+      "name": "“TOBAGO pavasara loterija 2026”",
+      "org": "SIA “SOMESE Baltic”",
+      "org_reg": "40103207278",
+      "product": "vismaz 10,00 EUR  vērtībā pirkumam",
+      "start": "2026-04-14",
+      "end": "2026-05-15",
+      "place": "T/C “Tobago” , Ventspils, Lielajā prospekts 3/5, LV-3601, Latvija"
+    },
+    {
       "permit": "8979",
       "name": "“G9 dzērienu Vislatvijas loterija”",
-      "org": "SIA “Visas Loterijas”",
+      "org": "SIA „Visas Loterijas”",
       "org_reg": "40103404235",
-      "product": "zīmola G9 dzērienu pirkumam",
+      "product": "zīmola G9 dzēriena pirkumam",
       "start": "2026-04-20",
       "end": "2026-06-02",
+      "place": "Latvijas Republika"
+    },
+    {
+      "permit": "8980",
+      "name": "“CORNY loterija 2026”",
+      "org": "SIA “SOMESE Baltic”",
+      "org_reg": "40103207278",
+      "product": "“CORNY” zīmola batoniņa iepakojuma pirkumam",
+      "start": "2026-04-20",
+      "end": "2026-06-18",
+      "place": "Latvijas Republika"
+    },
+    {
+      "permit": "8983",
+      "name": "\"Sabiedrības digitālo prasmju attīstība\"",
+      "org": "SIA \"Steam Education\"",
+      "org_reg": "41203066237",
+      "product": "projekta \"Sabiedrības digitālo prasmju attīstība\" pakalpojumam",
+      "start": "2026-04-02",
+      "end": "2026-06-01",
       "place": "Latvijas Republika"
     }
   ]
