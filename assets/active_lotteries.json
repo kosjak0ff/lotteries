@@ -1,5 +1,5 @@
 {
-  "reference_date": "2026-04-15",
+  "reference_date": "2026-04-24",
   "count": 42,
   "items": [
     {
@@ -51,16 +51,6 @@
       "start": "2026-03-16",
       "end": "2026-09-16",
       "place": "SIA „Tolmets Latvija” partneru metāllūžņu pieņemšanas laukumi visā Latvijas  Republikā"
-    },
-    {
-      "permit": "8884",
-      "name": "“Roshen loterija 2026”",
-      "org": "SIA “SOMESE Baltic”",
-      "org_reg": "40103207278",
-      "product": "vismaz 1 (viena) “Lacmi” produkta pirkumam",
-      "start": "2026-02-16",
-      "end": "2026-04-16",
-      "place": "Latvijas Republika"
     },
     {
       "permit": "8886",
@@ -421,6 +411,16 @@
       "start": "2026-04-07",
       "end": "2026-05-05",
       "place": "veikali MAXIMA visā Latvijas Republikā vai www.barbora.lv."
+    },
+    {
+      "permit": "8979",
+      "name": "“G9 dzērienu Vislatvijas loterija”",
+      "org": "SIA “Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "zīmola G9 dzērienu pirkumam",
+      "start": "2026-04-20",
+      "end": "2026-06-02",
+      "place": "Latvijas Republika"
     }
   ]
 }
