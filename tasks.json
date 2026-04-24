@@ -935,12 +935,33 @@
         "hash": "65a403f985653086a387fc3f2d7266844ed9f999",
         "message": "🧩 T-027 Recheck lotteries from 2026-04-22 workbook"
       }
+    },
+    {
+      "id": "T-028",
+      "title": "Update source card to 2026-04-22 workbook",
+      "description": "Update the site source card in index.html so it references the current local workbook date Loteriju reģistrs 22.04.2026 instead of the outdated 25.03.2026 label.",
+      "status": "TODO",
+      "priority": "low",
+      "owner": "CODER",
+      "tags": [
+        "web",
+        "content"
+      ],
+      "verify": [
+        "rg -n \"Loteriju reģistrs 22.04.2026\" index.html"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Planned a small content fix to align the visible source card with the currently used local workbook dated 22.04.2026."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "1d4a35737dfd1fd5849e0637d3f3f65accb8153daf750d5cac0e79e25e96e6e1"
+    "checksum": "13120d2343e5bdbf79a2f1173db5700530e1d0cc42928febe5b3f7a3b9070cbb"
   }
 }
