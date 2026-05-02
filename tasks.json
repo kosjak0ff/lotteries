@@ -993,7 +993,7 @@
       "id": "T-030",
       "title": "Clarify visible source card with current date",
       "description": "Update the visible source card so it keeps the honest workbook source date 30.04.2026 while also showing that the published active list is current as of 02.05.2026.",
-      "status": "TODO",
+      "status": "DOING",
       "priority": "low",
       "owner": "CODER",
       "tags": [
@@ -1008,6 +1008,32 @@
         {
           "author": "PLANNER",
           "body": "Planned a tiny UI wording fix so the header card reflects both the workbook date and the current published list date without mislabeling the source."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: updating the header source card text so it keeps the workbook date 30.04.2026 and explicitly shows that the published list is current as of 02.05.2026."
+        }
+      ]
+    },
+    {
+      "id": "T-031",
+      "title": "Revert source card clarification",
+      "description": "Revert the T-030 wording tweak in the source card and restore the original source-only label Loteriju reģistrs 30.04.2026 without touching the published lottery data.",
+      "status": "TODO",
+      "priority": "low",
+      "owner": "CODER",
+      "tags": [
+        "lotteries",
+        "web",
+        "ui"
+      ],
+      "verify": [
+        "rg -n '^\\s*<div class=\"card-value\">Loteriju reģistrs 30.04.2026</div>$' index.html"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Planned a small revert task to undo the T-030 source-card wording change while leaving the 2026-05-02 lottery refresh intact."
         }
       ]
     }
@@ -1016,6 +1042,6 @@
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "7bf66b68eb3c58cb8315417a5ce306f3c89d3f4685db242ae27e36b56ce28fec"
+    "checksum": "5fdf95e10f69fcc170e91c4e7f84ba5c80b8e74c52ed79645c23ef8b28bd8863"
   }
 }
