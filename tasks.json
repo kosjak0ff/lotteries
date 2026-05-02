@@ -965,7 +965,7 @@
       "id": "T-029",
       "title": "Refresh active lotteries for 2026-05-02 from workbook 2026-04-30",
       "description": "Recompute the published lottery datasets for 2026-05-02 from the local workbook Loteriju_reģistrs_30.04.2026..xls, remove expired permits, add newly active permits, correct any registry mismatches, refresh the visible source card to the 30.04.2026 workbook date, and fill missing public details from reliable sources where available.",
-      "status": "TODO",
+      "status": "DOING",
       "priority": "med",
       "owner": "CODER",
       "tags": [
@@ -982,6 +982,32 @@
         {
           "author": "PLANNER",
           "body": "Planned a workbook-backed refresh for the 2026-05-02 public site using the local VID registry snapshot dated 30.04.2026; implementation will recompute the active set, update the visible workbook source date, and enrich new or weak permits from reliable public sources."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: recomputing the 2026-05-02 active permit set from Loteriju_reģistrs_30.04.2026..xls, comparing it with the current public JSON, updating the visible source-card date, and rechecking missing public enrichment for any newly added or corrected permits."
+        }
+      ]
+    },
+    {
+      "id": "T-030",
+      "title": "Clarify visible source card with current date",
+      "description": "Update the visible source card so it keeps the honest workbook source date 30.04.2026 while also showing that the published active list is current as of 02.05.2026.",
+      "status": "TODO",
+      "priority": "low",
+      "owner": "CODER",
+      "tags": [
+        "lotteries",
+        "web",
+        "ui"
+      ],
+      "verify": [
+        "rg -n 'Loteriju reģistrs 30.04.2026, актуально на 02.05.2026' index.html"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Planned a tiny UI wording fix so the header card reflects both the workbook date and the current published list date without mislabeling the source."
         }
       ]
     }
@@ -990,6 +1016,6 @@
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "fdc90bb4baab200486bff5274ee22320fcda3edd77b69ed3406442aaa16b841f"
+    "checksum": "7bf66b68eb3c58cb8315417a5ce306f3c89d3f4685db242ae27e36b56ce28fec"
   }
 }
