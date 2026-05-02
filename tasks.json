@@ -940,7 +940,7 @@
       "id": "T-028",
       "title": "Update source card to 2026-04-22 workbook",
       "description": "Update the site source card in index.html so it references the current local workbook date Loteriju reģistrs 22.04.2026 instead of the outdated 25.03.2026 label.",
-      "status": "TODO",
+      "status": "DOING",
       "priority": "low",
       "owner": "CODER",
       "tags": [
@@ -954,6 +954,34 @@
         {
           "author": "PLANNER",
           "body": "Planned a small content fix to align the visible source card with the currently used local workbook dated 22.04.2026."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: replacing the outdated visible source-card date in index.html so it matches the current local workbook dated 22.04.2026."
+        }
+      ]
+    },
+    {
+      "id": "T-029",
+      "title": "Refresh active lotteries for 2026-05-02 from workbook 2026-04-30",
+      "description": "Recompute the published lottery datasets for 2026-05-02 from the local workbook Loteriju_reģistrs_30.04.2026..xls, remove expired permits, add newly active permits, correct any registry mismatches, refresh the visible source card to the 30.04.2026 workbook date, and fill missing public details from reliable sources where available.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "lotteries",
+        "web",
+        "refresh"
+      ],
+      "verify": [
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json",
+        "python -c \"import json; active=json.load(open('assets/active_lotteries.json', encoding='utf-8')); enriched=json.load(open('assets/enriched_info.json', encoding='utf-8')); permits=[row['permit'] for row in active['items']]; assert active['count']==len(permits); assert permits==sorted(permits, key=int); assert all(p in enriched for p in permits); assert all(p in permits for p in enriched); print('parity_ok')\""
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Planned a workbook-backed refresh for the 2026-05-02 public site using the local VID registry snapshot dated 30.04.2026; implementation will recompute the active set, update the visible workbook source date, and enrich new or weak permits from reliable public sources."
         }
       ]
     }
@@ -962,6 +990,6 @@
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "13120d2343e5bdbf79a2f1173db5700530e1d0cc42928febe5b3f7a3b9070cbb"
+    "checksum": "fdc90bb4baab200486bff5274ee22320fcda3edd77b69ed3406442aaa16b841f"
   }
 }
