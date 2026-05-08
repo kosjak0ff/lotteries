@@ -1,6 +1,6 @@
 {
-  "reference_date": "2026-05-02",
-  "count": 51,
+  "reference_date": "2026-05-08",
+  "count": 50,
   "items": [
     {
       "permit": "8874",
@@ -13,16 +13,6 @@
       "place": "Dambja iela 3A, Rīga, LV-1005, Latvija SIA “PTA” veikals"
     },
     {
-      "permit": "8878",
-      "name": "“Zelta Zivtiņa Bonusu klubs”",
-      "org": "SIA “Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "\"Tele2\" zīmola pakalpojumam",
-      "start": "2026-02-01",
-      "end": "2026-05-07",
-      "place": "Latvijas Republika"
-    },
-    {
       "permit": "8879",
       "name": "“Grilsezonas loterija 2026”",
       "org": "SIA “SOMESE Baltic”",
@@ -30,16 +20,6 @@
       "product": "SIA “Gaļas pārstrādes uzņēmuma Nākotne” produktu pirkumam",
       "start": "2026-03-16",
       "end": "2026-05-14",
-      "place": "Latvijas Republika"
-    },
-    {
-      "permit": "8880",
-      "name": "\"Pērc Ajax un laimē katru nedēļu!\"",
-      "org": "SIA \"ADgett\"",
-      "org_reg": "40103715778",
-      "product": "\"Ajax\" produkta pirkumam",
-      "start": "2026-02-23",
-      "end": "2026-05-07",
       "place": "Latvijas Republika"
     },
     {
@@ -93,16 +73,6 @@
       "place": "Latvijas Republika"
     },
     {
-      "permit": "8897",
-      "name": "“Iepērcies virs 100 EUR vai piesaki kādu no pakalpojumiem Tet veikalā t/c Ditton un laimē televizoru Samsung 55\" QLED Q7F 4K Vision AI Smart TV (2025) QE55Q7FAAUXXH”",
-      "org": "SIA “Tet”",
-      "org_reg": "40003052786",
-      "product": "pirkumam vismaz 100 EUR vērtībā vai \"Tet\" pakalpojumam",
-      "start": "2026-04-01",
-      "end": "2026-05-05",
-      "place": "\"Tet\" veikalā t/c Ditton, Cietokšņa ielā 60, Daugavpils"
-    },
-    {
       "permit": "8898",
       "name": "„Fanta”",
       "org": "SIA ''Guilty''",
@@ -113,24 +83,14 @@
       "place": "Latvijas Republika"
     },
     {
-      "permit": "8900",
-      "name": "““Kūkas, tortes, ruletes!” produktu loterija ELVI veikalos”",
-      "org": "SIA „Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "Latvijas Maiznieks produktu pirkumam",
-      "start": "2026-03-11",
-      "end": "2026-05-06",
-      "place": "veikali ELVI visā Latvijas Republikā"
-    },
-    {
-      "permit": "8901",
-      "name": "“Latvijas Tost Maize loterija Elvi veikalos!”",
-      "org": "SIA „Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "Latvijas Maiznieks produktu pirkumam",
-      "start": "2026-03-11",
-      "end": "2026-05-06",
-      "place": "veikali ELVI visā Latvijas Republikā"
+      "permit": "8902",
+      "name": "„Neptunas”",
+      "org": "SIA \"Guilty''",
+      "org_reg": "50003254051",
+      "product": "Neptunas preču pirkumam",
+      "start": "2026-05-04",
+      "end": "2026-08-06",
+      "place": "Latvijas Republika"
     },
     {
       "permit": "8904",
@@ -160,16 +120,6 @@
       "product": "Twister, Super Viva, Magnum, Ben&Jerry’s, Baltija, Mājas, Calippo, Volcanixx, Minecraft vai Algida zīmola saldējumu pirkumam",
       "start": "2026-05-01",
       "end": "2026-09-03",
-      "place": "Latvijas Republika"
-    },
-    {
-      "permit": "8930",
-      "name": "“Viegli iepērcies. Ātri saņem. Laimē iPhone!”",
-      "org": "SIA “C&C EE OU Latvijas filiāle”",
-      "org_reg": "40103177024",
-      "product": "pirkumam www.cec.lv 59,90 EUR vērtībā",
-      "start": "2026-03-06",
-      "end": "2026-05-05",
       "place": "Latvijas Republika"
     },
     {
@@ -233,16 +183,6 @@
       "place": "Latvijas Republika"
     },
     {
-      "permit": "8950",
-      "name": "”Uzvari, kā čempions”",
-      "org": "SIA „Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "NIVEA MEN produktu pirkumam",
-      "start": "2026-03-31",
-      "end": "2026-05-05",
-      "place": "Latvijas Republika"
-    },
-    {
       "permit": "8951",
       "name": "“Duracell loterija”",
       "org": "SIA “Visas Loterijas”",
@@ -251,16 +191,6 @@
       "start": "2026-04-01",
       "end": "2026-06-01",
       "place": "Latvijas Republika"
-    },
-    {
-      "permit": "8953",
-      "name": "“Dino Zoo loterija Dzimšanas dienas loterija”",
-      "org": "SIA “Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "vismaz 21.00 EUR vērtībā pirkumam",
-      "start": "2026-03-27",
-      "end": "2026-05-05",
-      "place": "veikalu tīkls “Dino Zoo” visā Latvijas Republikā vai www.dinozoo.lv"
     },
     {
       "permit": "8954",
@@ -283,6 +213,26 @@
       "place": "BAVA  autoskola, Latvijas Republikā"
     },
     {
+      "permit": "8956",
+      "name": "“SEMPER loterija 2026”",
+      "org": "SIA “SOMESE Baltic”",
+      "org_reg": "40103207278",
+      "product": "“SEMPER” zīmola produktu pirkuma",
+      "start": "2026-05-05",
+      "end": "2026-06-19",
+      "place": "Latvijas Republika"
+    },
+    {
+      "permit": "8957",
+      "name": "“Dzintars loterija veikalos Drogas”",
+      "org": "SIA “Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "zīmola “Dzintars” saules kosmētikas produktu pirkumam",
+      "start": "2026-05-03",
+      "end": "2026-06-02",
+      "place": "tirdzniecības vietas Drogas visā Latvijas  Republikā vai www.drogas.lv."
+    },
+    {
       "permit": "8958",
       "name": "“Latvijas Zeltene loterija veikalos Rimi”",
       "org": "SIA “Visas Loterijas”",
@@ -301,16 +251,6 @@
       "start": "2026-03-19",
       "end": "2026-07-01",
       "place": "Autoskola Automoto PRO Kr.Barona 40A, Jelgava"
-    },
-    {
-      "permit": "8961",
-      "name": "“Filorga loterija”",
-      "org": "SIA „Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "Filorga produktu pirkumam",
-      "start": "2026-04-01",
-      "end": "2026-05-05",
-      "place": "www.apotheka.lv, veikali “Apotheka  Health & Beauty”, jebkura fiziska “Apotheka” aptieka Latvijas Republikā"
     },
     {
       "permit": "8962",
@@ -373,6 +313,16 @@
       "place": "Tirdzniecības centra “Aleja” veikali, Rīgā, Vienības gatv. 194A."
     },
     {
+      "permit": "8971",
+      "name": "“Schwarzkopf Drogas loterija 2026”",
+      "org": "SIA “SOMESE Baltic”",
+      "org_reg": "40103207278",
+      "product": "jebkuru divu “Schwarzkopf” zīmola produktu pirkumam",
+      "start": "2026-05-03",
+      "end": "2026-06-05",
+      "place": "veikali “Drogas” Latvijas Republikā un interneta veikals www.drogas.lv."
+    },
+    {
       "permit": "8972",
       "name": "„Laimē Dyson Airwrap matu veidotāju!”",
       "org": "SIA “ADgett”",
@@ -401,16 +351,6 @@
       "start": "2026-04-14",
       "end": "2026-06-09",
       "place": "veikali RIMI visā Latvijas Republikā un www.rimi.lv/e-veikals."
-    },
-    {
-      "permit": "8975",
-      "name": "“Santa Maria loterija Maxima veikalos”",
-      "org": "SIA “Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "zīmola Santa Maria produktu pirkumam",
-      "start": "2026-04-07",
-      "end": "2026-05-05",
-      "place": "veikali MAXIMA visā Latvijas Republikā vai www.barbora.lv."
     },
     {
       "permit": "8976",
@@ -463,6 +403,16 @@
       "place": "Latvijas Republika"
     },
     {
+      "permit": "8981",
+      "name": "“Priecīgu KINDER® dienu”",
+      "org": "SIA “SOMESE Baltic”",
+      "org_reg": "40103207278",
+      "product": "“Kinder®” zīmola produkta pirkumam",
+      "start": "2026-05-04",
+      "end": "2026-06-18",
+      "place": "Latvijas Republika"
+    },
+    {
       "permit": "8982",
       "name": "“Iepērcies virs 100 EUR vai piesaki kādu no pakalpojumiem Tet veikalā t/c Origo un laimē skaļruni JBL PartyBox 710 Black”",
       "org": "SIA “Tet”",
@@ -493,6 +443,26 @@
       "place": "veikali MAXIMA visā Latvijas Republikā as  teritorijā vai interneta veikals www.barbora.lv."
     },
     {
+      "permit": "8988",
+      "name": "“P&G matu dienu loterija veikalos Drogas”",
+      "org": "SIA “Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "Head&Shoulders, Pantene vai Aussie produktu pirkumam",
+      "start": "2026-05-03",
+      "end": "2026-06-12",
+      "place": "tirdzniecības vietas Drogas visā Latvijas  Republikā vai www.drogas.lv."
+    },
+    {
+      "permit": "8989",
+      "name": "“Gillette loterija veikalos Drogas”",
+      "org": "SIA “Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "Gillette, Gillette Venus vai King C Gillette produktu pirkumam",
+      "start": "2026-05-03",
+      "end": "2026-06-02",
+      "place": "tirdzniecības vietas Drogas visā Latvijas  Republikā vai www.drogas.lv."
+    },
+    {
       "permit": "8992",
       "name": "“Rimi interneta veikala maija loterija 2026”",
       "org": "SIA “SOMESE Baltic”",
@@ -503,6 +473,16 @@
       "place": "Latvijas Republikā  interneta veikalā www.rimi.lv/e-veikals"
     },
     {
+      "permit": "8993",
+      "name": "“Lidl loterija”",
+      "org": "SIA „Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "veikalā Lidl vismaz EUR 20.00 vērtībā preču pirkumam",
+      "start": "2026-05-04",
+      "end": "2026-06-10",
+      "place": "Lidl tirdzniecības vietas visā Latvijas Republikā"
+    },
+    {
       "permit": "8996",
       "name": "“NUTRIBULLET KATRU DIENU! Veselīgs uzturs bez piepūles”",
       "org": "SIA “BDF Agency”",
@@ -511,6 +491,16 @@
       "start": "2026-05-01",
       "end": "2026-06-01",
       "place": "www.barbora.lv, Latvijas Republika"
+    },
+    {
+      "permit": "8997",
+      "name": "“Mamba, Werther’s, Toffifee un Knoppers loterija”",
+      "org": "SIA „Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "Storck produktu pirkumam",
+      "start": "2026-05-07",
+      "end": "2026-08-07",
+      "place": "Latvijas Republika"
     }
   ]
 }
