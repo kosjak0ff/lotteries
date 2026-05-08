@@ -1019,7 +1019,7 @@
       "id": "T-031",
       "title": "Revert source card clarification",
       "description": "Revert the T-030 wording tweak in the source card and restore the original source-only label Loteriju reģistrs 30.04.2026 without touching the published lottery data.",
-      "status": "TODO",
+      "status": "DOING",
       "priority": "low",
       "owner": "CODER",
       "tags": [
@@ -1034,6 +1034,33 @@
         {
           "author": "PLANNER",
           "body": "Planned a small revert task to undo the T-030 source-card wording change while leaving the 2026-05-02 lottery refresh intact."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: reverting the T-030 header wording so the source card shows only the original workbook label Loteriju reģistrs 30.04.2026."
+        }
+      ]
+    },
+    {
+      "id": "T-032",
+      "title": "Refresh active lotteries for 2026-05-08 from workbook 2026-05-07",
+      "description": "Recompute the public active lottery dataset for reference date 2026-05-08 from the local workbook Loteriju_reģistrs_07.05.2026..xls, remove expired permits, add newly active permits, update the visible source date, and fill missing public details from reliable online sources where available.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "lotteries",
+        "web",
+        "refresh"
+      ],
+      "verify": [
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Planned a workbook-backed refresh for the 2026-05-08 public site using the local VID registry snapshot dated 07.05.2026; implementation will recompute the active set, update the visible source date, and enrich new or weak permits from reliable public sources."
         }
       ]
     }
@@ -1042,6 +1069,6 @@
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "5fdf95e10f69fcc170e91c4e7f84ba5c80b8e74c52ed79645c23ef8b28bd8863"
+    "checksum": "190aa9f17d400fcc4661089820ac3525f345db64b298c5afd9ec6f6254846ae8"
   }
 }
