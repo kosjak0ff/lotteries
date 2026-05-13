@@ -27,13 +27,6 @@
     "registration_until": "2026-06-14",
     "notes": "Atļaujas Nr. 8886; официальные правила на maxima.lv подтверждают период регистрации 03.03.2026 00:00 — 14.06.2026 23:59, итог розыгрыша 15.06.2026; организатор SIA “Sprintlab group”. Список участвующих товаров (EAN) опубликован в правилах: https://www.maxima.lv/uploads/file/Loterijas-noteikumi_SMEG2026-Final.pdf."
   },
-  "8889": {
-    "requirements": "Купить любой шоколадный батончик Tupla в Латвии и зарегистрировать участие на странице кампании.",
-    "prizes": "1× iPhone 17; 8× подарочная карта Decathlon на 50 EUR; 10× коробка шоколадных батончиков TUPLA Maxi.",
-    "registration_url": "https://www.tuplaloterija.lv/",
-    "registration_until": "2026-05-07",
-    "notes": "Atļaujas Nr. 8889; официальный лендинг подтверждает период кампании 07.04–11.05.2026, период регистрации 07.04–07.05.2026 и 4 розыгрыша: 14.04, 21.04, 28.04 и 08.05.2026."
-  },
   "8895": {
     "requirements": "До 24.06.2026 купить минимум один продукт Dimdiņi в любой торговой точке Латвии, сохранить чек и зарегистрировать документ покупки на странице лотереи.",
     "prizes": "1× гриль Kamado BONO MEDIA; 1× аэрогриль Philips; 12× комплект продукции Dimdiņi.",
@@ -104,13 +97,6 @@
     "registration_url": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-top-loterija/",
     "registration_until": "2026-05-26",
     "notes": "Atļaujas Nr. 8944; период лотерии 01.04–26.05.2026; 8 розыгрышей: первый 08.04, финальный 27.05.2026."
-  },
-  "8945": {
-    "requirements": "Сделать покупку в любой торговой или сервисной точке ТЦ “Mc2” до 10.05.2026, сохранить чек и зарегистрировать его на странице лотереи.",
-    "prizes": "1× подарочная карта airBaltic на 2000 EUR.",
-    "registration_url": "https://www.loterijas.lv/loterija/mc2-loterija/",
-    "registration_until": "2026-05-10",
-    "notes": "Atļaujas Nr. 8945; период лотереи 10.03–10.05.2026; финальный розыгрыш 11.05.2026."
   },
   "8947": {
     "requirements": "Сделать покупку минимум на 15 EUR в магазинах LaTS или в интернет-магазине e-latts.lv, сохранить чек и зарегистрироваться через SMS на 1881 или через форму на странице кампании.",
@@ -301,12 +287,33 @@
     "registration_until": "",
     "notes": "Atļaujas Nr. 8983; официальный реестр VID подтверждает permit, период 02.04–01.06.2026 и организатора SIA \"Steam Education\". Публичная закупочная страница VARAM дополнительно подтверждает, что SIA Steam Education является исполнителем проекта “Sabiedrības digitālo prasmju attīstība”, но текущая публичная страница именно лотерии или её правил не найдена."
   },
+  "8984": {
+    "requirements": "До 30.06.2026 купить продукт Pringles в любой торговой точке Латвии, сохранить чек и зарегистрировать документ покупки на странице лотереи.",
+    "prizes": "3× гриль KOMODO EVO Media, Navy Blue Matte; 5× беспроводная колонка JBL Charge 6; 20× Pringles пикниковый плед.",
+    "registration_url": "https://www.loterijas.lv/loterija/pringles-loterija-6/",
+    "registration_until": "2026-06-30",
+    "notes": "Atļaujas Nr. 8984; публичная страница Loterijas.lv подтверждает период 12.05–30.06.2026, покупку Pringles в любой торговой точке Латвии, регистрацию чека и 7 розыгрышей с первым 19.05 и финальным 01.07.2026."
+  },
   "8985": {
     "requirements": "До 22.06.2026 купить любой хлеб Fazer Gardā в магазинах Maxima или в www.barbora.lv, сохранить чек и зарегистрировать покупку по SMS или через веб-форму.",
     "prizes": "1× гриль Weber Genesis E-315; 8× подарочная корзина Fazer и подарочная карта Maxima 35 EUR.",
     "registration_url": "https://www.loterijas.lv/loterija/fazer-garda-svetku-garsa-katrai-dienai/",
     "registration_until": "2026-06-22",
     "notes": "Atļaujas Nr. 8985; публичная страница Loterijas.lv подтверждает период участия 28.04–22.06.2026, регистрацию через веб-форму или SMS, первый розыгрыш 05.05.2026 и финальный розыгрыш 25.06.2026."
+  },
+  "8986": {
+    "requirements": "До 08.06.2026 купить продукт P&G в магазине Maxima или интернет-магазине www.barbora.lv, сохранить чек и зарегистрировать документ покупки через страницу кампании.",
+    "prizes": "1× денежный приз 3000 EUR; 300× комплект продуктов P&G.",
+    "registration_url": "https://www.loterijas.lv/loterija/pg-loterija-maxima-veikalos-2/",
+    "registration_until": "2026-06-08",
+    "notes": "Atļaujas Nr. 8986; публичная страница Loterijas.lv подтверждает период 12.05–08.06.2026, участие с P&G продуктом в Maxima или Barbora.lv, регистрацию через gudrspirkums.lv и 4 розыгрыша с первым 19.05 и финальным 09.06.2026."
+  },
+  "8987": {
+    "requirements": "До 30.06.2026 купить любой продукт Fazer Tutti Frutti в любой торговой точке Латвии, сохранить чек и зарегистрировать документ покупки на странице лотереи.",
+    "prizes": "5× SUP-доска; 20× продуктовый комплект.",
+    "registration_url": "https://www.loterijas.lv/loterija/fazer-tutti-frutti-loterija-2/",
+    "registration_until": "2026-06-30",
+    "notes": "Atļaujas Nr. 8987; публичная страница Loterijas.lv подтверждает период 12.05–30.06.2026, участие с Fazer Tutti Frutti продуктом в любой торговой точке Латвии и 7 розыгрышей с первым 19.05 и финальным 01.07.2026."
   },
   "8988": {
     "requirements": "До 01.06.2026 купить любой продукт Pantene, Aussie или Head & Shoulders в магазине Drogas или на www.drogas.lv, сохранить чек и зарегистрировать покупку через страницу кампании.",
@@ -321,6 +328,13 @@
     "registration_url": "https://www.loterijas.lv/loterija/gillette-loterija-veikalos-drogas-10/",
     "registration_until": "2026-06-01",
     "notes": "Atļaujas Nr. 8989; публичная страница Loterijas.lv подтверждает период 03.05–01.06.2026, участие с Gillette/Gillette Venus/King C Gillette в Drogas или drogas.lv, регистрацию через gudrspirkums.lv и 4 розыгрыша с финалом 02.06.2026."
+  },
+  "8990": {
+    "requirements": "До 15.06.2026 купить минимум 2 продукта Santa Maria в одной покупке в магазине Rimi или интернет-магазине www.rimi.lv/e-veikals, сохранить чек и зарегистрировать документ покупки.",
+    "prizes": "5× подарочная карта Rimi на 300 EUR; 25× комплект продуктов Santa Maria.",
+    "registration_url": "https://www.loterijas.lv/loterija/santa-maria-loterija-rimi-veikalos/",
+    "registration_until": "2026-06-15",
+    "notes": "Atļaujas Nr. 8990; публичная страница Loterijas.lv подтверждает период 12.05–15.06.2026, участие с 2 продуктами Santa Maria в Rimi или rimi.lv/e-veikals и 5 розыгрышей с первым 19.05 и финальным 16.06.2026."
   },
   "8992": {
     "requirements": "С 28.04 по 01.06.2026 сделать покупку минимум на 20 EUR в интернет-магазине www.rimi.lv/e-veikals, сохранить чек и зарегистрировать покупку на странице акции.",
@@ -349,5 +363,19 @@
     "registration_url": "https://www.loterijas.lv/loterija/mamba-werthers-toffifee-un-knoppers-loterija/",
     "registration_until": "2026-08-06",
     "notes": "Atļaujas Nr. 8997; публичная страница Loterijas.lv подтверждает период 07.05–06.08.2026, минимальную покупку Storck на 3 EUR, регистрацию чека и 13 розыгрышей с первым 15.05 и финальным 07.08.2026."
+  },
+  "8999": {
+    "requirements": "Быть клиентом Zelta Zivtiņa Pēcapmaksa или подключиться к ней; для уже подключённых клиентов публичная страница ZZ Bonusu klubs подтверждает участие через SMS с текстом BONUSS на 1620.",
+    "prizes": "Денежные и/или товарные бонус-призы ZZ Bonusu klubs; точный призовой фонд для текущего Atļaujas Nr. 8999 публично не подтверждён.",
+    "registration_url": "https://www.zeltazivtina.lv/bonusu-klubs",
+    "registration_until": "",
+    "notes": "Atļaujas Nr. 8999; официальный реестр подтверждает новый permit, период 09.05–03.06.2026 и услугу Zelta Zivtiņa. Публичная страница ZZ Bonusu klubs на момент проверки всё ещё показывает старые permit-ссылки, но подтверждает механику участия для pēcapmaksa клиентов и SMS BONUSS на 1620; поэтому карточка не выдумывает текущий призовой фонд."
+  },
+  "9002": {
+    "requirements": "Купить продукт или услугу SIA Elenger / заключить или использовать договор Elenger в период лотереи; отдельная публичная форма или правила именно для Atļaujas Nr. 9002 не найдены.",
+    "prizes": "— данных пока нет (публичные правила и призовой фонд по Atļaujas Nr. 9002 не обнаружены).",
+    "registration_url": "https://elenger.lv/",
+    "registration_until": "",
+    "notes": "Atļaujas Nr. 9002; официальный реестр VID подтверждает permit, организатора SIA Elenger, продукт SIA “Elenger” и период 11.05–16.06.2026. Официальный сайт Elenger подтверждает компанию и её услуги, но публичная страница лотереи, форма регистрации или призовой фонд для этого permit-а не найдены."
   }
 }

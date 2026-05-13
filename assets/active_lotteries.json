@@ -1,6 +1,6 @@
 {
-  "reference_date": "2026-05-08",
-  "count": 50,
+  "reference_date": "2026-05-13",
+  "count": 54,
   "items": [
     {
       "permit": "8874",
@@ -41,16 +41,6 @@
       "start": "2026-03-03",
       "end": "2026-06-15",
       "place": "Veikalu tīkla  “Maxima” veikali visā Latvijas Republikā"
-    },
-    {
-      "permit": "8889",
-      "name": "“Tupla loterija”",
-      "org": "SIA „BSMS”",
-      "org_reg": "40003471367",
-      "product": "TUPLA  preču pirkumam",
-      "start": "2026-04-07",
-      "end": "2026-05-11",
-      "place": "Latvijas Republika"
     },
     {
       "permit": "8895",
@@ -151,16 +141,6 @@
       "start": "2026-04-01",
       "end": "2026-05-27",
       "place": "tirdzniecības vieta top!, mini top!"
-    },
-    {
-      "permit": "8945",
-      "name": "“Mc2 loterija”",
-      "org": "SIA „Visas Loterijas”",
-      "org_reg": "40103404235",
-      "product": "preču pirkumam",
-      "start": "2026-03-10",
-      "end": "2026-05-11",
-      "place": "Latvijas Republika"
     },
     {
       "permit": "8947",
@@ -433,6 +413,16 @@
       "place": "Latvijas Republika"
     },
     {
+      "permit": "8984",
+      "name": "“Pringles loterija”",
+      "org": "SIA „Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "Pringles produkta pirkumam",
+      "start": "2026-05-12",
+      "end": "2026-07-01",
+      "place": "Latvijas Republika"
+    },
+    {
       "permit": "8985",
       "name": "“Fazer Gardā - Svētku garša katrai dienai! ”",
       "org": "SIA „Visas Loterijas”",
@@ -441,6 +431,26 @@
       "start": "2026-04-28",
       "end": "2026-06-25",
       "place": "veikali MAXIMA visā Latvijas Republikā as  teritorijā vai interneta veikals www.barbora.lv."
+    },
+    {
+      "permit": "8986",
+      "name": "“P&G loterija Maxima veikalos”",
+      "org": "SIA „Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "P&G produkta pirkumam",
+      "start": "2026-05-12",
+      "end": "2026-06-09",
+      "place": "veikali MAXIMA visā Latvijas Republikā un www.barbora.lv"
+    },
+    {
+      "permit": "8987",
+      "name": "\"Fazer Tutti Frutti loterija''",
+      "org": "SIA \"Visas Loterijas\"",
+      "org_reg": "40103404235",
+      "product": "Fazer Tutti Frutti produktu pirkumam",
+      "start": "2026-05-12",
+      "end": "2026-07-01",
+      "place": "Latvijas Republika"
     },
     {
       "permit": "8988",
@@ -461,6 +471,16 @@
       "start": "2026-05-03",
       "end": "2026-06-02",
       "place": "tirdzniecības vietas Drogas visā Latvijas  Republikā vai www.drogas.lv."
+    },
+    {
+      "permit": "8990",
+      "name": "“Santa Maria loterija Rimi veikalos”",
+      "org": "SIA “Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "Santa Maria produktu pirkumam",
+      "start": "2026-05-12",
+      "end": "2026-06-16",
+      "place": "veikali Rimi visā Latvijas Republikā vai www.rimi.lv/e-veikals"
     },
     {
       "permit": "8992",
@@ -501,6 +521,26 @@
       "start": "2026-05-07",
       "end": "2026-08-07",
       "place": "Latvijas Republika"
+    },
+    {
+      "permit": "8999",
+      "name": "“Zelta Zivtiņa Bonusu klubs”",
+      "org": "SIA “Visas Loterijas”",
+      "org_reg": "40103404235",
+      "product": "Tele2 zīmola “Zelta Zivtiņa”  pakalpojumam",
+      "start": "2026-05-09",
+      "end": "2026-06-03",
+      "place": "Latvijas Republika"
+    },
+    {
+      "permit": "9002",
+      "name": "“Elenger loterija”",
+      "org": "SIA Elenger",
+      "org_reg": "40203080354",
+      "product": "SIA “Elenger” produktu pirkumam",
+      "start": "2026-05-11",
+      "end": "2026-06-16",
+      "place": "Latvijas Republika, www.elenger.lv"
     }
   ]
 }
