@@ -1075,12 +1075,35 @@
         "hash": "d90af202e32228b839df81dc12f58be2c49fc36b",
         "message": "🧩 T-032 Refresh lotteries for 2026-05-08"
       }
+    },
+    {
+      "id": "T-033",
+      "title": "Refresh active lotteries for 2026-05-13",
+      "description": "Recompute the public active lottery dataset for reference date 2026-05-13 from the latest available official Latvian lottery registry, remove expired permits, add newly active permits, update the visible source date, and fill missing public details from reliable online sources where available.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "lotteries",
+        "web",
+        "refresh"
+      ],
+      "verify": [
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Planned a registry-backed refresh for the 2026-05-13 public site; implementation will fetch or derive the latest available official registry data, recompute the active set, update the visible source date, and enrich new or weak permits from reliable public sources."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "b09e46cd62f513b813852d1a21d6ad907fc0473765c4855f4d2dc55980be51da"
+    "checksum": "fe7bf5d1dc968e295e739d0cad1c12978563ec28bbc5f3ce908524bb305a01ed"
   }
 }
