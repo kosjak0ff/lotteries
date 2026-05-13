@@ -1080,7 +1080,7 @@
       "id": "T-033",
       "title": "Refresh active lotteries for 2026-05-13",
       "description": "Recompute the public active lottery dataset for reference date 2026-05-13 from the latest available official Latvian lottery registry, remove expired permits, add newly active permits, update the visible source date, and fill missing public details from reliable online sources where available.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "med",
       "owner": "CODER",
       "tags": [
@@ -1096,14 +1096,26 @@
         {
           "author": "PLANNER",
           "body": "Planned a registry-backed refresh for the 2026-05-13 public site; implementation will fetch or derive the latest available official registry data, recompute the active set, update the visible source date, and enrich new or weak permits from reliable public sources."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: refreshing the site for 2026-05-13, discovering the latest official lottery registry from VID/IAUI, recomputing the active permit set, updating source labeling, and enriching newly added or weak permits from reliable public sources."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: refreshed the 2026-05-13 active list from the latest official VID registry updated 08.05.2026, confirmed JSON validity, active/enrichment parity, workbook extraction check, and .venv/bin/python -m pytest -q (5 passed)."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "eac17f3e49eb00863514c76d54a42edfcf159e2a",
+        "message": "🧩 T-033 Refresh lotteries for 2026-05-13"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "fe7bf5d1dc968e295e739d0cad1c12978563ec28bbc5f3ce908524bb305a01ed"
+    "checksum": "e476639d68a930834cf24cb493a4c807f06c8652d752fcae37864b7263da0474"
   }
 }
