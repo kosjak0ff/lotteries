@@ -1115,7 +1115,7 @@
       "id": "T-034",
       "title": "Refresh active lotteries for 2026-05-15 from workbook 2026-05-14",
       "description": "Recompute the public active lottery dataset for reference date 2026-05-15 from the local workbook Loteriju_reģistrs_14.05.2026..xls, remove expired permits, add newly active permits, update the visible source date, and fill missing public details from reliable online sources where available.",
-      "status": "TODO",
+      "status": "DONE",
       "priority": "med",
       "owner": "CODER",
       "tags": [
@@ -1131,14 +1131,26 @@
         {
           "author": "PLANNER",
           "body": "Planned a workbook-backed refresh for the 2026-05-15 public site using the local VID registry snapshot dated 14.05.2026; implementation will recompute the active set, update the visible source date, and enrich new or weak permits from reliable public sources."
+        },
+        {
+          "author": "CODER",
+          "body": "Start: recomputing the 2026-05-15 active permit set from Loteriju_reģistrs_14.05.2026..xls, comparing it with the current public JSON, updating the visible source date, and rechecking missing public enrichment for newly added or corrected permits."
+        },
+        {
+          "author": "REVIEWER",
+          "body": "Verified: refreshed the 2026-05-15 active list from Loteriju_reģistrs_14.05.2026..xls, confirmed JSON validity, active/enrichment parity, workbook extraction check, and .venv/bin/python -m pytest -q (5 passed)."
         }
-      ]
+      ],
+      "commit": {
+        "hash": "49a00ad07822ba112a5b847bf1f7b821affe7ba7",
+        "message": "🧩 T-034 Refresh lotteries for 2026-05-15"
+      }
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "d5e1c70d7d02a27f938ce495d60a3104ed4403572442363856d6cca16e3babeb"
+    "checksum": "91bbd9f1b97603dbc82023c65020edb00e72c78252ddc2780ba5f0d875682f5a"
   }
 }
