@@ -1110,12 +1110,35 @@
         "hash": "eac17f3e49eb00863514c76d54a42edfcf159e2a",
         "message": "🧩 T-033 Refresh lotteries for 2026-05-13"
       }
+    },
+    {
+      "id": "T-034",
+      "title": "Refresh active lotteries for 2026-05-15 from workbook 2026-05-14",
+      "description": "Recompute the public active lottery dataset for reference date 2026-05-15 from the local workbook Loteriju_reģistrs_14.05.2026..xls, remove expired permits, add newly active permits, update the visible source date, and fill missing public details from reliable online sources where available.",
+      "status": "TODO",
+      "priority": "med",
+      "owner": "CODER",
+      "tags": [
+        "lotteries",
+        "web",
+        "refresh"
+      ],
+      "verify": [
+        "python -m json.tool assets/active_lotteries.json",
+        "python -m json.tool assets/enriched_info.json"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Planned a workbook-backed refresh for the 2026-05-15 public site using the local VID registry snapshot dated 14.05.2026; implementation will recompute the active set, update the visible source date, and enrich new or weak permits from reliable public sources."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "e476639d68a930834cf24cb493a4c807f06c8652d752fcae37864b7263da0474"
+    "checksum": "d5e1c70d7d02a27f938ce495d60a3104ed4403572442363856d6cca16e3babeb"
   }
 }
