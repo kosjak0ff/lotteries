@@ -1,6 +1,6 @@
 {
-  "reference_date": "2026-05-15",
-  "count": 53,
+  "reference_date": "2026-05-20",
+  "count": 50,
   "items": [
     {
       "permit": "8874",
@@ -273,16 +273,6 @@
       "place": "Latvijas Republika"
     },
     {
-      "permit": "8969",
-      "name": "“ALEJA pavasara loterija 2026”",
-      "org": "SIA “SOMESE Baltic”",
-      "org_reg": "40103207278",
-      "product": "pirkumam vismaz 10,00 EUR vērtībā jebkurā no TC “Aleja” tirdzniecības vietām vai pakalpojumu sniegšanas vietām (izņemot veikalu “Rimi”)",
-      "start": "2026-04-14",
-      "end": "2026-05-15",
-      "place": "Tirdzniecības centra “Aleja” veikali, Rīgā, Vienības gatv. 194A."
-    },
-    {
       "permit": "8971",
       "name": "“Schwarzkopf Drogas loterija 2026”",
       "org": "SIA “SOMESE Baltic”",
@@ -321,36 +311,6 @@
       "start": "2026-04-14",
       "end": "2026-06-09",
       "place": "veikali RIMI visā Latvijas Republikā un www.rimi.lv/e-veikals."
-    },
-    {
-      "permit": "8976",
-      "name": "“OSTMALA pavasara loterija 2026”",
-      "org": "SIA “SOMESE Baltic”",
-      "org_reg": "40103207278",
-      "product": "vismaz 10,00 EUR  vērtībā preču pirkumam",
-      "start": "2026-04-14",
-      "end": "2026-05-15",
-      "place": "T/C “Ostmala” ,  Liepāja, Kārļa Zāles laukums 8, LV-3401"
-    },
-    {
-      "permit": "8977",
-      "name": "“VIVO pavasara loterija 2026”",
-      "org": "SIA “SOMESE Baltic”",
-      "org_reg": "40103207278",
-      "product": "vismaz 10,00 EUR  vērtībā pirkumam",
-      "start": "2026-04-14",
-      "end": "2026-05-15",
-      "place": "T/C “VIVO” Jelgava, Katoļu iela 18, LV-3001, Latvija"
-    },
-    {
-      "permit": "8978",
-      "name": "“TOBAGO pavasara loterija 2026”",
-      "org": "SIA “SOMESE Baltic”",
-      "org_reg": "40103207278",
-      "product": "vismaz 10,00 EUR  vērtībā pirkumam",
-      "start": "2026-04-14",
-      "end": "2026-05-15",
-      "place": "T/C “Tobago” , Ventspils, Lielajā prospekts 3/5, LV-3601, Latvija"
     },
     {
       "permit": "8979",
@@ -531,6 +491,16 @@
       "start": "2026-05-11",
       "end": "2026-06-16",
       "place": "Latvijas Republika, www.elenger.lv"
+    },
+    {
+      "permit": "9004",
+      "name": "” Lay’s Lidl World Cup 2026” (“Lay’s Lidl Pasaules Kauss 2026”)",
+      "org": "SIA \"MV GROUP Distribution LV\"",
+      "org_reg": "40003787568",
+      "product": "“Lay’s” un/vai “Doritos” zīmola preču pirkumam",
+      "start": "2026-05-18",
+      "end": "2026-06-01",
+      "place": "“Lidl” zīmola tirdzniecības  vietas visā Latvijas Republikā"
     }
   ]
 }
