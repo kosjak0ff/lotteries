@@ -1145,12 +1145,35 @@
         "hash": "49a00ad07822ba112a5b847bf1f7b821affe7ba7",
         "message": "🧩 T-034 Refresh lotteries for 2026-05-15"
       }
+    },
+    {
+      "id": "T-035",
+      "title": "Refresh active lotteries for 2026-05-20",
+      "description": "Refresh the static lottery dataset for reference date 2026-05-20 using the latest IAUI registry available online, remove lotteries inactive on that date, add newly active lotteries, and enrich missing public participation details in assets/enriched_info.json.",
+      "status": "TODO",
+      "priority": "high",
+      "owner": "CODER",
+      "tags": [
+        "lotteries",
+        "iaui",
+        "refresh"
+      ],
+      "verify": [
+        "python scripts/extract_lotteries.py --date 2026-05-20 --input Loteriju_reģistrs_20.05.2026..xls --check",
+        "python -m pytest -q"
+      ],
+      "comments": [
+        {
+          "author": "PLANNER",
+          "body": "Plan: update active_lotteries.json and enriched_info.json for the 2026-05-20 reference date from online IAUI/public sources."
+        }
+      ]
     }
   ],
   "meta": {
     "schema_version": 1,
     "managed_by": "agentctl",
     "checksum_algo": "sha256",
-    "checksum": "91bbd9f1b97603dbc82023c65020edb00e72c78252ddc2780ba5f0d875682f5a"
+    "checksum": "61872834bf0bc0d782a005ae10df221c53ee0fb571240f9a2d2ff1c5cf543ead"
   }
 }
